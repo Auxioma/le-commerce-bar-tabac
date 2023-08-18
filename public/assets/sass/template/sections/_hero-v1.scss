@@ -1,0 +1,50 @@
+.vs-hero-wrapper {
+  .hero-btn {
+    a {
+      line-height: inherit;
+      font-size: inherit;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+
+      [class*="mask-"],
+      [class*="mask-"] {
+        left: -1px;
+        top: -1px;
+        @include equal-size(103%);
+      }
+    }
+  }
+}
+
+
+.hero-shape1 {
+  position: absolute;
+  left: 10%;
+  bottom: -7%;
+  z-index: 31;
+}
+
+
+.ls-text-theme {
+  color: #fa8507 !important;
+}
+
+.ls-text-yellow {
+  color: #ffe119 !important;
+}
+
+@media (max-width: 1024px) {
+  .ls-layer .vs-btn {
+    font-size: 14px;
+    padding: 10px 33px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ls-layer .vs-btn {
+    font-size: 12px;
+    padding: 3px 20px;
+  }
+}

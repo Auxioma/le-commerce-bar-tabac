@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+        <meta name="description" content="{% block description %}Welcome!{% endblock %}">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:wght@300;400;500;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Favicons - Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/img/favicons/apple-icon-57x57.png') }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/img/favicons/apple-icon-60x60.png') }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/img/favicons/apple-icon-72x72.png') }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/favicons/apple-icon-76x76.png') }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/img/favicons/apple-icon-114x114.png') }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/img/favicons/apple-icon-120x120.png') }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('assets/img/favicons/apple-icon-144x144.png') }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('assets/img/favicons/apple-icon-152x152.png') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-icon-180x180.png') }}">
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets/img/favicons/android-icon-192x192.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/img/favicons/favicon-96x96.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}">
+        <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/ms-icon-144x144.png') }}">
+
+        {{ encore_entry_link_tags('app') }}
+        {% block stylesheets %}{% endblock %}
+
     </head>
     <body>
+
+        <!--[if lte IE 9]>
+    	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <div class="preloader  ">
+            <button class="vs-btn mask-style1 preloaderCls">Cancel Preloader </button>
+            <div class="preloader-inner">
+                <div class="loader-logo">
+                    <img src="{{ asset('assets/img/logo-white.svg') }}" alt="Loader Image">
+                </div>
+                <div class="loader-wrap pt-4">
+                    <span class="loader"></span>
+                </div>
+            </div>
+        </div>
+
         {% block body %}{% endblock %}
+        
+        <script src="{{ asset('assets/js/vendor/jquery.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/jquery-migrate-3.0.0.min.js') }}"></script>
+        <script src="{{ asset('assets/js/slick.min.js') }}"></script>
+        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets/js/greensock.min.js') }}"></script>
+        <script src="{{ asset('assets/js/layerslider.kreaturamedia.jquery.js') }}"></script>
+        <script src="{{ asset('assets/js/layerslider.transitions.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.datetimepicker.min.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vscustom-carousel.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vsmenu.min.js') }}"></script>
+        <script src="{{ asset('assets/js/ajax-mail.js') }}"></script>
+        <script src="{{ asset('assets/js/main.js') }}"></script>
     </body>
 </html>
