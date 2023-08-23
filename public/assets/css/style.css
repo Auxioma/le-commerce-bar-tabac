@@ -3253,7 +3253,7 @@ textarea.form-control.is-invalid {
 }
 .popup-search-box form input::placeholder {
   color: #fff;
-}
+}/*
 .popup-search-box form button {
   position: absolute;
   top: 0px;
@@ -3271,7 +3271,7 @@ textarea.form-control.is-invalid {
 }
 .popup-search-box form button:hover {
   transform: scale(1.1);
-}
+}*/
 .popup-search-box.show {
   opacity: 1;
   visibility: visible;
