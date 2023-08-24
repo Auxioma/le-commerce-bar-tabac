@@ -9,18 +9,16 @@
 			<div class="row align-items-center">
 				<div class="col-5 col-md-3">
 					<div class="logo">
-						<a href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+						<a href="{{ path('app_home_page') }}"><img src="assets/img/logo-noir.png" alt="logo"></a>
 					</div>
 				</div>
 				<div class="col-7 col-md-9 text-right">
 					<nav class="main-menu menu-sticky1 onepage-nav d-none d-lg-block link-inherit mobile-menu-active">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#menu">Menu</a></li>
-							<li><a href="#gallery">Gallery</a></li>
-							<li><a href="#chef">Chef</a></li>
-							<li><a href="#blog">Blog</a></li>
+							<li><a href="{{ path('app_home_page') }}">Accueil</a></li>
+							<li><a href="#about">Le bar</a></li>
+							<li><a href="#promo">nos offres</a></li>
+							<li><a href="#avisclt">Temoiniages</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -37,7 +35,7 @@
 				<i class="fal fa-times"></i>
 			</button>
 			<div class="mobile-logo">
-				<a href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+				<a href="{{ path('app_home_page') }}"><img src="assets/img/logo-blanc.png" alt="logo"></a>
 			</div>
 			<div class="vs-mobile-menu link-inherit"></div>
 		</div>
@@ -47,19 +45,17 @@
 			<div class="row align-items-center">
 				<div class="col-6 col-lg-2">
 					<div class="header-logo">
-						<a href="index.html"><img src="assets/img/logo-white.svg" class="d-none d-lg-block" alt="Grillino - Food Restaurant Cafe Grill & Bistro HTML Template"></a>
-						<a href="index.html"><img src="assets/img/logo.svg" class="d-block d-lg-none" alt="Grillino - Food Restaurant Cafe Grill & Bistro HTML Template"></a>
+						<a href="{{ path('app_home_page') }}"><img src="assets/img/logo-blanc.png" class="d-none d-lg-block" alt="Grillino - Food Restaurant Cafe Grill & Bistro HTML Template"></a>
+						<a href="{{ path('app_home_page') }}"><img src="assets/img/logo-noir.png" class="d-block d-lg-none" alt="Grillino - Food Restaurant Cafe Grill & Bistro HTML Template"></a>
 					</div>
 				</div>
 				<div class="col-6 col-lg-6 col-xl-5 position-static">
 					<nav class="main-menu menu-style3 link-inherit text-right text-xl-left mobile-menu-active dark-style onepage-nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#menu">Menu</a></li>
-							<li><a href="#gallery">Gallery</a></li>
-							<li><a href="#chef">Chef</a></li>
-							<li><a href="#blog">Blog</a></li>
+							<li><a href="{{ path('app_home_page') }}">Accueil</a></li>
+							<li><a href="#about">Le bar</a></li>
+							<li><a href="#promo">nos offres</a></li>
+							<li><a href="#avisclt">Temoiniages</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -241,7 +237,7 @@
 		</div>
 	</section>
 
-	<section class="vs-cta-wrapper background-image bg-fluid py-lg-130 py-60" data-vs-img="assets/img/cta/banner-1.png" data-overlay="dark" data-opacity="5">
+	<section id="promo" class="vs-cta-wrapper background-image bg-fluid py-lg-130 py-60" data-vs-img="assets/img/cta/banner-1.png" data-overlay="dark" data-opacity="5">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-xl-8">
@@ -259,11 +255,11 @@
 		</div>
 	</section>
 
-	<section class="vs-testimonial-wrapper vs-testimonial-layout3 pt-lg-130 pt-60 pb-lg-100 pb-30">
+	<section id="avisclt" class="vs-testimonial-wrapper vs-testimonial-layout3 pt-lg-130 pt-60 pb-lg-100 pb-30">
 		<div class="container">
 			<div class="section-title text-center ">
-				<h2 class="sec-title1 text-font3">Client’s
-					<span class="text-theme">Feedback</span>
+				<h2 class="sec-title1 text-font3">Avis
+					<span class="text-theme">des clients</span>
 				</h2>
 				<div class="sec-line">
 					<img src="assets/img/shape/sec-title-1.png" alt="Section Shape Icon">
@@ -273,43 +269,44 @@
 
 				<div class="col-lg-6">
 					<div class="vs-testimonial text-center bg-smoke px-15 px-md-40 px-xl-60 py-15 py-md-35 py-xl-95">
-						<p class="testimonial-text text-md mb-lg-35">“ Progressively strategize compelling metrics whereas impactful architectures. Rapidiously fabricate multifunctional customer ”</p>
+						<p class="testimonial-text text-md mb-lg-35" style="height:84px">
+						“ Bar tabac sympa, les serveuses très sympa aussi, Ça fait du bien au moral de trouver un lieu de repos accueillant. ”</p>
 						<div class="author-image">
-							<img src="assets/img/testimonial/testimonial-author-2-1.jpg" alt="Testimonial Author Image">
+							<img src="https://lh3.googleusercontent.com/a-/AD_cMMQyA15Qve-6BvP88R3O2kfIh1cLxvO6makzGv8o_pA3kZE=s40-c-rp-mo-ba3-br100" alt="Testimonial Author Image">
 						</div>
 						<span class="testimonial-bg-icon">
 							<i class="flaticon-left-quote icon-3x" data-opacity="1"></i>
 						</span>
-						<h3 class="author-name mb-0">Algernon Freddy</h3>
-						<span>Managing Director</span>
+						<h3 class="author-name mb-0">JF JEFFE</h3>
+						<span>Avis Google</span>
 					</div>
 				</div>
 
 				<div class="col-lg-6">
 					<div class="vs-testimonial text-center bg-smoke px-15 px-md-40 px-xl-60 py-15 py-md-35 py-xl-95">
-						<p class="testimonial-text text-md mb-lg-35">“ Progressively strategize compelling metrics whereas impactful architectures. Rapidiously fabricate multifunctional customer ”</p>
+						<p class="testimonial-text text-md mb-lg-35" style="height:84px">“ Patron et son équipe accueillants<br> et très sympas ”</p>
 						<div class="author-image">
-							<img src="assets/img/testimonial/testimonial-author-2-1.jpg" alt="Testimonial Author Image">
+							<img src="https://lh3.googleusercontent.com/a-/AD_cMMT-9bfTjmxptk4aeRKRuGtFoSq50SELZK_T2rbmqsAKMQ=s40-c-rp-mo-ba3-br100" alt="Testimonial Author Image">
 						</div>
 						<span class="testimonial-bg-icon">
 							<i class="flaticon-left-quote icon-3x" data-opacity="1"></i>
 						</span>
-						<h3 class="author-name mb-0">Algernon Freddy</h3>
-						<span>Managing Director</span>
+						<h3 class="author-name mb-0">BOURGIS Thierry</h3>
+						<span>Avis Google</span>
 					</div>
 				</div>
 
 				<div class="col-lg-6">
 					<div class="vs-testimonial text-center bg-smoke px-15 px-md-40 px-xl-60 py-15 py-md-35 py-xl-95">
-						<p class="testimonial-text text-md mb-lg-35">“ Progressively strategize compelling metrics whereas impactful architectures. Rapidiously fabricate multifunctional customer ”</p>
+						<p class="testimonial-text text-md mb-lg-35" style="height:84px">“ Si vous cherchez un bar convivial c'est le bonne endroit. Très commerçant les deux frères ”</p>
 						<div class="author-image">
-							<img src="assets/img/testimonial/testimonial-author-2-1.jpg" alt="Testimonial Author Image">
+							<img src="https://lh3.googleusercontent.com/a-/AD_cMMS25fywfAgjY39y4I-3D21d-5KAGrSqhhcGDUgUIba_yw=s40-c-rp-mo-br100" alt="Testimonial Author Image">
 						</div>
 						<span class="testimonial-bg-icon">
 							<i class="flaticon-left-quote icon-3x" data-opacity="1"></i>
 						</span>
-						<h3 class="author-name mb-0">Algernon Freddy</h3>
-						<span>Managing Director</span>
+						<h3 class="author-name mb-0">sebastien bouloché</h3>
+						<span>Avis Google</span>
 					</div>
 				</div>
 
@@ -579,8 +576,8 @@
 							<div class="widget pt-0">
 								<div class="vs-widget-about">
 									<div class="widget-about-logo mb-20 mb-lg-25">
-										<a href="index.html">
-											<img src="assets/img/logo-white.svg" alt="logo">
+										<a href="{{ path('app_home_page') }}">
+											<img src="assets/img/logo-blanc.png" alt="logo">
 										</a>
 									</div>
 									<p class="widget-about-text mb-20">Energistically repurpose client-based odels rather than magnetic sources. Intrinsicly
