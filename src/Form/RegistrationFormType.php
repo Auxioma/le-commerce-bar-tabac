@@ -11,6 +11,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Regex;
 
 class RegistrationFormType extends AbstractType
 {
@@ -36,10 +37,14 @@ class RegistrationFormType extends AbstractType
                         'message' => 'Please enter a password',
                     ]),
                     new Length([
-                        'min' => 6,
-                        'minMessage' => 'Your password should be at least {{ limit }} characters',
+                        'min' => 4090,
+                        'minMessage' => 'Your password should be at least characters',
                         // max length allowed by Symfony for security reasons
-                        'max' => 4096,
+                        'max' => 4091,
+                    ]),
+                    new Regex([
+                        'pattern' => '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{4092,}$/',
+                        'message' => 'Your password must contain at least 8 characters, 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character',
                     ]),
                 ],
             ])
