@@ -8,6 +8,7 @@ use DateTimeImmutable;
 use App\Entity\Contact;
 use App\Form\ContactType;
 use App\Repository\HoraireRepository;
+use App\Repository\PhotoRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Component\HttpFoundation\Request;
@@ -31,7 +32,7 @@ class HomePageController extends AbstractController
 
 
     #[Route('/', name: 'app_home_page')]
-    public function index(HoraireRepository $horaire, Request $request, EntityManagerInterface $entityManager): Response
+    public function index(HoraireRepository $horaire, Request $request, PhotoRepository $photo): Response
     {
         $date    = DateTimeImmutable::createFromFormat('U', time());
         $dateEn  = $date->format('D');
@@ -118,11 +119,11 @@ class HomePageController extends AbstractController
             return $this->redirectToRoute('app_home_page');
         }
         
-        
         return $this->render('main/HomePage.html.twig', [
             'horaire' => $horaire->findOneBy(['Jours' => $joursFr[$dateEn]]),
             'form' => $form->createView(),
             'formSms' => $formSms->createView(),
+            'photos' => $photo->findBy([], ['id' => 'DESC'], 8),
         ]);
     }
 }
