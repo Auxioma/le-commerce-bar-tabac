@@ -1,8 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Bars tabac à FORGES-LES-EAUX{% endblock %}
-{% block description %}Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.{% endblock %}
-{% block kw %}Bar, Tabac, Boissons, Tabac à rouler, Ambiance, Convivialité, Café, Terrasse, Jeux de société, Presse{% endblock %}
+{% block title %}
+	{% trans %}Bars tabac à FORGES-LES-EAUX{% endtrans %}
+{% endblock %}
+{% block description %}
+	{% trans %}Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.{% endtrans %}
+{% endblock %}
+{% block kw %}
+	{% trans %}Bar, Tabac, Boissons, Tabac à rouler, Ambiance, Convivialité, Café, Terrasse, Jeux de société, Presse{% endtrans %}
+{% endblock %}
 
 {% block body %}
 	<div class="sticky-header-wrap sticky-header py-1 py-sm-2 py-lg-1">
@@ -10,17 +16,19 @@
 			<div class="row align-items-center">
 				<div class="col-5 col-md-3">
 					<div class="logo">
-						<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-noir.png') }}" alt="logo"></a>
+						<a href="{{ path('app_home_page') }}">
+							<img src="{{ asset('assets/img/logo-noir.png') }}" alt="{% trans %}Bar tabac{% endtrans %}">
+						</a>
 					</div>
 				</div>
 				<div class="col-7 col-md-9 text-right">
 					<nav class="main-menu menu-sticky1 onepage-nav d-none d-lg-block link-inherit mobile-menu-active">
 						<ul>
-							<li><a href="{{ path('app_home_page') }}">Accueil</a></li>
-							<li><a href="#about">Le bar</a></li>
-							<li><a href="#promo">nos offres</a></li>
-							<li><a href="#avisclt">Temoiniages</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><ahref="{{ path('app_home_page') }}">{% trans %}Accueil{% endtrans %}</a></li>
+							<li><a href="#about">{% trans %}Le bar{% endtrans %}</a></li>
+							<li><a href="#promo">{% trans %}nos offres{% endtrans %}</a></li>
+							<li><a href="#avisclt">{% trans %}Temoiniages{% endtrans %}</a></li>
+							<li><a href="#contact">{% trans %}Contact{% endtrans %}</a></li>
 						</ul>
 					</nav>
 					<button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none">
@@ -36,7 +44,7 @@
 				<i class="fal fa-times"></i>
 			</button>
 			<div class="mobile-logo">
-				<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-blanc.png') }}" alt="logo"></a>
+				<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-blanc.png') }}" alt="{% trans %}Café{% endtrans %}"></a>
 			</div>
 			<div class="vs-mobile-menu link-inherit"></div>
 		</div>
@@ -46,18 +54,18 @@
 			<div class="row align-items-center">
 				<div class="col-6 col-lg-2">
 					<div class="header-logo">
-						<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-blanc.png') }}" class="d-none d-lg-block" alt="Grillino - Food Restaurant Cafe Grill & Bistro HTML Template"></a>
-						<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-noir.png') }}" class="d-block d-lg-none" alt="Grillino - Food Restaurant Cafe Grill & Bistro HTML Template"></a>
+						<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-blanc.png') }}" class="d-none d-lg-block" alt="{% trans %}Boissons{% endtrans %}"></a>
+						<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-noir.png') }}" class="d-block d-lg-none" alt="{% trans %}Tabac{% endtrans %}"></a>
 					</div>
 				</div>
 				<div class="col-6 col-lg-6 col-xl-5 position-static">
 					<nav class="main-menu menu-style3 link-inherit text-right text-xl-left mobile-menu-active dark-style onepage-nav">
 						<ul>
-							<li><a href="{{ path('app_home_page') }}">Accueil</a></li>
-							<li><a href="#about">Le bar</a></li>
-							<li><a href="#promo">nos offres</a></li>
-							<li><a href="#avisclt">Temoiniages</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><ahref="{{ path('app_home_page') }}">{% trans %}Accueil{% endtrans %}</a></li>
+							<li><a href="#about">{% trans %}Le bar{% endtrans %}</a></li>
+							<li><a href="#promo">{% trans %}nos offres{% endtrans %}</a></li>
+							<li><a href="#avisclt">{% trans %}Temoiniages{% endtrans %}</a></li>
+							<li><a href="#contact">{% trans %}Contac{% endtrans %}</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="vs-menu-toggle ml-auto d-block text-theme border-theme d-lg-none">
@@ -71,7 +79,10 @@
 								<i class="fal fa-clock text-theme fa-2x"></i>
 							</div>
 							<div class="media-body">
-								<span class="d-block mb-1">Ce {{ horaire.Jours }} ouvert de {{ horaire.HoraireOuverture }}</span>
+								<span class="d-block mb-1">{% trans %}Ce{% endtrans %}
+									{{ horaire.Jours }}
+									{% trans %}ouvert de{% endtrans %}
+									{{ horaire.HoraireOuverture }}</span>
 							</div>
 						</div>
 					</div>
@@ -84,45 +95,45 @@
 			<div class="vs-hero-slide ls-slide" data-ls="duration: 7000; transition2d: 5;">
 				<img src="{{ asset('assets/img/hero/Slider-1.png') }}" alt="Slide Image" class="ls-bg" data-ls="bgsize: cover;">
 				<span class="hero-subtitle text-white text-font3 h1 ls-l" style="left: 50%; top: 140px; font-size: 62px; white-space: normal; width: 860px; text-align: center;" data-ls="offsetxin: -200; durationin: 1000; delayin: 600; easingin:easeOutQuint; offsetxout: -50; durationout: 1000;">Le Commerce</span>
-				<h1 class="hero-title text-white ls-l" style="left: 50%; top: 245px; width: 850px; font-size: 130px; white-space: normal; text-align: center; line-height: 90px;" data-ls="offsetxin: 100; durationin: 1000; delayin: 700; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;">Bar</h1>
+				<h1 class="hero-title text-white ls-l" style="left: 50%; top: 245px; width: 850px; font-size: 130px; white-space: normal; text-align: center; line-height: 90px;" data-ls="offsetxin: 100; durationin: 1000; delayin: 700; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;">{% trans %}Bar{% endtrans %}</h1>
 				<p class="ls-l text-white" style="left: 50%; top: 368px; width: 900px; font-size: 18px; white-space: normal; text-transform: uppercase; text-align: center;" data-ls="delayin: 800;  showinfo:1; durationin:1000; scalexin:0.8; scaleyin:0.8;  scalexout:1.1; scaleyout: 1.1;">3 rue du Marechal Leclerc, 76440 Forges les Eaux</p>
 				<span class="shape1 ls-l" style="left: 300px; top: 379px; width: 80px; height: 2px; background-color: #ffffff;" data-ls="offsetxin: -100; durationin: 1000; delayin: 1500; easingin:easeOutQuint; offsetxout: -50; durationout: 1000;"></span>
 				<span class="shape2 ls-l" style="left: 840px; top: 379px; width: 80px; height: 2px; background-color: #ffffff;" data-ls="offsetxin: 100; durationin: 1000; delayin: 1500; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;"></span>
 				<div class="hero-btn ls-l" style="left: 50%; top: 425px; width: 180px; height: 60px; overflow: hidden; border-radius: 50px; line-height: 60px; font-size: 18px;" data-ls="delayin: 1100; showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:0.9; scaleyin:0.9; scalexout:1.1; scaleyout: 1.1; fadein:true; fadeout: true; transformoriginin:50% 143.8% 0;">
-					<a href="https://goo.gl/maps/DNf6hnuQfuNm77Cn7" class="vs-btn mask-style1">Itinéraire</a>
+					<a href="https://goo.gl/maps/DNf6hnuQfuNm77Cn7" class="vs-btn mask-style1">{% trans %}Itinéraire{% endtrans %}</a>
 				</div>
 			</div>
 			<div class="vs-hero-slide ls-slide" data-ls="duration: 7000; transition2d: 5;">
 				<img src="{{ asset('assets/img/hero/Slider-2.png') }}" alt="Slide Image" class="ls-bg" data-ls="bgsize: cover;">
 				<span class="hero-subtitle text-white text-font3 h1 ls-l" style="left: 50%; top: 140px; font-size: 62px; white-space: normal; width: 860px; text-align: center;" data-ls="offsetxin: -200; durationin: 1000; delayin: 600; easingin:easeOutQuint; offsetxout: -50; durationout: 1000;">Le Commerce</span>
-				<h1 class="hero-title text-white ls-l" style="left: 50%; top: 245px; width: 850px; font-size: 130px; white-space: normal; text-align: center; line-height: 90px;" data-ls="offsetxin: 100; durationin: 1000; delayin: 700; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;">Tabac</h1>
+				<h1 class="hero-title text-white ls-l" style="left: 50%; top: 245px; width: 850px; font-size: 130px; white-space: normal; text-align: center; line-height: 90px;" data-ls="offsetxin: 100; durationin: 1000; delayin: 700; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;">{% trans %}Tabac{% endtrans %}</h1>
 				<p class="ls-l text-white" style="left: 50%; top: 368px; width: 900px; font-size: 18px; white-space: normal; text-transform: uppercase; text-align: center;" data-ls="delayin: 800;  showinfo:1; durationin:1000; scalexin:0.8; scaleyin:0.8;  scalexout:1.1; scaleyout: 1.1;">3 rue du Marechal Leclerc, 76440 Forges les Eaux</p>
 				<span class="shape1 ls-l" style="left: 300px; top: 379px; width: 80px; height: 2px; background-color: #ffffff;" data-ls="offsetxin: -100; durationin: 1000; delayin: 1500; easingin:easeOutQuint; offsetxout: -50; durationout: 1000;"></span>
 				<span class="shape2 ls-l" style="left: 840px; top: 379px; width: 80px; height: 2px; background-color: #ffffff;" data-ls="offsetxin: 100; durationin: 1000; delayin: 1500; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;"></span>
 				<div class="hero-btn ls-l" style="left: 50%; top: 425px; width: 180px; height: 60px; overflow: hidden; border-radius: 50px; line-height: 60px; font-size: 18px;" data-ls="delayin: 1100; showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:0.9; scaleyin:0.9; scalexout:1.1; scaleyout: 1.1; fadein:true; fadeout: true; transformoriginin:50% 143.8% 0;">
-					<a href="https://goo.gl/maps/DNf6hnuQfuNm77Cn7" class="vs-btn mask-style1">Itinéraire</a>
+					<a href="https://goo.gl/maps/DNf6hnuQfuNm77Cn7" class="vs-btn mask-style1">{% trans %}Itinéraire{% endtrans %}</a>
 				</div>
 			</div>
 			<div class="vs-hero-slide ls-slide" data-ls="duration: 7000; transition2d: 5;">
 				<img src="{{ asset('assets/img/hero/Slider-3.png') }}" alt="Slide Image" class="ls-bg" data-ls="bgsize: cover;">
 				<span class="hero-subtitle text-white text-font3 h1 ls-l" style="left: 50%; top: 140px; font-size: 62px; white-space: normal; width: 860px; text-align: center;" data-ls="offsetxin: -200; durationin: 1000; delayin: 600; easingin:easeOutQuint; offsetxout: -50; durationout: 1000;">Le Commerce</span>
-				<h1 class="hero-title text-white ls-l" style="left: 50%; top: 245px; width: 850px; font-size: 130px; white-space: normal; text-align: center; line-height: 90px;" data-ls="offsetxin: 100; durationin: 1000; delayin: 700; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;">F.D.J</h1>
+				<h1 class="hero-title text-white ls-l" style="left: 50%; top: 245px; width: 850px; font-size: 130px; white-space: normal; text-align: center; line-height: 90px;" data-ls="offsetxin: 100; durationin: 1000; delayin: 700; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;">{% trans %}F.D.J{% endtrans %}</h1>
 				<p class="ls-l text-white" style="left: 50%; top: 368px; width: 900px; font-size: 18px; white-space: normal; text-transform: uppercase; text-align: center;" data-ls="delayin: 800;  showinfo:1; durationin:1000; scalexin:0.8; scaleyin:0.8;  scalexout:1.1; scaleyout: 1.1;">3 rue du Marechal Leclerc, 76440 Forges les Eaux</p>
 				<span class="shape1 ls-l" style="left: 280px; top: 379px; width: 80px; height: 2px; background-color: #ffffff;" data-ls="offsetxin: -100; durationin: 1000; delayin: 1500; easingin:easeOutQuint; offsetxout: -50; durationout: 1000;"></span>
 				<span class="shape2 ls-l" style="left: 860px; top: 379px; width: 80px; height: 2px; background-color: #ffffff;" data-ls="offsetxin: 100; durationin: 1000; delayin: 1500; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;"></span>
 				<div class="hero-btn ls-l" style="left: 50%; top: 425px; width: 180px; height: 60px; overflow: hidden; border-radius: 50px; line-height: 60px; font-size: 18px;" data-ls="delayin: 1100; showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:0.9; scaleyin:0.9; scalexout:1.1; scaleyout: 1.1; fadein:true; fadeout: true; transformoriginin:50% 143.8% 0;">
-					<a href="https://goo.gl/maps/DNf6hnuQfuNm77Cn7" class="vs-btn mask-style1">Itinéraire</a>
+					<a href="https://goo.gl/maps/DNf6hnuQfuNm77Cn7" class="vs-btn mask-style1">{% trans %}Itinéraire{% endtrans %}</a>
 				</div>
 			</div>
 			<div class="vs-hero-slide ls-slide" data-ls="duration: 7000; transition2d: 5;">
 				<img src="{{ asset('assets/img/hero/Slider-1.png') }}" alt="Slide Image" class="ls-bg" data-ls="bgsize: cover;">
 				<span class="hero-subtitle text-white text-font3 h1 ls-l" style="left: 50%; top: 140px; font-size: 62px; white-space: normal; width: 860px; text-align: center;" data-ls="offsetxin: -200; durationin: 1000; delayin: 600; easingin:easeOutQuint; offsetxout: -50; durationout: 1000;">Le Commerce</span>
-				<h1 class="hero-title text-white ls-l" style="left: 50%; top: 245px; width: 850px; font-size: 130px; white-space: normal; text-align: center; line-height: 90px;" data-ls="offsetxin: 100; durationin: 1000; delayin: 700; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;">P.M.U</h1>
+				<h1 class="hero-title text-white ls-l" style="left: 50%; top: 245px; width: 850px; font-size: 130px; white-space: normal; text-align: center; line-height: 90px;" data-ls="offsetxin: 100; durationin: 1000; delayin: 700; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;">{% trans %}P.M.U{% endtrans %}</h1>
 				<p class="ls-l text-white" style="left: 50%; top: 368px; width: 900px; font-size: 18px; white-space: normal; text-transform: uppercase; text-align: center;" data-ls="delayin: 800;  showinfo:1; durationin:1000; scalexin:0.8; scaleyin:0.8;  scalexout:1.1; scaleyout: 1.1;">3 rue du Marechal Leclerc, 76440 Forges les Eaux</p>
 				<span class="shape1 ls-l" style="left: 280px; top: 379px; width: 80px; height: 2px; background-color: #ffffff;" data-ls="offsetxin: -100; durationin: 1000; delayin: 1500; easingin:easeOutQuint; offsetxout: -50; durationout: 1000;"></span>
 				<span class="shape2 ls-l" style="left: 860px; top: 379px; width: 80px; height: 2px; background-color: #ffffff;" data-ls="offsetxin: 100; durationin: 1000; delayin: 1500; easingin:easeOutQuint; offsetxout: 50; durationout: 1000;"></span>
 				<div class="hero-btn ls-l" style="left: 50%; top: 425px; width: 180px; height: 60px; overflow: hidden; border-radius: 50px; line-height: 60px; font-size: 18px;" data-ls="delayin: 1100; showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:0.9; scaleyin:0.9; scalexout:1.1; scaleyout: 1.1; fadein:true; fadeout: true; transformoriginin:50% 143.8% 0;">
-					<a href="https://goo.gl/maps/DNf6hnuQfuNm77Cn7" class="vs-btn mask-style1">Itinéraire</a>
+					<a href="https://goo.gl/maps/DNf6hnuQfuNm77Cn7" class="vs-btn mask-style1">{% trans %}Itinéraire{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -133,18 +144,18 @@
 			<div class="row gutters-40">
 				<div class="col-lg-6">
 					<div class="about-image mb-30 mb-lg-0">
-						<img src="{{ asset('assets/img/about/about-bg-6-2.png') }}" alt="Image">
+						<img src="{{ asset('assets/img/about/about-bg-6-2.png') }}" alt="{% trans %}Cigarettes{% endtrans %}">
 					</div>
 				</div>
 				<div class="col-lg-6 align-self-center">
 					<div class="about-content ">
-						<h2 class="sec-title1 text-font3">Votre destination ultime pour
-							<span class="text-theme">une expérience inoubliable !</span>
+						<h2 class="sec-title1 text-font3">{% trans %}Votre destination ultime pour{% endtrans %}
+							<span class="text-theme">{% trans %}une expérience inoubliable !{% endtrans %}</span>
 						</h2>
 						<div class="sec-line text-left mx-0">
-							<img src="{{ asset('assets/img/shape/sec-title-1.png') }}" alt="Section Shape Icon">
+							<img src="{{ asset('assets/img/shape/sec-title-1.png') }}" alt="{% trans %}Alcool{% endtrans %}">
 						</div>
-						<p>Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !</p>
+						<p>{% trans %}Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !{% endtrans %}</p>
 						<div class="row">
 							<div class="col-sm-4 col-lg-4 col-xl-4">
 								<div class="text-counter1 media">
@@ -155,7 +166,7 @@
 									</div>
 									<div class="media-body">
 										<span class="counter text-title">100</span>%
-										<h3 class="h5 my-0 text-font1">Ambiance Chaleureuse</h3>
+										<h3 class="h5 my-0 text-font1">{% trans %}Ambiance Chaleureuse{% endtrans %}</h3>
 									</div>
 								</div>
 							</div>
@@ -168,7 +179,7 @@
 									</div>
 									<div class="media-body">
 										<span class="counter text-title">100</span>%
-										<h3 class="h5 my-0 text-font1">Service Exceptionnel </h3>
+										<h3 class="h5 my-0 text-font1">{% trans %}Service Exceptionnel{% endtrans %}</h3>
 									</div>
 								</div>
 							</div>
@@ -181,7 +192,7 @@
 									</div>
 									<div class="media-body">
 										<span class="counter text-title">100</span>%
-										<h3 class="h5 my-0 text-font1">Événements Spéciaux </h3>
+										<h3 class="h5 my-0 text-font1">{% trans %}Événements Spéciaux{% endtrans %}</h3>
 									</div>
 								</div>
 							</div>
@@ -198,10 +209,12 @@
 				<div class="col-md-12 col-lg-12 col-xl-12">
 					<div class="section-title text-center ">
 						<h2 class="sec-title1 text-font3">
-							<span class="text-theme">Plongez dans une atmosphère  </span>chaleureuse et accueillante
+							<span class="text-theme">{% trans %}Plongez dans une atmosphère{% endtrans %}
+							</span>
+							{% trans %}chaleureuse et accueillante{% endtrans %}
 						</h2>
 						<div class="sec-line">
-							<img src="{{ asset('assets/img/shape/sec-title-1.png') }}" alt="Section Shape Icon">
+							<img src="{{ asset('assets/img/shape/sec-title-1.png') }}" alt="{% trans %}Cocktails{% endtrans %}">
 						</div>
 					</div>
 				</div>
@@ -212,8 +225,8 @@
 						<span class="service-icon text-theme d-block mb-30">
 							<i style="font-size: 62px;" class="far fa-mug-hot"></i>
 						</span>
-						<h3 class="service-title link-inherit mb-10">Bar</h3>
-						<p class="service-text mb-0 text-justify">Dans l'ambiance chaleureuse du bar, les rires et les conversations se mêlent harmonieusement, créant un véritable tableau de convivialité et de détente</p>
+						<h3 class="service-title link-inherit mb-10">{% trans %}Bar{% endtrans %}</h3>
+						<p class="service-text mb-0 text-justify">{% trans %}Dans l'ambiance chaleureuse du bar, les rires et les conversations se mêlent harmonieusement, créant un véritable tableau de convivialité et de détente{% endtrans %}</p>
 					</div>
 				</div>
 				<div class="col-xl-4">
@@ -221,8 +234,8 @@
 						<span class="service-icon text-theme d-block mb-30">
 							<i style="font-size: 62px;" class="fas fa-chess-board"></i>
 						</span>
-						<h3 class="service-title link-inherit mb-10">Jeux</h3>
-						<p class="service-text mb-0 text-justify">Plongez dans l'excitation et la tension des paris avec le jeu de hasard, où chaque ticket devient une porte ouverte de décrocher la victoire.</p>
+						<h3 class="service-title link-inherit mb-10">{% trans %}Jeux{% endtrans %}</h3>
+						<p class="service-text mb-0 text-justify">{% trans %}Plongez dans l'excitation et la tension des paris avec le jeu de hasard, où chaque ticket devient une porte ouverte de décrocher la victoire.{% endtrans %}</p>
 					</div>
 				</div>
 				<div class="col-xl-4">
@@ -230,8 +243,8 @@
 						<span class="service-icon text-theme d-block mb-30">
 							<i style="font-size: 62px;" class="fal fa-smoking"></i>
 						</span>
-						<h3 class="service-title link-inherit mb-10">Tabac</h3>
-						<p class="service-text mb-0 text-justify">Le tabac demeure une source majeure de préoccupations pour la santé en raison de ses effets nocifs sur la santé et de son lien avec de nombreuses maladies graves.</p>
+						<h3 class="service-title link-inherit mb-10">{% trans %}Tabac{% endtrans %}</h3>
+						<p class="service-text mb-0 text-justify">{% trans %}Le tabac demeure une source majeure de préoccupations pour la santé en raison de ses effets nocifs sur la santé et de son lien avec de nombreuses maladies graves.{% endtrans %}</p>
 					</div>
 				</div>
 			</div>
@@ -243,14 +256,17 @@
 			<div class="row align-items-center">
 				<div class="col-xl-8">
 					<div class="cta-content text-center text-xl-left mb-30 mb-xl-0">
-						<h2 class="h1 text-font3 text-white">Pour bénéficier de  
-							<span class="text-theme"> promotions  </span> ponctuel
-							</h2>
-						<h4 class="text-font1 mb-0 text-white">veuillez entrer votre numéro de téléphone.</h4>
+						<h2 class="h1 text-font3 text-white">{% trans %}Pour bénéficier de{% endtrans %}
+							<span class="text-theme">
+								{% trans %}promotions{% endtrans %}
+							</span>
+							{% trans %}ponctuel{% endtrans %}
+						</h2>
+						<h4 class="text-font1 mb-0 text-white">{% trans %}veuillez entrer votre numéro de téléphone.{% endtrans %}</h4>
 					</div>
 				</div>
 				<div class="col-xl-4 text-center text-xl-right">
-					<a href="#" class="vs-btn mask-style1 searchBoxTggler">Recevez nos offres</a>
+					<a href="#" class="vs-btn mask-style1 searchBoxTggler">{% trans %}Recevez nos offres{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -259,11 +275,11 @@
 	<section id="avisclt" class="vs-testimonial-wrapper vs-testimonial-layout3 pt-lg-130 pt-60 pb-lg-100 pb-30">
 		<div class="container">
 			<div class="section-title text-center ">
-				<h2 class="sec-title1 text-font3">Avis
-					<span class="text-theme">des clients</span>
+				<h2 class="sec-title1 text-font3">{% trans %}Avis{% endtrans %}
+					<span class="text-theme">{% trans %}des clients{% endtrans %}</span>
 				</h2>
 				<div class="sec-line">
-					<img src="{{ asset('assets/img/shape/sec-title-1.png') }}" alt="Section Shape Icon">
+					<img src="{{ asset('assets/img/shape/sec-title-1.png') }}" alt="{% trans %}Cartes à gratter{% endtrans %}">
 				</div>
 			</div>
 			<div class="row vs-carousel arrow-has-margin" data-slidetoshow="2" data-arrows="true" data-mdslidetoshow="1" data-smslidetoshow="1" data-xsslidetoshow="1">
@@ -271,43 +287,44 @@
 				<div class="col-lg-6">
 					<div class="vs-testimonial text-center bg-smoke px-15 px-md-40 px-xl-60 py-15 py-md-35 py-xl-95">
 						<p class="testimonial-text text-md mb-lg-35" style="height:84px">
-						“ Bar tabac sympa, les serveuses très sympa aussi, Ça fait du bien au moral de trouver un lieu de repos accueillant. ”</p>
+							{% trans %}“ Bar tabac sympa, les serveuses très sympa aussi, Ça fait du bien au moral de trouver un lieu de repos accueillant. ”{% endtrans %}
+						</p>
 						<div class="author-image">
-							<img src="https://lh3.googleusercontent.com/a-/AD_cMMQyA15Qve-6BvP88R3O2kfIh1cLxvO6makzGv8o_pA3kZE=s40-c-rp-mo-ba3-br100" alt="Testimonial Author Image">
+							<img src="https://lh3.googleusercontent.com/a-/AD_cMMQyA15Qve-6BvP88R3O2kfIh1cLxvO6makzGv8o_pA3kZE=s40-c-rp-mo-ba3-br100" alt="{% trans %}Jeux de loterie{% endtrans %}">
 						</div>
 						<span class="testimonial-bg-icon">
 							<i class="flaticon-left-quote icon-3x" data-opacity="1"></i>
 						</span>
 						<h3 class="author-name mb-0">JF JEFFE</h3>
-						<span>Avis Google</span>
+						<span>{% trans %}Avis Google{% endtrans %}</span>
 					</div>
 				</div>
 
 				<div class="col-lg-6">
 					<div class="vs-testimonial text-center bg-smoke px-15 px-md-40 px-xl-60 py-15 py-md-35 py-xl-95">
-						<p class="testimonial-text text-md mb-lg-35" style="height:84px">“ Patron et son équipe accueillants et très sympas ”</p>
+						<p class="testimonial-text text-md mb-lg-35" style="height:84px">{% trans %}“ Patron et son équipe accueillants et très sympas ”{% endtrans %}</p>
 						<div class="author-image">
-							<img src="https://lh3.googleusercontent.com/a-/AD_cMMT-9bfTjmxptk4aeRKRuGtFoSq50SELZK_T2rbmqsAKMQ=s40-c-rp-mo-ba3-br100" alt="Testimonial Author Image">
+							<img src="https://lh3.googleusercontent.com/a-/AD_cMMT-9bfTjmxptk4aeRKRuGtFoSq50SELZK_T2rbmqsAKMQ=s40-c-rp-mo-ba3-br100" alt="{% trans %}Journaux{% endtrans %}">
 						</div>
 						<span class="testimonial-bg-icon">
 							<i class="flaticon-left-quote icon-3x" data-opacity="1"></i>
 						</span>
 						<h3 class="author-name mb-0">BOURGIS Thierry</h3>
-						<span>Avis Google</span>
+						<span>{% trans %}Avis Google{% endtrans %}</span>
 					</div>
 				</div>
 
 				<div class="col-lg-6">
 					<div class="vs-testimonial text-center bg-smoke px-15 px-md-40 px-xl-60 py-15 py-md-35 py-xl-95">
-						<p class="testimonial-text text-md mb-lg-35" style="height:84px">“ Si vous cherchez un bar convivial c'est le bonne endroit. Très commerçant les deux frères ”</p>
+						<p class="testimonial-text text-md mb-lg-35" style="height:84px">{% trans %}“ Si vous cherchez un bar convivial c'est le bonne endroit. Très commerçant les deux frères ”{% endtrans %}</p>
 						<div class="author-image">
-							<img src="https://lh3.googleusercontent.com/a-/AD_cMMS25fywfAgjY39y4I-3D21d-5KAGrSqhhcGDUgUIba_yw=s40-c-rp-mo-br100" alt="Testimonial Author Image">
+							<img src="https://lh3.googleusercontent.com/a-/AD_cMMS25fywfAgjY39y4I-3D21d-5KAGrSqhhcGDUgUIba_yw=s40-c-rp-mo-br100" alt="{% trans %}Rencontre sociale{% endtrans %}">
 						</div>
 						<span class="testimonial-bg-icon">
 							<i class="flaticon-left-quote icon-3x" data-opacity="1"></i>
 						</span>
 						<h3 class="author-name mb-0">sebastien bouloché</h3>
-						<span>Avis Google</span>
+						<span>{% trans %}Avis Google{% endtrans %}</span>
 					</div>
 				</div>
 
@@ -319,11 +336,12 @@
 	<section class="vs-gallery-wrapper gallery-box-layout1 link-inherit pb-lg-100 pb-30" id="gallery">
 		<div class="container">
 			<div class="section-title text-center ">
-				<h2 class="sec-title1 text-font3">Notre gallerie
-					<span class="text-theme"> d'image</span>
+				<h2 class="sec-title1 text-font3">{% trans %}Notre gallerie{% endtrans %}
+					<span class="text-theme">
+						{% trans %}d'image{% endtrans %}</span>
 				</h2>
 				<div class="sec-line">
-					<img src="{{ asset('assets/img/shape/sec-title-1.png') }}" alt="Section Shape Icon">
+					<img src="{{ asset('assets/img/shape/sec-title-1.png') }}" alt="{% trans %}Fumeurs{% endtrans %}">
 				</div>
 			</div>
 		</div>
@@ -338,7 +356,9 @@
 								<img src="{{ vich_uploader_asset(photo, 'imageFile') }}" class="w-100" alt="{{ photo.Alt }}" height="400" width="455">
 							</div>
 							<div class="gallery-content px-40 py-40" data-overlay="black" data-opacity="7">
-								<h3 class="gallery-title h4 mb-0 text-white"><a>{{ photo.Alt }}</a></h3>
+								<h3 class="gallery-title h4 mb-0 text-white">
+									<a>{{ photo.Alt }}</a>
+								</h3>
 								<a href="{{ vich_uploader_asset(photo, 'imageFile') }}" class="icon-btn popup-image text-body">
 									<i class="fal fa-eye"></i>
 								</a>
@@ -365,11 +385,11 @@
 	<section class="vs-reservation-wrapper vs-reservation-layout4 background-image bg-fixed py-lg-130 py-60" data-vs-img="assets/img/appointment/appointment-bg-2-1.jpg" data-overlay="black" data-opacity="6" id="contact">
 		<div class="container z-index-common">
 			<div class="section-title text-center">
-				<h2 class="sec-title1 text-font3 text-white">Contactez-nous via notre 
-					<span class="text-theme">formulaire ou par téléphone</span>
+				<h2 class="sec-title1 text-font3 text-white">{% trans %}Contactez-nous via notre{% endtrans %}
+					<span class="text-theme">{% trans %}formulaire ou par téléphone{% endtrans %}</span>
 				</h2>
 				<div class="sec-line">
-					<img src="{{ asset('assets/img/shape/sec-title-2.png') }}" alt="Section Shape Icon">
+					<img src="{{ asset('assets/img/shape/sec-title-2.png') }}" alt="{% trans %}Ambiance conviviale{% endtrans %}">
 				</div>
 			</div>
 			<div class="row ">
@@ -380,7 +400,7 @@
 								<i class="fal fa-map-marker-alt fa-3x"></i>
 							</span>
 							<div class="media-body ml-15">
-								<h3 class="box-title mb-1">Notre adresse</h3>
+								<h3 class="box-title mb-1">{% trans %}Notre adresse{% endtrans %}</h3>
 								<p class="mb-0">3 Rue du Mal Leclerc, 76440 Forges-les-Eaux</p>
 							</div>
 						</div>
@@ -389,7 +409,7 @@
 								<i class="fal fa-phone fa-3x"></i>
 							</span>
 							<div class="media-body ml-15">
-								<h3 class="box-title mb-1">Numéro de téléphone</h3>
+								<h3 class="box-title mb-1">{% trans %}Numéro de téléphone{% endtrans %}</h3>
 								<p class="mb-0">+33 (0)2 35 90 50 16</p>
 							</div>
 						</div>
@@ -398,7 +418,7 @@
 								<i class="fal fa-envelope fa-3x"></i>
 							</span>
 							<div class="media-body ml-15">
-								<h3 class="box-title mb-1">E-mail</h3>
+								<h3 class="box-title mb-1">{% trans %}E-mail{% endtrans %}</h3>
 								<p class="mb-0">hello@example.com</p>
 							</div>
 						</div>
@@ -407,18 +427,18 @@
 								<i class="fal fa-clock fa-2x"></i>
 							</span>
 							<div class="media-body ml-15">
-								<h3 class="box-title mb-1">Nos horaires</h3>
-								<p class="mb-0">lundi	07:00 à 19:30</p>
-								<p class="mb-0">mardi	07:00 à 19:30</p>
-								<p class="mb-0">mercredi	07:00 à 19:30</p>
-								<p class="mb-0">jeudi	07:00 à 19:30</p>
-								<p class="mb-0">vendredi	07:00 à 19:30</p>
-								<p class="mb-0">samedi	07:00 à 19:30</p>
-								<p class="mb-0">dimanche	08:00 à 18:30</p>
+								<h3 class="box-title mb-1">{% trans %}Nos horaires{% endtrans %}</h3>
+								<p class="mb-0">{% trans %}lundi	07:00 à 19:30{% endtrans %}</p>
+								<p class="mb-0">{% trans %}mardi	07:00 à 19:30{% endtrans %}</p>
+								<p class="mb-0">{% trans %}mercredi	07:00 à 19:30{% endtrans %}</p>
+								<p class="mb-0">{% trans %}jeudi	07:00 à 19:30{% endtrans %}</p>
+								<p class="mb-0">{% trans %}vendredi	07:00 à 19:30{% endtrans %}</p>
+								<p class="mb-0">{% trans %}samedi	07:00 à 19:30{% endtrans %}</p>
+								<p class="mb-0">{% trans %}dimanche	08:00 à 18:30{% endtrans %}</p>
 							</div>
 						</div>
 						<div class="social-links links-has-border">
-							<h3 class="box-title mb-2">Partager sur :</h3>
+							<h3 class="box-title mb-2">{% trans %}Partager sur :{% endtrans %}</h3>
 							<ul>
 								<li><a href="http://www.facebook.com/share.php?u=lecommercebartabac.com"><i class="fab fa-facebook-f"></i></a></li>
 								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -431,28 +451,28 @@
 				<div class="col-lg-6">
 
 					{{ form_start(form, {'attr' : {'class':'appointment-form1 px-10 py-10 px-sm-30 py-sm-30 px-xl-80 py-xl-80 bg-white'} }) }}
-						<div class="form-title text-center mb-30">
-							<h2 class="text-font3">Contactez la bar le commerce</h2>
-						</div>
-						<div class="form-group mb-20">
-							{{ form_widget(form.Nom)}}
-							<i class="fal fa-user"></i>
-						</div>
-						<div class="form-group mb-20">
-							{{ form_widget(form.Email)}}
-							<i class="fal fa-envelope"></i>
-						</div>
-						<div class="form-group mb-20">
-							{{ form_widget(form.Telephone)}}
-							<i class="fal fa-phone"></i>
-						</div>
-						<div class="form-group mb-20">
-							{{ form_widget(form.Message, {'attr' : {'rows':'3'}})}}
-							<i class="fal fa-pencil"></i>
-						</div>
-						<div class="form-btn">
-							<button type="submit" class="vs-btn mask-style1 rounded-0 w-100">Envoyer</button>
-						</div>
+					<div class="form-title text-center mb-30">
+						<h2 class="text-font3">{% trans %}Contactez la bar le commerce{% endtrans %}</h2>
+					</div>
+					<div class="form-group mb-20">
+						{{ form_widget(form.Nom)}}
+						<i class="fal fa-user"></i>
+					</div>
+					<div class="form-group mb-20">
+						{{ form_widget(form.Email)}}
+						<i class="fal fa-envelope"></i>
+					</div>
+					<div class="form-group mb-20">
+						{{ form_widget(form.Telephone)}}
+						<i class="fal fa-phone"></i>
+					</div>
+					<div class="form-group mb-20">
+						{{ form_widget(form.Message, {'attr' : {'rows':'3'}})}}
+						<i class="fal fa-pencil"></i>
+					</div>
+					<div class="form-btn">
+						<button type="submit" class="vs-btn mask-style1 rounded-0 w-100">Envoyer</button>
+					</div>
 					{{ form_end(form) }}
 				</div>
 			</div>
@@ -472,7 +492,9 @@
 											<img src="{{ asset('assets/img/logo-blanc.png') }}" alt="logo">
 										</a>
 									</div>
-									<p class="widget-about-text mb-20">Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !</p>
+									<p class="widget-about-text mb-20">
+										{% trans %}Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !{% endtrans %}
+									</p>
 								</div>
 							</div>
 						</div>
@@ -496,7 +518,8 @@
 			</div>
 			<div class="footer-copyright text-center bg-black py-3 link-inherit z-index-common">
 				<div class="container">
-					<p class="text-white mb-0">Copyright {{ 'now' | date('Y') }}</p>  
+					<p class="text-white mb-0">Copyright
+						{{ 'now' | date('Y') }}</p>
 				</div>
 			</div>
 		</footer>
@@ -506,14 +529,17 @@
 		<i class="far fa-angle-up"></i>
 	</a>
 
-    <div class="popup-search-box d-none d-lg-block  ">
-        <button class="searchClose border-theme text-theme"><i class="fal fa-times"></i></button>
-        {{ form_start(formSms) }}
-            {{ form_widget(formSms.Nom) }}
-            {{ form_widget(formSms.Prenom) }}
-            {{ form_widget(formSms.telephone) }}
-			<p class="my-3">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale avec notre établissement. Vos données ne seront ni vendues, ni échangées.</p>
-            <button type="submit" class="vs-btn mask-style1 w-50 mt-3">Soumetre le formulaire</button>
-        {{ form_end(formSms) }}
-    </div>
+	<div class="popup-search-box d-none d-lg-block  ">
+		<button class="searchClose border-theme text-theme">
+			<i class="fal fa-times"></i>
+		</button>
+		{{ form_start(formSms) }}
+		{{ form_widget(formSms.Nom) }}
+		{{ form_widget(formSms.Prenom) }}
+		{{ form_widget(formSms.telephone) }}
+		<p class="my-3">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale avec notre établissement. Vos données ne seront ni vendues, ni échangées.</p>
+		<button type="submit" class="vs-btn mask-style1 w-50 mt-3">Soumetre le formulaire</button>
+		{{ form_end(formSms) }}
+	</div>
 {% endblock %}
+
