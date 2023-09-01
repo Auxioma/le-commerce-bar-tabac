@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="da" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony" />
+    </header>
+    <body>
+      <trans-unit id="LbKonXo" resname="Votre nom">
+        <source>Votre nom</source>
+        <target>Dit navn</target>
+      </trans-unit>
+      <trans-unit id="oPt21Gu" resname="Votre email">
+        <source>Votre email</source>
+        <target>Din email</target>
+      </trans-unit>
+      <trans-unit id="FhafGdY" resname="Votre numéro de téléphone">
+        <source>Votre numéro de téléphone</source>
+        <target>Dit telefonnummer</target>
+      </trans-unit>
+      <trans-unit id="QERVmkw" resname="Votre message">
+        <source>Votre message</source>
+        <target>Din besked</target>
+      </trans-unit>
+      <trans-unit id="ssEkU20" resname="Nom">
+        <source>Nom</source>
+        <target>Navn</target>
+      </trans-unit>
+      <trans-unit id="4yW.j5A" resname="Prénom">
+        <source>Prénom</source>
+        <target>Fornavn</target>
+      </trans-unit>
+      <trans-unit id="NvDqjbl" resname="Numéro de téléphone">
+        <source>Numéro de téléphone</source>
+        <target>Telefonnummer</target>
+      </trans-unit>
+      <trans-unit id="TwJbFLG" resname="Bars tabac à FORGES-LES-EAUX">
+        <source>Bars tabac à FORGES-LES-EAUX</source>
+        <target>Tobaksbarer i FORGES-LES-EAUX</target>
+      </trans-unit>
+      <trans-unit id="nNnunA6" resname="Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.">
+        <source>Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.</source>
+        <target>Den upåklagelige service, vi yder, er kernen i vores omdømme. Vores opmærksomme og professionelle personale vil give dig en varm og diskret velkomst, hvilket sikrer, at dit besøg er enestående fra start til slut. Hvert smil, hver interaktion er med til at gøre din tid tilbragt i vores bar til en uforglemmelig oplevelse.Den upåklagelige service, vi tilbyder, er kernen i vores omdømme. Vores opmærksomme og professionelle personale vil give dig en varm og diskret velkomst, hvilket sikrer, at dit besøg er enestående fra start til slut. Hvert smil, hver interaktion er med til at gøre din tid brugt i vores bar til en uforglemmelig oplevelse.</target>
+      </trans-unit>
+      <trans-unit id="H_DZJmv" resname="Bar, Tabac, Boissons, Tabac à rouler, Ambiance, Convivialité, Café, Terrasse, Jeux de société, Presse">
+        <source>Bar, Tabac, Boissons, Tabac à rouler, Ambiance, Convivialité, Café, Terrasse, Jeux de société, Presse</source>
+        <target>Bar, Tobak, Drikkevarer, Rulletobak, Atmosfære, Hyggelighed, Café, Terrasse, Brætspil, Presse</target>
+      </trans-unit>
+      <trans-unit id="hF8TuXE" resname="Bar tabac">
+        <source>Bar tabac</source>
+        <target>Tobaksbar</target>
+      </trans-unit>
+      <trans-unit id="UzFhc1Y" resname="Accueil">
+        <source>Accueil</source>
+        <target>Velkommen</target>
+      </trans-unit>
+      <trans-unit id="SLK0dTj" resname="Le bar">
+        <source>Le bar</source>
+        <target>Baren</target>
+      </trans-unit>
+      <trans-unit id="g1vuI4Q" resname="nos offres">
+        <source>nos offres</source>
+        <target>vores tilbud</target>
+      </trans-unit>
+      <trans-unit id="ry4Ql96" resname="Temoiniages">
+        <source>Temoiniages</source>
+        <target>Udtalelser</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="c0c9zBK" resname="Café">
+        <source>Café</source>
+        <target>Kaffe</target>
+      </trans-unit>
+      <trans-unit id="i0lC5Nc" resname="Boissons">
+        <source>Boissons</source>
+        <target>Drikkevarer</target>
+      </trans-unit>
+      <trans-unit id="vYrSLYg" resname="Tabac">
+        <source>Tabac</source>
+        <target>Tobak</target>
+      </trans-unit>
+      <trans-unit id="hw_xZri" resname="Ce">
+        <source>Ce</source>
+        <target>Det her</target>
+      </trans-unit>
+      <trans-unit id="YVekqzR" resname="ouvert de">
+        <source>ouvert de</source>
+        <target>åben fra</target>
+      </trans-unit>
+      <trans-unit id="ldZMrM4" resname="Bar">
+        <source>Bar</source>
+        <target>Bar</target>
+      </trans-unit>
+      <trans-unit id="TrhWCNi" resname="Itinéraire">
+        <source>Itinéraire</source>
+        <target>Rute</target>
+      </trans-unit>
+      <trans-unit id="7Bp1IN0" resname="F.D.J">
+        <source>F.D.J</source>
+        <target>FDJ</target>
+      </trans-unit>
+      <trans-unit id="8tqDxUn" resname="P.M.U">
+        <source>P.M.U</source>
+        <target>PMU</target>
+      </trans-unit>
+      <trans-unit id="u7cro25" resname="Cigarettes">
+        <source>Cigarettes</source>
+        <target>Cigaretter</target>
+      </trans-unit>
+      <trans-unit id="WEfrJsB" resname="Votre destination ultime pour">
+        <source>Votre destination ultime pour</source>
+        <target>Din ultimative destination for</target>
+      </trans-unit>
+      <trans-unit id="8uCVP_B" resname="une expérience inoubliable !">
+        <source>une expérience inoubliable !</source>
+        <target>en uforglemmelig oplevelse!</target>
+      </trans-unit>
+      <trans-unit id="G3jypZG" resname="Alcool">
+        <source>Alcool</source>
+        <target>Alkohol</target>
+      </trans-unit>
+      <trans-unit id="f8JKW3V" resname="Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !">
+        <source>Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !</source>
+        <target>Leder du efter et venligt sted at slappe af og nyde dine yndlingsaktiviteter? Led ikke længere, for COMMERCE har alt, hvad du behøver!</target>
+      </trans-unit>
+      <trans-unit id="7UoQ7jk" resname="Ambiance Chaleureuse">
+        <source>Ambiance Chaleureuse</source>
+        <target>Varmt miljø</target>
+      </trans-unit>
+      <trans-unit id="t9Shj5c" resname="Service Exceptionnel">
+        <source>Service Exceptionnel</source>
+        <target>Enestående service</target>
+      </trans-unit>
+      <trans-unit id="3OkMRcd" resname="Événements Spéciaux">
+        <source>Événements Spéciaux</source>
+        <target>Specielle begivenheder</target>
+      </trans-unit>
+      <trans-unit id="j8FE97z" resname="Plongez dans une atmosphère">
+        <source>Plongez dans une atmosphère</source>
+        <target>Fordyb dig i en atmosfære</target>
+      </trans-unit>
+      <trans-unit id="AVmXjak" resname="chaleureuse et accueillante">
+        <source>chaleureuse et accueillante</source>
+        <target>varm og imødekommende</target>
+      </trans-unit>
+      <trans-unit id="Oj6_4.9" resname="Cocktails">
+        <source>Cocktails</source>
+        <target>Cocktails</target>
+      </trans-unit>
+      <trans-unit id="243DCDj" resname="Dans l'ambiance chaleureuse du bar, les rires et les conversations se mêlent harmonieusement, créant un véritable tableau de convivialité et de détente">
+        <source>Dans l'ambiance chaleureuse du bar, les rires et les conversations se mêlent harmonieusement, créant un véritable tableau de convivialité et de détente</source>
+        <target>I den varme atmosfære i baren blandes latter og samtaler harmonisk og skaber et sandt billede af hygge og afslapning</target>
+      </trans-unit>
+      <trans-unit id="VNP.vRg" resname="Jeux">
+        <source>Jeux</source>
+        <target>Spil</target>
+      </trans-unit>
+      <trans-unit id="wXiH8rK" resname="Plongez dans l'excitation et la tension des paris avec le jeu de hasard, où chaque ticket devient une porte ouverte de décrocher la victoire.">
+        <source>Plongez dans l'excitation et la tension des paris avec le jeu de hasard, où chaque ticket devient une porte ouverte de décrocher la victoire.</source>
+        <target>Fordyb dig i spændingen og spændingen ved væddemål med hasardspillet, hvor hver billet bliver en åben dør til at vinde sejren.</target>
+      </trans-unit>
+      <trans-unit id="Nih7rIP" resname="Le tabac demeure une source majeure de préoccupations pour la santé en raison de ses effets nocifs sur la santé et de son lien avec de nombreuses maladies graves.">
+        <source>Le tabac demeure une source majeure de préoccupations pour la santé en raison de ses effets nocifs sur la santé et de son lien avec de nombreuses maladies graves.</source>
+        <target>Tobak er fortsat en stor kilde til sundhedsproblemer på grund af dens skadelige virkninger på sundheden og dens forbindelse til mange alvorlige sygdomme.</target>
+      </trans-unit>
+      <trans-unit id="gEYHGSz" resname="Pour bénéficier de">
+        <source>Pour bénéficier de</source>
+        <target>Til at nyde godt af</target>
+      </trans-unit>
+      <trans-unit id="Gk4x7rv" resname="promotions">
+        <source>promotions</source>
+        <target>kampagner</target>
+      </trans-unit>
+      <trans-unit id="DA2T0vJ" resname="ponctuel">
+        <source>ponctuel</source>
+        <target>punktlig</target>
+      </trans-unit>
+      <trans-unit id="Z5758RQ" resname="veuillez entrer votre numéro de téléphone.">
+        <source>veuillez entrer votre numéro de téléphone.</source>
+        <target>indtast venligst dit telefonnummer.</target>
+      </trans-unit>
+      <trans-unit id="w83CZEj" resname="Recevez nos offres">
+        <source>Recevez nos offres</source>
+        <target>Modtag vores tilbud</target>
+      </trans-unit>
+      <trans-unit id="Pn7xwmS" resname="Avis">
+        <source>Avis</source>
+        <target>Varsel</target>
+      </trans-unit>
+      <trans-unit id="VTau.Ri" resname="des clients">
+        <source>des clients</source>
+        <target>klient</target>
+      </trans-unit>
+      <trans-unit id="hNbCi0U" resname="Cartes à gratter">
+        <source>Cartes à gratter</source>
+        <target>Skrabelodder</target>
+      </trans-unit>
+      <trans-unit id="N649VcP" resname="“ Bar tabac sympa, les serveuses très sympa aussi, Ça fait du bien au moral de trouver un lieu de repos accueillant. ”">
+        <source>“ Bar tabac sympa, les serveuses très sympa aussi, Ça fait du bien au moral de trouver un lieu de repos accueillant. ”</source>
+        <target>“Dejlig tobaksbar, servitricerne er også meget søde. Det er godt for din moral at finde et indbydende sted at hvile. ”</target>
+      </trans-unit>
+      <trans-unit id="96LQz7E" resname="Jeux de loterie">
+        <source>Jeux de loterie</source>
+        <target>Lotteri spil</target>
+      </trans-unit>
+      <trans-unit id="vFjuCsd" resname="Avis Google">
+        <source>Avis Google</source>
+        <target>Google anmeldelser</target>
+      </trans-unit>
+      <trans-unit id="W_uhXez" resname="“ Patron et son équipe accueillants et très sympas ”">
+        <source>“ Patron et son équipe accueillants et très sympas ”</source>
+        <target>“Imødekommende og meget venlig chef og team”</target>
+      </trans-unit>
+      <trans-unit id="lUNx4vT" resname="Journaux">
+        <source>Journaux</source>
+        <target>Aviser</target>
+      </trans-unit>
+      <trans-unit id="aIJIHop" resname="“ Si vous cherchez un bar convivial c'est le bonne endroit. Très commerçant les deux frères ”">
+        <source>“ Si vous cherchez un bar convivial c'est le bonne endroit. Très commerçant les deux frères ”</source>
+        <target>"Hvis du leder efter en venlig bar, er dette det rigtige sted. Meget kommercielt, de to brødre”</target>
+      </trans-unit>
+      <trans-unit id="1rYt6IM" resname="Rencontre sociale">
+        <source>Rencontre sociale</source>
+        <target>Social sammenkomst</target>
+      </trans-unit>
+      <trans-unit id="1Au5Jtx" resname="Notre gallerie">
+        <source>Notre gallerie</source>
+        <target>Vores galleri</target>
+      </trans-unit>
+      <trans-unit id="blBfUjz" resname="d'image">
+        <source>d'image</source>
+        <target>billede</target>
+      </trans-unit>
+      <trans-unit id="kvw8MCA" resname="Fumeurs">
+        <source>Fumeurs</source>
+        <target>Rygere</target>
+      </trans-unit>
+      <trans-unit id="IF.lyrg" resname="Contactez-nous via notre">
+        <source>Contactez-nous via notre</source>
+        <target>Kontakt os via vores</target>
+      </trans-unit>
+      <trans-unit id="biF1AG9" resname="formulaire ou par téléphone">
+        <source>formulaire ou par téléphone</source>
+        <target>formular eller telefonisk</target>
+      </trans-unit>
+      <trans-unit id="YTJtsJS" resname="Ambiance conviviale">
+        <source>Ambiance conviviale</source>
+        <target>Venlig atmosfære</target>
+      </trans-unit>
+      <trans-unit id="eZ2T84S" resname="Notre adresse">
+        <source>Notre adresse</source>
+        <target>Vores adresse</target>
+      </trans-unit>
+      <trans-unit id="JVDZYuU" resname="E-mail">
+        <source>E-mail</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="UOpXNLV" resname="Nos horaires">
+        <source>Nos horaires</source>
+        <target>Vores tidsplaner</target>
+      </trans-unit>
+      <trans-unit id="OUzv1xR" resname="lundi	07:00 à 19:30">
+        <source>lundi	07:00 à 19:30</source>
+        <target>Mandag	 07.00 til 19.30</target>
+      </trans-unit>
+      <trans-unit id="Gim.1uu" resname="mardi	07:00 à 19:30">
+        <source>mardi	07:00 à 19:30</source>
+        <target>tirsdag	 07.00 til 19.30</target>
+      </trans-unit>
+      <trans-unit id="n6SRjlq" resname="mercredi	07:00 à 19:30">
+        <source>mercredi	07:00 à 19:30</source>
+        <target>onsdag	 07.00 til 19.30</target>
+      </trans-unit>
+      <trans-unit id="9bX4haH" resname="jeudi	07:00 à 19:30">
+        <source>jeudi	07:00 à 19:30</source>
+        <target>TORSDAG	 07.00 til 19.30</target>
+      </trans-unit>
+      <trans-unit id="2UePZ01" resname="vendredi	07:00 à 19:30">
+        <source>vendredi	07:00 à 19:30</source>
+        <target>Fredag	 07.00 til 19.30</target>
+      </trans-unit>
+      <trans-unit id="Th3vKCt" resname="samedi	07:00 à 19:30">
+        <source>samedi	07:00 à 19:30</source>
+        <target>LØRDAG	 07.00 til 19.30</target>
+      </trans-unit>
+      <trans-unit id="wJI6mv8" resname="dimanche	08:00 à 18:30">
+        <source>dimanche	08:00 à 18:30</source>
+        <target>Søndag	 08.00 til 18.30</target>
+      </trans-unit>
+      <trans-unit id="Z7bvoiG" resname="Partager sur :">
+        <source>Partager sur :</source>
+        <target>Del på :</target>
+      </trans-unit>
+      <trans-unit id="81tQ3rO" resname="Contactez la bar le commerce">
+        <source>Contactez la bar le commerce</source>
+        <target>Kontakt bar le commerce</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

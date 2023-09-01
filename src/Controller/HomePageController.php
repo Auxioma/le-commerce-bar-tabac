@@ -31,7 +31,35 @@ class HomePageController extends AbstractController
     }
 
 
-    #[Route('/', name: 'app_home_page')]
+    #[Route([
+        'fr' => '/',
+        'de' => '/de', 
+        'en' => '/en', 
+        'bg' => '/bg',
+        'hr' => '/hr',
+        'da' => '/da',
+        'es' => '/es',
+        'et' => '/et', 
+        'fi' => '/fi',
+        'el' => '/el',
+        'hu' => '/hu',
+        'ga' => '/ga',
+        'it' => '/it',
+        'lv' => '/lv',
+        'lt' => '/lt',
+        'mt' => '/mt',
+        'nl' => '/nl',
+        'pl' => '/pl',
+        'pt' => '/pt',
+        'ro' => '/ro',
+        'sk' => '/sk',
+        'sl' => '/sl',
+        'sv' => '/sv',
+        'cs' => '/cs',
+        'ua' => '/ua',
+        'ru' => '/ru',
+        'be' => '/be',
+    ], name: 'app_home_page')]
     public function index(HoraireRepository $horaire, Request $request, PhotoRepository $photo): Response
     {
         $date    = DateTimeImmutable::createFromFormat('U', time());

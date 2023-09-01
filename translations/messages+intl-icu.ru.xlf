@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="fr" target-language="ru" datatype="plaintext" original="file.ext">
+        <header>
+            <tool tool-id="symfony" tool-name="Symfony" />
+        </header>
+
+        <body>
+            <trans-unit id="Pl_9vzt" resname="cette article n'existe pas.">
+                <source>cette article n'existe pas.</source>
+                <target>этой статьи не существует.</target>
+            </trans-unit>
+            <trans-unit id="4yW.j5A" resname="Prénom">
+                <source>Prénom</source>
+                <target>Фамилия</target>
+            </trans-unit>
+            <trans-unit id="yjKRUrU" resname="Veuillez saisir votre prénom">
+                <source>Veuillez saisir votre prénom</source>
+                <target>Пожалуйста, введите Ваше имя</target>
+            </trans-unit>
+            <trans-unit id="ssEkU20" resname="Nom">
+                <source>Nom</source>
+                <target>Название</target>
+            </trans-unit>
+            <trans-unit id="6XY6UWK" resname="Veuillez saisir votre nom">
+                <source>Veuillez saisir votre nom</source>
+                <target>Пожалуйста, введите ваше имя</target>
+            </trans-unit>
+            <trans-unit id="lpzL089" resname="Email">
+                <source>Email</source>
+                <target>Электронная почта</target>
+            </trans-unit>
+            <trans-unit id="AUqS.6D" resname="Veuillez saisir votre email">
+                <source>Veuillez saisir votre email</source>
+                <target>Пожалуйста, введите адрес электронной почты</target>
+            </trans-unit>
+            <trans-unit id="IDCqHMZ" resname="Veuillez saisir un email valide">
+                <source>Veuillez saisir un email valide</source>
+                <target>Пожалуйста, введите действительный адрес электронной почты</target>
+            </trans-unit>
+            <trans-unit id="yBFB55A" resname="Votre téléphone">
+                <source>Votre téléphone</source>
+                <target>Ваш телефон</target>
+            </trans-unit>
+            <trans-unit id="KnQ.wAP" resname="Objet de votre demande">
+                <source>Objet de votre demande</source>
+                <target>Цель Вашего запроса</target>
+            </trans-unit>
+            <trans-unit id="s4oX5Fe" resname="Sélectionnez un sujet">
+                <source>Sélectionnez un sujet</source>
+                <target>Выберите тему</target>
+            </trans-unit>
+            <trans-unit id="pgICobQ" resname="Demande d'information">
+                <source>Demande d'information</source>
+                <target>Информационный запрос</target>
+            </trans-unit>
+            <trans-unit id="njLrh1T" resname="Demande de rappel">
+                <source>Demande de rappel</source>
+                <target>Запрос обратного вызова</target>
+            </trans-unit>
+            <trans-unit id="63LhaDu" resname="Autre">
+                <source>Autre</source>
+                <target>Другое</target>
+            </trans-unit>
+            <trans-unit id="QERVmkw" resname="Votre message">
+                <source>Votre message</source>
+                <target>Ваше сообщение</target>
+            </trans-unit>
+            <trans-unit id="r.k3QSy" resname="Lire l'article">
+                <source>Lire l'article</source>
+                <target>Читать статью</target>
+            </trans-unit>
+            <trans-unit id=".dtP2j4" resname="Articles associés">
+                <source>Articles associés</source>
+                <target>Похожие статьи</target>
+            </trans-unit>
+            <trans-unit id="MH7yhLp" resname="À propos">
+                <source>À propos</source>
+                <target>О нас</target>
+            </trans-unit>
+            <trans-unit id="y2Qv6hP" resname="Bienvenue sur notre site dédié à la radiesthésie et à la voyance. Notre medium radiesthésiste possède un don unique qui lui permet de percevoir les énergies et de recevoir des informations intuitives du monde spirituel. Avec des années d'expérience dans le domaine de la radiesthésie, notre medium a aidé de nombreuses personnes à trouver des réponses, à guérir des blessures émotionnelles, et à retrouver un équilibre dans leur vie.">
+                <source>Bienvenue sur notre site dédié à la radiesthésie et à la voyance. Notre medium radiesthésiste possède un don unique qui lui permet de percevoir les énergies et de recevoir des informations intuitives du monde spirituel. Avec des années d'expérience dans le domaine de la
+                radiesthésie, notre medium a aidé de nombreuses personnes à trouver des réponses, à guérir des blessures émotionnelles, et à retrouver un équilibre dans leur vie.</source>
+                <target>Добро пожаловать на наш сайт, посвященный диузингу и ясновидению. Наш медиум обладает уникальным даром, позволяющим ей воспринимать энергии и получать интуитивную информацию из духовного мира. Имея многолетний опыт работы в области даузинга
+, наш медиум помог многим людям найти ответы, залечить душевные раны и обрести равновесие в своей жизни.</target>
+            </trans-unit>
+            <trans-unit id="avzbPDX" resname="Comment la radiesthésie fonctionne-t-elle ?">
+                <source>Comment la radiesthésie fonctionne-t-elle ?</source>
+                <target>Как работает доузинг?</target>
+            </trans-unit>
+            <trans-unit id="1ITxho3" resname="La radiesthésie est une pratique ancienne qui utilise des outils tels que des pendules et des baguettes pour capter et interpréter les vibrations énergétiques qui nous entourent. Notre medium radiesthésiste est en mesure d'utiliser ces outils pour localiser des objets perdus, détecter des blocages énergétiques dans le corps, et répondre à des questions importantes concernant le passé, le présent et l'avenir.">
+                <source>La radiesthésie est une pratique ancienne qui utilise des outils tels que des pendules et des baguettes pour capter et interpréter les vibrations énergétiques qui nous entourent. Notre medium radiesthésiste est en mesure d'utiliser ces outils pour localiser des objets perdus,
+                détecter des blocages énergétiques dans le corps, et répondre à des questions importantes concernant le passé, le présent et l'avenir.</source>
+                <target>Даузинг - это древняя практика, в которой используются такие инструменты, как маятники и жезлы, для улавливания и интерпретации энергетических вибраций вокруг нас. Наш медиум способен с помощью этих инструментов находить потерянные предметы,
+ обнаруживать энергетические блокировки в теле, а также отвечать на важные вопросы о прошлом, настоящем и будущем.</target>
+            </trans-unit>
+            <trans-unit id="A5DJnwG" resname="Consultations de voyance personnalisées">
+                <source>Consultations de voyance personnalisées</source>
+                <target>Индивидуальные консультации по ясновидению</target>
+            </trans-unit>
+            <trans-unit id="7Gk1R8C" resname="Notre medium propose des consultations de voyance personnalisées, où il se connecte avec votre énergie et celle de l'univers pour vous offrir des messages et des conseils spécifiquement adaptés à votre situation. Que vous ayez des questions sur votre carrière, vos relations, votre santé ou votre spiritualité, notre medium radiesthésiste est là pour vous guider sur votre chemin de vie.">
+                <source>Notre medium propose des consultations de voyance personnalisées, où il se connecte avec votre énergie et celle de l'univers pour vous offrir des messages et des conseils spécifiquement adaptés à votre situation. Que vous ayez des questions sur votre carrière, vos relations,
+                votre santé ou votre spiritualité, notre medium radiesthésiste est là pour vous guider sur votre chemin de vie.</source>
+                <target>Наш медиум предлагает индивидуальные консультации по ясновидению, в ходе которых он связывается с вашей энергией и энергией Вселенной, чтобы предложить вам послания и советы, специально разработанные для вашей ситуации. Если у вас есть вопросы о карьере, взаимоотношениях,
+ здоровье или духовности, наш медиум готов направить вас по жизненному пути.</target>
+            </trans-unit>
+            <trans-unit id="ItnSNJ3" resname="Contactez-nous dès aujourd'hui">
+                <source>Contactez-nous dès aujourd'hui</source>
+                <target>Свяжитесь с нами сегодня</target>
+            </trans-unit>
+            <trans-unit id="wDvyWtT" resname="Si vous avez besoin de réponses, de guérison ou de soutien dans votre vie, n'hésitez pas à nous contacter pour une consultation avec notre medium radiesthésiste. Nous sommes là pour vous aider à trouver la clarté et le réconfort dont vous avez besoin.">
+                <source>Si vous avez besoin de réponses, de guérison ou de soutien dans votre vie, n'hésitez pas à nous contacter pour une consultation avec notre medium radiesthésiste. Nous sommes là pour vous aider à trouver la clarté et le réconfort dont vous avez besoin.</source>
+                <target>Если вам нужны ответы, исцеление или поддержка в вашей жизни, не стесняйтесь обращаться к нам за консультацией с нашим медиумом-доузингом. Мы готовы помочь вам обрести ясность и комфорт, в которых вы нуждаетесь.</target>
+            </trans-unit>
+            <trans-unit id="3uCRFOT" resname="Demandez une Consultation">
+                <source>Demandez une Consultation</source>
+                <target>Запрос на консультацию</target>
+            </trans-unit>
+            <trans-unit id="YNA1nu_" resname="Call:">
+                <source>Call:</source>
+                <target>Звоните:</target>
+            </trans-unit>
+            <trans-unit id="F1B9z4R" resname="Email:">
+                <source>Email:</source>
+                <target>Email:</target>
+            </trans-unit>
+            <trans-unit id="HSz9q4O" resname="Visit:">
+                <source>Visit:</source>
+                <target>Посещение:</target>
+            </trans-unit>
+            <trans-unit id="YSHyAf3" resname="Bienvenue">
+                <source>Bienvenue</source>
+                <target>Добро пожаловать</target>
+            </trans-unit>
+            <trans-unit id="sBFnVlo" resname="Vous êtes connecté en tant que">
+                <source>Vous êtes connecté en tant que</source>
+                <target>Вы вошли в систему как</target>
+            </trans-unit>
+            <trans-unit id="UzFhc1Y" resname="Accueil">
+                <source>Accueil</source>
+                <target>Главная</target>
+            </trans-unit>
+            <trans-unit id="gxzCZ4E" resname="La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.">
+                <source>La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.</source>
+                <target>Доузинг - это медиум, открывающий двери в альтернативную медицину, где интуиция сочетается с наукой, раскрывая тайны исцеления.</target>
+            </trans-unit>
+            <trans-unit id="zOnAobl" resname="Mentions légales">
+                <source>Mentions légales</source>
+                <target>Юридическая информация</target>
+            </trans-unit>
+            <trans-unit id="X61.dc8" resname="Conditions d'utilisation">
+                <source>Conditions d'utilisation</source>
+                <target>Условия использования</target>
+            </trans-unit>
+            <trans-unit id="ma9mBv_" resname="Menu">
+                <source>Menu</source>
+                <target>Меню</target>
+            </trans-unit>
+            <trans-unit id="K1w9JnI" resname="Contact">
+                <source>Contact</source>
+                <target>Связаться с</target>
+            </trans-unit>
+            <trans-unit id=".N.6E9J" resname="Horoscope">
+                <source>Horoscope</source>
+                <target>Гороскоп</target>
+            </trans-unit>
+            <trans-unit id="jGvAmVN" resname="Blog">
+                <source>Blog</source>
+                <target>Блог</target>
+            </trans-unit>
+            <trans-unit id="gQ0Mqto" resname="ENVOYER">
+                <source>ENVOYER</source>
+                <target>ОТПРАВИТЬ</target>
+            </trans-unit>
+            <trans-unit id="Q25hAW4" resname="Play">
+                <source>Play</source>
+                <target>Играть</target>
+            </trans-unit>
+            <trans-unit id="8n4i7M_" resname="La Radiesthésie : Révélateur de Mystères Cachés">
+                <source>La Radiesthésie : Révélateur de Mystères Cachés</source>
+                <target>Радиэстезия: раскрытие скрытых тайн</target>
+            </trans-unit>
+            <trans-unit id="pbuxkdH" resname="Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour vous guider vers une harmonie éclairée.">
+                <source>Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour
+                vous guider vers une harmonie éclairée.</source>
+                <target>Исследуйте скрытые тайны с помощью доузинга. Будучи страстным приверженцем этой практики, я предлагаю вам ясность, спокойствие и равновесие, чтобы понять свое внутреннее "я". Погрузитесь в увлекательный мир доузинга, где открываются скрытые ответы, чтобы
+ направить вас к просветленной гармонии.</target>
+            </trans-unit>
+            <trans-unit id="BD1ipjE" resname="Radiesthésie pendulaire">
+                <source>Radiesthésie pendulaire</source>
+                <target>Маятниковая лучевая терапия</target>
+            </trans-unit>
+            <trans-unit id="5.U.xsC" resname="Radiesthésie médicale">
+                <source>Radiesthésie médicale</source>
+                <target>Медицинская радиоэстезия</target>
+            </trans-unit>
+            <trans-unit id="GW3UX.p" resname="Radiesthésie divinatoire">
+                <source>Radiesthésie divinatoire</source>
+                <target>Дивинационная радиэстезия</target>
+            </trans-unit>
+            <trans-unit id="PMYoOKD" resname="Radiesthésie alimentaire">
+                <source>Radiesthésie alimentaire</source>
+                <target>Радиэстезия к пище</target>
+            </trans-unit>
+            <trans-unit id="fKqvGDa" resname="Radiesthésie spirituelle">
+                <source>Radiesthésie spirituelle</source>
+                <target>Духовная радиэстезия</target>
+            </trans-unit>
+            <trans-unit id="tkaUcV5" resname="Radiesthésie émotionnelle">
+                <source>Radiesthésie émotionnelle</source>
+                <target>Эмоциональная радиэстезия</target>
+            </trans-unit>
+            <trans-unit id="CpdoREZ" resname="Types de Radiesthésie">
+                <source>Types de Radiesthésie</source>
+                <target>Виды радиэстезии</target>
+            </trans-unit>
+            <trans-unit id="BF5fqFc" resname="Clients satisfaits">
+                <source>Clients satisfaits</source>
+                <target>Удовлетворенные клиенты</target>
+            </trans-unit>
+            <trans-unit id="AaVEtJv" resname="Projets Terminés">
+                <source>Projets Terminés</source>
+                <target>Готовые проекты</target>
+            </trans-unit>
+            <trans-unit id="WesDQt6" resname="Heures de Travail">
+                <source>Heures de Travail</source>
+                <target>Время работы</target>
+            </trans-unit>
+            <trans-unit id="yjToSmC" resname="Explorez les Mystères de la Radiesthésie">
+                <source>Explorez les Mystères de la Radiesthésie</source>
+                <target>Исследовать тайны радиэстезии</target>
+            </trans-unit>
+            <trans-unit id="HX91IEF" resname="Formulaire de Contact">
+                <source>Formulaire de Contact</source>
+                <target>Контактная форма</target>
+            </trans-unit>
+            <trans-unit id="Av6EX6p" resname="Horoscope hebdomadaire">
+                <source>Horoscope hebdomadaire</source>
+                <target>Еженедельный гороскоп</target>
+            </trans-unit>
+            <trans-unit id="2.uDw7I" resname="Date de publication">
+                <source>Date de publication</source>
+                <target>Дата публикации</target>
+            </trans-unit>
+            <trans-unit id="3kLnYRg" resname="Aucune donnée d'horoscope disponible pour">
+                <source>Aucune donnée d'horoscope disponible pour</source>
+                <target>Данные гороскопа отсутствуют для</target>
+            </trans-unit>
+            <trans-unit id="eJY5BfO" resname="Dates">
+                <source>Dates</source>
+                <target>Даты</target>
+            </trans-unit>
+            <trans-unit id="4KtK2wG" resname="Traits">
+                <source>Traits</source>
+                <target>Характеристики</target>
+            </trans-unit>
+            <trans-unit id="0ti27Bv" resname="votre message a bien été envoyé.">
+                <source>votre message a bien été envoyé.</source>
+                <target>Ваше сообщение отправлено.</target>
+            </trans-unit>
+            <trans-unit id="CM.ZEbn" resname="Le formulaire contient une ou plusieurs erreurs et n'a pas pu être envoyé. Veuillez corriger et réessayer svp.">
+                <source>Le formulaire contient une ou plusieurs erreurs et n'a pas pu être envoyé. Veuillez corriger et réessayer svp.</source>
+                <target>Форма содержит одну или несколько ошибок и не может быть отправлена. Пожалуйста, исправьте ее и повторите попытку.</target>
+            </trans-unit>
+            <trans-unit id="GD3OIXs" resname="cette article n'existe plus.">
+                <source>cette article n'existe plus.</source>
+                <target>эта статья больше не существует.</target>
+            </trans-unit>
+            <trans-unit id="oDkDLRF" resname="Demande de rendez-vous">
+                <source>Demande de rendez-vous</source>
+                <target>Запрос на назначение</target>
+            </trans-unit>
+            <trans-unit id="IFOfyp1" resname="Nos derniers articles">
+                <source>Nos derniers articles</source>
+                <target>Наши последние статьи</target>
+            </trans-unit>
+            <trans-unit id="vSlH3g." resname="catégorie">
+                <source>catégorie</source>
+                <target>категория</target>
+            </trans-unit>
+            <trans-unit id="kKrC340" resname="Tous droits réservés">
+                <source>Tous droits réservés</source>
+                <target>Все права защищены</target>
+            </trans-unit>
+            <trans-unit id="TvBzUlU" resname="Tous les articles">
+                <source>Tous les articles</source>
+                <target>Все статьи</target>
+            </trans-unit>
+            <trans-unit id="ZJrS_2C" resname="Rendez-vous">
+                <source>Rendez-vous</source>
+                <target>Назначения</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

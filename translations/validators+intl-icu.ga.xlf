@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="ga" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="YRKYC4." resname="There is already an account with this email">
+        <source>There is already an account with this email</source>
+        <target>__There is already an account with this email</target>
+      </trans-unit>
+      <trans-unit id="YXZ26gK" resname="Please enter a password">
+        <source>Please enter a password</source>
+        <target>__Please enter a password</target>
+      </trans-unit>
+      <trans-unit id=".esazsm" resname="Your password should be at least {{ limit }} characters">
+        <source>Your password should be at least {{ limit }} characters</source>
+        <target>__Your password should be at least {{ limit }} characters</target>
+      </trans-unit>
+      <trans-unit id="IaE5GBl" resname="You should agree to our terms.">
+        <source>You should agree to our terms.</source>
+        <target>__You should agree to our terms.</target>
+      </trans-unit>
+      <trans-unit id=".VbubFA" resname="Your password should be at least characters">
+        <source>Your password should be at least characters</source>
+        <target>__Your password should be at least characters</target>
+      </trans-unit>
+      <trans-unit id="ukv7aQo" resname="Your password must contain at least 8 characters, 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character">
+        <source>Your password must contain at least 8 characters, 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character</source>
+        <target>__Your password must contain at least 8 characters, 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character</target>
+      </trans-unit>
+      <trans-unit id="Fe2zEyl" resname="Please enter your email">
+        <source>Please enter your email</source>
+        <target>__Please enter your email</target>
+      </trans-unit>
+      <trans-unit id="VKDowX6" resname="Error">
+        <source>Error</source>
+        <target>__Error</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

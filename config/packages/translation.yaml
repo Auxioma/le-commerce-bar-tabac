@@ -3,13 +3,31 @@ framework:
     translator:
         default_path: '%kernel.project_dir%/translations'
         fallbacks:
-            - fr
-#        providers:
-#            crowdin:
-#                dsn: '%env(CROWDIN_DSN)%'
-#            loco:
-#                dsn: '%env(LOCO_DSN)%'
-#            lokalise:
-#                dsn: '%env(LOKALISE_DSN)%'
-#            phrase:
-#                dsn: '%env(PHRASE_DSN)%'
+            - de
+            - en
+            - bg
+            - hr
+            - da
+            - es
+            - et
+            - fi
+            - el
+            - hu
+            - ga
+            - it
+            - lv
+            - lt
+            - mt
+            - nl
+            - pl
+            - pt
+            - ro
+            - sk
+            - sl
+            - sv
+            - cs
+            - ru
+            - ua
+            - be
+
+

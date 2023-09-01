@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="fr" target-language="ua" datatype="plaintext" original="file.ext">
+        <header>
+            <tool tool-id="symfony" tool-name="Symfony" />
+        </header>
+
+        <body>
+            <trans-unit id="Pl_9vzt" resname="cette article n'existe pas.">
+                <source>cette article n'existe pas.</source>
+                <target>Ця стаття не існує.</target>
+            </trans-unit>
+            <trans-unit id="4yW.j5A" resname="Prénom">
+                <source>Prénom</source>
+                <target>Ім'я</target>
+            </trans-unit>
+            <trans-unit id="yjKRUrU" resname="Veuillez saisir votre prénom">
+                <source>Veuillez saisir votre prénom</source>
+                <target>Будь ласка, введіть своє ім'я</target>
+            </trans-unit>
+            <trans-unit id="ssEkU20" resname="Nom">
+                <source>Nom</source>
+                <target>Ім'я</target>
+            </trans-unit>
+            <trans-unit id="6XY6UWK" resname="Veuillez saisir votre nom">
+                <source>Veuillez saisir votre nom</source>
+                <target>Будь ласка, введіть своє ім'я</target>
+            </trans-unit>
+            <trans-unit id="lpzL089" resname="Email">
+                <source>Email</source>
+                <target>Електронна пошта</target>
+            </trans-unit>
+            <trans-unit id="AUqS.6D" resname="Veuillez saisir votre email">
+                <source>Veuillez saisir votre email</source>
+                <target>Будь ласка, введіть свою електронну адресу</target>
+            </trans-unit>
+            <trans-unit id="IDCqHMZ" resname="Veuillez saisir un email valide">
+                <source>Veuillez saisir un email valide</source>
+                <target>Введіть дійсну адресу електронної пошти</target>
+            </trans-unit>
+            <trans-unit id="yBFB55A" resname="Votre téléphone">
+                <source>Votre téléphone</source>
+                <target>Твій телефон</target>
+            </trans-unit>
+            <trans-unit id="KnQ.wAP" resname="Objet de votre demande">
+                <source>Objet de votre demande</source>
+                <target>Предмет вашого запиту</target>
+            </trans-unit>
+            <trans-unit id="s4oX5Fe" resname="Sélectionnez un sujet">
+                <source>Sélectionnez un sujet</source>
+                <target>Виберіть тему</target>
+            </trans-unit>
+            <trans-unit id="pgICobQ" resname="Demande d'information">
+                <source>Demande d'information</source>
+                <target>Запит інформації</target>
+            </trans-unit>
+            <trans-unit id="njLrh1T" resname="Demande de rappel">
+                <source>Demande de rappel</source>
+                <target>Запит на зворотній дзвінок</target>
+            </trans-unit>
+            <trans-unit id="63LhaDu" resname="Autre">
+                <source>Autre</source>
+                <target>Інший</target>
+            </trans-unit>
+            <trans-unit id="QERVmkw" resname="Votre message">
+                <source>Votre message</source>
+                <target>Ваше повідомлення</target>
+            </trans-unit>
+            <trans-unit id="r.k3QSy" resname="Lire l'article">
+                <source>Lire l'article</source>
+                <target>Прочитати статтю</target>
+            </trans-unit>
+            <trans-unit id=".dtP2j4" resname="Articles associés">
+                <source>Articles associés</source>
+                <target>Схожі статті</target>
+            </trans-unit>
+            <trans-unit id="MH7yhLp" resname="À propos">
+                <source>À propos</source>
+                <target>про</target>
+            </trans-unit>
+            <trans-unit id="y2Qv6hP" resname="Bienvenue sur notre site dédié à la radiesthésie et à la voyance. Notre medium radiesthésiste possède un don unique qui lui permet de percevoir les énergies et de recevoir des informations intuitives du monde spirituel. Avec des années d'expérience dans le domaine de la radiesthésie, notre medium a aidé de nombreuses personnes à trouver des réponses, à guérir des blessures émotionnelles, et à retrouver un équilibre dans leur vie.">
+                <source>Bienvenue sur notre site dédié à la radiesthésie et à la voyance. Notre medium radiesthésiste possède un don unique qui lui permet de percevoir les énergies et de recevoir des informations intuitives du monde spirituel. Avec des années d'expérience dans le domaine de la
+                radiesthésie, notre medium a aidé de nombreuses personnes à trouver des réponses, à guérir des blessures émotionnelles, et à retrouver un équilibre dans leur vie.</source>
+                <target>Ласкаво просимо на наш сайт, присвячений біолокації та ясновидінню. Наш біолокатор має унікальний дар, який дозволяє йому сприймати енергії та отримувати інтуїтивну інформацію з духовного світу. З багаторічним досвідом роботи в сфері
+ Радиолокація, наш засіб, допомогла багатьом людям знайти відповіді, залікувати емоційні рани та відновити баланс у своєму житті.</target>
+            </trans-unit>
+            <trans-unit id="avzbPDX" resname="Comment la radiesthésie fonctionne-t-elle ?">
+                <source>Comment la radiesthésie fonctionne-t-elle ?</source>
+                <target>Як працює біолокація?</target>
+            </trans-unit>
+            <trans-unit id="1ITxho3" resname="La radiesthésie est une pratique ancienne qui utilise des outils tels que des pendules et des baguettes pour capter et interpréter les vibrations énergétiques qui nous entourent. Notre medium radiesthésiste est en mesure d'utiliser ces outils pour localiser des objets perdus, détecter des blocages énergétiques dans le corps, et répondre à des questions importantes concernant le passé, le présent et l'avenir.">
+                <source>La radiesthésie est une pratique ancienne qui utilise des outils tels que des pendules et des baguettes pour capter et interpréter les vibrations énergétiques qui nous entourent. Notre medium radiesthésiste est en mesure d'utiliser ces outils pour localiser des objets perdus,
+                détecter des blocages énergétiques dans le corps, et répondre à des questions importantes concernant le passé, le présent et l'avenir.</source>
+                <target>Лозологія — це давня практика, яка використовує такі інструменти, як маятники та палички, щоб вловлювати та інтерпретувати енергетичні вібрації навколо нас. Наше радіолокаційне середовище може використовувати ці інструменти для пошуку втрачених об’єктів,
+ виявляти енергетичні блокування в тілі та відповідати на важливі питання про минуле, теперішнє та майбутнє.</target>
+            </trans-unit>
+            <trans-unit id="A5DJnwG" resname="Consultations de voyance personnalisées">
+                <source>Consultations de voyance personnalisées</source>
+                <target>Індивідуальні консультації з ясновидіння</target>
+            </trans-unit>
+            <trans-unit id="7Gk1R8C" resname="Notre medium propose des consultations de voyance personnalisées, où il se connecte avec votre énergie et celle de l'univers pour vous offrir des messages et des conseils spécifiquement adaptés à votre situation. Que vous ayez des questions sur votre carrière, vos relations, votre santé ou votre spiritualité, notre medium radiesthésiste est là pour vous guider sur votre chemin de vie.">
+                <source>Notre medium propose des consultations de voyance personnalisées, où il se connecte avec votre énergie et celle de l'univers pour vous offrir des messages et des conseils spécifiquement adaptés à votre situation. Que vous ayez des questions sur votre carrière, vos relations,
+                votre santé ou votre spiritualité, notre medium radiesthésiste est là pour vous guider sur votre chemin de vie.</source>
+                <target>Наш медіум пропонує персоналізовані консультації з ясновидінням, де він зв’язується з вашою енергією та енергією Всесвіту, щоб надати вам повідомлення та поради, спеціально адаптовані до вашої ситуації. Якщо у вас є запитання щодо вашої кар’єри, стосунків,
+ ваше здоров'я чи духовність, наше біолокаційне середовище тут, щоб супроводжувати вас на вашому життєвому шляху.</target>
+            </trans-unit>
+            <trans-unit id="ItnSNJ3" resname="Contactez-nous dès aujourd'hui">
+                <source>Contactez-nous dès aujourd'hui</source>
+                <target>Зв'яжіться з нами сьогодні</target>
+            </trans-unit>
+            <trans-unit id="wDvyWtT" resname="Si vous avez besoin de réponses, de guérison ou de soutien dans votre vie, n'hésitez pas à nous contacter pour une consultation avec notre medium radiesthésiste. Nous sommes là pour vous aider à trouver la clarté et le réconfort dont vous avez besoin.">
+                <source>Si vous avez besoin de réponses, de guérison ou de soutien dans votre vie, n'hésitez pas à nous contacter pour une consultation avec notre medium radiesthésiste. Nous sommes là pour vous aider à trouver la clarté et le réconfort dont vous avez besoin.</source>
+                <target>Якщо вам потрібні відповіді, зцілення чи підтримка у вашому житті, не соромтеся зв’язатися з нами для консультації з нашим біолокаційним середовищем. Ми тут, щоб допомогти вам знайти необхідну ясність і заспокоєння.</target>
+            </trans-unit>
+            <trans-unit id="3uCRFOT" resname="Demandez une Consultation">
+                <source>Demandez une Consultation</source>
+                <target>Запит на консультацію</target>
+            </trans-unit>
+            <trans-unit id="YNA1nu_" resname="Call:">
+                <source>Call:</source>
+                <target>Телефонуйте:</target>
+            </trans-unit>
+            <trans-unit id="F1B9z4R" resname="Email:">
+                <source>Email:</source>
+                <target>Електронна пошта:</target>
+            </trans-unit>
+            <trans-unit id="HSz9q4O" resname="Visit:">
+                <source>Visit:</source>
+                <target>Відвідайте:</target>
+            </trans-unit>
+            <trans-unit id="YSHyAf3" resname="Bienvenue">
+                <source>Bienvenue</source>
+                <target>Ласкаво просимо</target>
+            </trans-unit>
+            <trans-unit id="sBFnVlo" resname="Vous êtes connecté en tant que">
+                <source>Vous êtes connecté en tant que</source>
+                <target>Ви увійшли як</target>
+            </trans-unit>
+            <trans-unit id="UzFhc1Y" resname="Accueil">
+                <source>Accueil</source>
+                <target>Ласкаво просимо</target>
+            </trans-unit>
+            <trans-unit id="gxzCZ4E" resname="La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.">
+                <source>La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.</source>
+                <target>Радиолокація – це засіб, який відкриває двері альтернативній медицині, де інтуїція поєднується з наукою, щоб розкрити таємниці зцілення.</target>
+            </trans-unit>
+            <trans-unit id="zOnAobl" resname="Mentions légales">
+                <source>Mentions légales</source>
+                <target>Юридична інформація</target>
+            </trans-unit>
+            <trans-unit id="X61.dc8" resname="Conditions d'utilisation">
+                <source>Conditions d'utilisation</source>
+                <target>Умови використання</target>
+            </trans-unit>
+            <trans-unit id="ma9mBv_" resname="Menu">
+                <source>Menu</source>
+                <target>Меню</target>
+            </trans-unit>
+            <trans-unit id="K1w9JnI" resname="Contact">
+                <source>Contact</source>
+                <target>контакт</target>
+            </trans-unit>
+            <trans-unit id=".N.6E9J" resname="Horoscope">
+                <source>Horoscope</source>
+                <target>Гороскоп</target>
+            </trans-unit>
+            <trans-unit id="jGvAmVN" resname="Blog">
+                <source>Blog</source>
+                <target>Блог</target>
+            </trans-unit>
+            <trans-unit id="gQ0Mqto" resname="ENVOYER">
+                <source>ENVOYER</source>
+                <target>НАДІСЛАТИ</target>
+            </trans-unit>
+            <trans-unit id="Q25hAW4" resname="Play">
+                <source>Play</source>
+                <target>грати</target>
+            </trans-unit>
+            <trans-unit id="8n4i7M_" resname="La Radiesthésie : Révélateur de Mystères Cachés">
+                <source>La Radiesthésie : Révélateur de Mystères Cachés</source>
+                <target>Dowsing: Revealer of Hidden Mysteries</target>
+            </trans-unit>
+            <trans-unit id="pbuxkdH" resname="Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour vous guider vers une harmonie éclairée.">
+                <source>Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour
+                vous guider vers une harmonie éclairée.</source>
+                <target>Досліджуйте приховані таємниці за допомогою локації. Як відданий ентузіаст цієї практики, я пропоную вам ясність, спокій і рівновагу, щоб зрозуміти свою внутрішню сутність. Пориньте у захоплюючий світ біолокації, де відкриваються приховані відповіді
+ вести вас до просвітленої гармонії.</target>
+            </trans-unit>
+            <trans-unit id="BD1ipjE" resname="Radiesthésie pendulaire">
+                <source>Radiesthésie pendulaire</source>
+                <target>Маятникова біолокація</target>
+            </trans-unit>
+            <trans-unit id="5.U.xsC" resname="Radiesthésie médicale">
+                <source>Radiesthésie médicale</source>
+                <target>Медична біолокація</target>
+            </trans-unit>
+            <trans-unit id="GW3UX.p" resname="Radiesthésie divinatoire">
+                <source>Radiesthésie divinatoire</source>
+                <target>Ворожіння локація</target>
+            </trans-unit>
+            <trans-unit id="PMYoOKD" resname="Radiesthésie alimentaire">
+                <source>Radiesthésie alimentaire</source>
+                <target>Харчова біолокація</target>
+            </trans-unit>
+            <trans-unit id="fKqvGDa" resname="Radiesthésie spirituelle">
+                <source>Radiesthésie spirituelle</source>
+                <target>Духовна біолокація</target>
+            </trans-unit>
+            <trans-unit id="tkaUcV5" resname="Radiesthésie émotionnelle">
+                <source>Radiesthésie émotionnelle</source>
+                <target>Емоційна біолокація</target>
+            </trans-unit>
+            <trans-unit id="CpdoREZ" resname="Types de Radiesthésie">
+                <source>Types de Radiesthésie</source>
+                <target>Види біолокації</target>
+            </trans-unit>
+            <trans-unit id="BF5fqFc" resname="Clients satisfaits">
+                <source>Clients satisfaits</source>
+                <target>Задоволені клієнти</target>
+            </trans-unit>
+            <trans-unit id="AaVEtJv" resname="Projets Terminés">
+                <source>Projets Terminés</source>
+                <target>Виконані проекти</target>
+            </trans-unit>
+            <trans-unit id="WesDQt6" resname="Heures de Travail">
+                <source>Heures de Travail</source>
+                <target>Робочі години</target>
+            </trans-unit>
+            <trans-unit id="yjToSmC" resname="Explorez les Mystères de la Radiesthésie">
+                <source>Explorez les Mystères de la Radiesthésie</source>
+                <target>Досліджуйте таємниці біолокації</target>
+            </trans-unit>
+            <trans-unit id="HX91IEF" resname="Formulaire de Contact">
+                <source>Formulaire de Contact</source>
+                <target>Контактний формуляр</target>
+            </trans-unit>
+            <trans-unit id="Av6EX6p" resname="Horoscope hebdomadaire">
+                <source>Horoscope hebdomadaire</source>
+                <target>Гороскоп на тиждень</target>
+            </trans-unit>
+            <trans-unit id="2.uDw7I" resname="Date de publication">
+                <source>Date de publication</source>
+                <target>Дата публікації</target>
+            </trans-unit>
+            <trans-unit id="3kLnYRg" resname="Aucune donnée d'horoscope disponible pour">
+                <source>Aucune donnée d'horoscope disponible pour</source>
+                <target>Немає даних гороскопу для</target>
+            </trans-unit>
+            <trans-unit id="eJY5BfO" resname="Dates">
+                <source>Dates</source>
+                <target>дати</target>
+            </trans-unit>
+            <trans-unit id="4KtK2wG" resname="Traits">
+                <source>Traits</source>
+                <target>особливості</target>
+            </trans-unit>
+            <trans-unit id="0ti27Bv" resname="votre message a bien été envoyé.">
+                <source>votre message a bien été envoyé.</source>
+                <target>Ваше повідомлення було відправлене.</target>
+            </trans-unit>
+            <trans-unit id="CM.ZEbn" resname="Le formulaire contient une ou plusieurs erreurs et n'a pas pu être envoyé. Veuillez corriger et réessayer svp.">
+                <source>Le formulaire contient une ou plusieurs erreurs et n'a pas pu être envoyé. Veuillez corriger et réessayer svp.</source>
+                <target>Форма містить одну чи кілька помилок, тому її неможливо надіслати. Виправте та повторіть спробу.</target>
+            </trans-unit>
+            <trans-unit id="GD3OIXs" resname="cette article n'existe plus.">
+                <source>cette article n'existe plus.</source>
+                <target>Ця стаття більше не існує.</target>
+            </trans-unit>
+            <trans-unit id="oDkDLRF" resname="Demande de rendez-vous">
+                <source>Demande de rendez-vous</source>
+                <target>Запит на зустріч</target>
+            </trans-unit>
+            <trans-unit id="IFOfyp1" resname="Nos derniers articles">
+                <source>Nos derniers articles</source>
+                <target>Наші останні статті</target>
+            </trans-unit>
+            <trans-unit id="vSlH3g." resname="catégorie">
+                <source>catégorie</source>
+                <target>категорія</target>
+            </trans-unit>
+            <trans-unit id="kKrC340" resname="Tous droits réservés">
+                <source>Tous droits réservés</source>
+                <target>Всі права захищені</target>
+            </trans-unit>
+            <trans-unit id="TvBzUlU" resname="Tous les articles">
+                <source>Tous les articles</source>
+                <target>Всі елементи</target>
+            </trans-unit>
+            <trans-unit id="ZJrS_2C" resname="Rendez-vous">
+                <source>Rendez-vous</source>
+                <target>Призначення</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

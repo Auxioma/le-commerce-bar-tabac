@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="hu" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony" />
+    </header>
+    <body>
+      <trans-unit id="LbKonXo" resname="Votre nom">
+        <source>Votre nom</source>
+        <target>A neved</target>
+      </trans-unit>
+      <trans-unit id="oPt21Gu" resname="Votre email">
+        <source>Votre email</source>
+        <target>Az email címed</target>
+      </trans-unit>
+      <trans-unit id="FhafGdY" resname="Votre numéro de téléphone">
+        <source>Votre numéro de téléphone</source>
+        <target>A telefonszámod</target>
+      </trans-unit>
+      <trans-unit id="QERVmkw" resname="Votre message">
+        <source>Votre message</source>
+        <target>Az üzeneted</target>
+      </trans-unit>
+      <trans-unit id="ssEkU20" resname="Nom">
+        <source>Nom</source>
+        <target>Név</target>
+      </trans-unit>
+      <trans-unit id="4yW.j5A" resname="Prénom">
+        <source>Prénom</source>
+        <target>Keresztnév</target>
+      </trans-unit>
+      <trans-unit id="NvDqjbl" resname="Numéro de téléphone">
+        <source>Numéro de téléphone</source>
+        <target>Telefonszám</target>
+      </trans-unit>
+      <trans-unit id="TwJbFLG" resname="Bars tabac à FORGES-LES-EAUX">
+        <source>Bars tabac à FORGES-LES-EAUX</source>
+        <target>Dohányszeletek FORGES-LES-EAUX-ban</target>
+      </trans-unit>
+      <trans-unit id="nNnunA6" resname="Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.">
+        <source>Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.</source>
+        <target>Hírnevünk középpontjában az általunk nyújtott kifogástalan szolgáltatás áll. Figyelmes és professzionális személyzetünk meleg és diszkrét fogadtatásban részesíti Önt, biztosítva, hogy látogatása az elejétől a végéig kivételes legyen. Minden mosoly, minden interakció hozzájárul ahhoz, hogy a bárunkban eltöltött idő felejthetetlen élménnyé váljon.Hírnevünk középpontjában az általunk kínált kifogástalan szolgáltatás áll. Figyelmes és professzionális személyzetünk meleg és diszkrét fogadtatásban részesíti Önt, biztosítva, hogy látogatása az elejétől a végéig kivételes legyen. Minden mosoly, minden interakció hozzájárul ahhoz, hogy a bárunkban eltöltött idő felejthetetlen élménnyé váljon.</target>
+      </trans-unit>
+      <trans-unit id="H_DZJmv" resname="Bar, Tabac, Boissons, Tabac à rouler, Ambiance, Convivialité, Café, Terrasse, Jeux de société, Presse">
+        <source>Bar, Tabac, Boissons, Tabac à rouler, Ambiance, Convivialité, Café, Terrasse, Jeux de société, Presse</source>
+        <target>Bár, Dohányáru, Italok, Sodródohány, Légkör, Vidámság, Kávézó, Terasz, Társasjátékok, Sajtó</target>
+      </trans-unit>
+      <trans-unit id="hF8TuXE" resname="Bar tabac">
+        <source>Bar tabac</source>
+        <target>Dohányszelet</target>
+      </trans-unit>
+      <trans-unit id="UzFhc1Y" resname="Accueil">
+        <source>Accueil</source>
+        <target>Üdvözöljük</target>
+      </trans-unit>
+      <trans-unit id="SLK0dTj" resname="Le bar">
+        <source>Le bar</source>
+        <target>A bárban</target>
+      </trans-unit>
+      <trans-unit id="g1vuI4Q" resname="nos offres">
+        <source>nos offres</source>
+        <target>ajánlatainkat</target>
+      </trans-unit>
+      <trans-unit id="ry4Ql96" resname="Temoiniages">
+        <source>Temoiniages</source>
+        <target>Beszámolók</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Kapcsolatba lépni</target>
+      </trans-unit>
+      <trans-unit id="c0c9zBK" resname="Café">
+        <source>Café</source>
+        <target>Kávé</target>
+      </trans-unit>
+      <trans-unit id="i0lC5Nc" resname="Boissons">
+        <source>Boissons</source>
+        <target>Italok</target>
+      </trans-unit>
+      <trans-unit id="vYrSLYg" resname="Tabac">
+        <source>Tabac</source>
+        <target>Dohány</target>
+      </trans-unit>
+      <trans-unit id="hw_xZri" resname="Ce">
+        <source>Ce</source>
+        <target>Ez</target>
+      </trans-unit>
+      <trans-unit id="YVekqzR" resname="ouvert de">
+        <source>ouvert de</source>
+        <target>tól nyitva</target>
+      </trans-unit>
+      <trans-unit id="ldZMrM4" resname="Bar">
+        <source>Bar</source>
+        <target>Rúd</target>
+      </trans-unit>
+      <trans-unit id="TrhWCNi" resname="Itinéraire">
+        <source>Itinéraire</source>
+        <target>Utazási program</target>
+      </trans-unit>
+      <trans-unit id="7Bp1IN0" resname="F.D.J">
+        <source>F.D.J</source>
+        <target>FDJ</target>
+      </trans-unit>
+      <trans-unit id="8tqDxUn" resname="P.M.U">
+        <source>P.M.U</source>
+        <target>PMU</target>
+      </trans-unit>
+      <trans-unit id="u7cro25" resname="Cigarettes">
+        <source>Cigarettes</source>
+        <target>Cigaretta</target>
+      </trans-unit>
+      <trans-unit id="WEfrJsB" resname="Votre destination ultime pour">
+        <source>Votre destination ultime pour</source>
+        <target>Az Ön végső úti célja</target>
+      </trans-unit>
+      <trans-unit id="8uCVP_B" resname="une expérience inoubliable !">
+        <source>une expérience inoubliable !</source>
+        <target>egy felejthetetlen élmény !</target>
+      </trans-unit>
+      <trans-unit id="G3jypZG" resname="Alcool">
+        <source>Alcool</source>
+        <target>Alkohol</target>
+      </trans-unit>
+      <trans-unit id="f8JKW3V" resname="Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !">
+        <source>Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !</source>
+        <target>Barátságos helyet keres, ahol kikapcsolódhat és élvezheti kedvenc tevékenységeit? Ne keressen tovább, mert a COMMERCE-ben minden megtalálható, amire szüksége van!</target>
+      </trans-unit>
+      <trans-unit id="7UoQ7jk" resname="Ambiance Chaleureuse">
+        <source>Ambiance Chaleureuse</source>
+        <target>Meleg környezet</target>
+      </trans-unit>
+      <trans-unit id="t9Shj5c" resname="Service Exceptionnel">
+        <source>Service Exceptionnel</source>
+        <target>Kivételes szolgáltatás</target>
+      </trans-unit>
+      <trans-unit id="3OkMRcd" resname="Événements Spéciaux">
+        <source>Événements Spéciaux</source>
+        <target>Különleges események</target>
+      </trans-unit>
+      <trans-unit id="j8FE97z" resname="Plongez dans une atmosphère">
+        <source>Plongez dans une atmosphère</source>
+        <target>Merüljön el egy légkörben</target>
+      </trans-unit>
+      <trans-unit id="AVmXjak" resname="chaleureuse et accueillante">
+        <source>chaleureuse et accueillante</source>
+        <target>meleg és barátságos</target>
+      </trans-unit>
+      <trans-unit id="Oj6_4.9" resname="Cocktails">
+        <source>Cocktails</source>
+        <target>Koktélok</target>
+      </trans-unit>
+      <trans-unit id="243DCDj" resname="Dans l'ambiance chaleureuse du bar, les rires et les conversations se mêlent harmonieusement, créant un véritable tableau de convivialité et de détente">
+        <source>Dans l'ambiance chaleureuse du bar, les rires et les conversations se mêlent harmonieusement, créant un véritable tableau de convivialité et de détente</source>
+        <target>A bár meleg atmoszférájában a nevetés és a beszélgetések harmonikusan keverednek, valódi képet alkotva a vidámságról és a kikapcsolódásról</target>
+      </trans-unit>
+      <trans-unit id="VNP.vRg" resname="Jeux">
+        <source>Jeux</source>
+        <target>Játékok</target>
+      </trans-unit>
+      <trans-unit id="wXiH8rK" resname="Plongez dans l'excitation et la tension des paris avec le jeu de hasard, où chaque ticket devient une porte ouverte de décrocher la victoire.">
+        <source>Plongez dans l'excitation et la tension des paris avec le jeu de hasard, où chaque ticket devient une porte ouverte de décrocher la victoire.</source>
+        <target>Merüljön el a fogadás izgalmában és feszültségében a szerencsejátékkal, ahol minden jegy egy nyitott ajtóvá válik a győzelem megszerzéséhez.</target>
+      </trans-unit>
+      <trans-unit id="Nih7rIP" resname="Le tabac demeure une source majeure de préoccupations pour la santé en raison de ses effets nocifs sur la santé et de son lien avec de nombreuses maladies graves.">
+        <source>Le tabac demeure une source majeure de préoccupations pour la santé en raison de ses effets nocifs sur la santé et de son lien avec de nombreuses maladies graves.</source>
+        <target>A dohány továbbra is aggodalomra ad okot az egészségre gyakorolt káros hatásai és számos súlyos betegséggel való kapcsolata miatt.</target>
+      </trans-unit>
+      <trans-unit id="gEYHGSz" resname="Pour bénéficier de">
+        <source>Pour bénéficier de</source>
+        <target>hasznot húzni</target>
+      </trans-unit>
+      <trans-unit id="Gk4x7rv" resname="promotions">
+        <source>promotions</source>
+        <target>promóciók</target>
+      </trans-unit>
+      <trans-unit id="DA2T0vJ" resname="ponctuel">
+        <source>ponctuel</source>
+        <target>pontos</target>
+      </trans-unit>
+      <trans-unit id="Z5758RQ" resname="veuillez entrer votre numéro de téléphone.">
+        <source>veuillez entrer votre numéro de téléphone.</source>
+        <target>kérlek add meg a telefonszámod.</target>
+      </trans-unit>
+      <trans-unit id="w83CZEj" resname="Recevez nos offres">
+        <source>Recevez nos offres</source>
+        <target>Fogadja ajánlatainkat</target>
+      </trans-unit>
+      <trans-unit id="Pn7xwmS" resname="Avis">
+        <source>Avis</source>
+        <target>Értesítés</target>
+      </trans-unit>
+      <trans-unit id="VTau.Ri" resname="des clients">
+        <source>des clients</source>
+        <target>ügyfél</target>
+      </trans-unit>
+      <trans-unit id="hNbCi0U" resname="Cartes à gratter">
+        <source>Cartes à gratter</source>
+        <target>Kaparós sorsjegy</target>
+      </trans-unit>
+      <trans-unit id="N649VcP" resname="“ Bar tabac sympa, les serveuses très sympa aussi, Ça fait du bien au moral de trouver un lieu de repos accueillant. ”">
+        <source>“ Bar tabac sympa, les serveuses très sympa aussi, Ça fait du bien au moral de trouver un lieu de repos accueillant. ”</source>
+        <target>„Szép dohánybár, a pincérlányok is nagyon kedvesek, jót tesz a lelkiállapotnak, ha talál egy kellemes pihenőhelyet. ”</target>
+      </trans-unit>
+      <trans-unit id="96LQz7E" resname="Jeux de loterie">
+        <source>Jeux de loterie</source>
+        <target>Lottó játékok</target>
+      </trans-unit>
+      <trans-unit id="vFjuCsd" resname="Avis Google">
+        <source>Avis Google</source>
+        <target>Google Vélemények</target>
+      </trans-unit>
+      <trans-unit id="W_uhXez" resname="“ Patron et son équipe accueillants et très sympas ”">
+        <source>“ Patron et son équipe accueillants et très sympas ”</source>
+        <target>“Üdvözlő és nagyon barátságos főnök és csapat”</target>
+      </trans-unit>
+      <trans-unit id="lUNx4vT" resname="Journaux">
+        <source>Journaux</source>
+        <target>Újságok</target>
+      </trans-unit>
+      <trans-unit id="aIJIHop" resname="“ Si vous cherchez un bar convivial c'est le bonne endroit. Très commerçant les deux frères ”">
+        <source>“ Si vous cherchez un bar convivial c'est le bonne endroit. Très commerçant les deux frères ”</source>
+        <target>„Ha egy barátságos bárt keres, ez a megfelelő hely. Nagyon kommersz, a két testvér”</target>
+      </trans-unit>
+      <trans-unit id="1rYt6IM" resname="Rencontre sociale">
+        <source>Rencontre sociale</source>
+        <target>Közösségi összejövetel</target>
+      </trans-unit>
+      <trans-unit id="1Au5Jtx" resname="Notre gallerie">
+        <source>Notre gallerie</source>
+        <target>A mi galériánk</target>
+      </trans-unit>
+      <trans-unit id="blBfUjz" resname="d'image">
+        <source>d'image</source>
+        <target>kép</target>
+      </trans-unit>
+      <trans-unit id="kvw8MCA" resname="Fumeurs">
+        <source>Fumeurs</source>
+        <target>Dohányosok</target>
+      </trans-unit>
+      <trans-unit id="IF.lyrg" resname="Contactez-nous via notre">
+        <source>Contactez-nous via notre</source>
+        <target>Vegye fel velünk a kapcsolatot a mi elérhetőségeinken keresztül</target>
+      </trans-unit>
+      <trans-unit id="biF1AG9" resname="formulaire ou par téléphone">
+        <source>formulaire ou par téléphone</source>
+        <target>űrlapon vagy telefonon</target>
+      </trans-unit>
+      <trans-unit id="YTJtsJS" resname="Ambiance conviviale">
+        <source>Ambiance conviviale</source>
+        <target>Barátságos légkör</target>
+      </trans-unit>
+      <trans-unit id="eZ2T84S" resname="Notre adresse">
+        <source>Notre adresse</source>
+        <target>A címünk</target>
+      </trans-unit>
+      <trans-unit id="JVDZYuU" resname="E-mail">
+        <source>E-mail</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="UOpXNLV" resname="Nos horaires">
+        <source>Nos horaires</source>
+        <target>A menetrendjeink</target>
+      </trans-unit>
+      <trans-unit id="OUzv1xR" resname="lundi	07:00 à 19:30">
+        <source>lundi	07:00 à 19:30</source>
+        <target>hétfő	 07:00 és 19:30 között</target>
+      </trans-unit>
+      <trans-unit id="Gim.1uu" resname="mardi	07:00 à 19:30">
+        <source>mardi	07:00 à 19:30</source>
+        <target>kedd	 07:00 és 19:30 között</target>
+      </trans-unit>
+      <trans-unit id="n6SRjlq" resname="mercredi	07:00 à 19:30">
+        <source>mercredi	07:00 à 19:30</source>
+        <target>szerda	 07:00 és 19:30 között</target>
+      </trans-unit>
+      <trans-unit id="9bX4haH" resname="jeudi	07:00 à 19:30">
+        <source>jeudi	07:00 à 19:30</source>
+        <target>CSÜTÖRTÖK	 07:00 és 19:30 között</target>
+      </trans-unit>
+      <trans-unit id="2UePZ01" resname="vendredi	07:00 à 19:30">
+        <source>vendredi	07:00 à 19:30</source>
+        <target>péntek	 07:00 és 19:30 között</target>
+      </trans-unit>
+      <trans-unit id="Th3vKCt" resname="samedi	07:00 à 19:30">
+        <source>samedi	07:00 à 19:30</source>
+        <target>SZOMBAT	 07:00 és 19:30 között</target>
+      </trans-unit>
+      <trans-unit id="wJI6mv8" resname="dimanche	08:00 à 18:30">
+        <source>dimanche	08:00 à 18:30</source>
+        <target>vasárnap	 08:00 és 18:30 között</target>
+      </trans-unit>
+      <trans-unit id="Z7bvoiG" resname="Partager sur :">
+        <source>Partager sur :</source>
+        <target>Oszd meg :</target>
+      </trans-unit>
+      <trans-unit id="81tQ3rO" resname="Contactez la bar le commerce">
+        <source>Contactez la bar le commerce</source>
+        <target>Lépjen kapcsolatba a bar le commerce-vel</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

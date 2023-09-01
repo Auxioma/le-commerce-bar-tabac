@@ -7,31 +7,37 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class SmsType extends AbstractType
 {
+    public function __construct(
+        private TranslatorInterface $translator
+    ) {
+    }
+    
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
             ->add('Nom', TextType::class, [
                 'label' => false,
                 'attr' => [
-                    'placeholder' => 'Nom',
+                    'placeholder' => $this->translator->trans('Nom'),
                     'class' => 'border-theme',
                 ],
             ])
             ->add('Prenom', TextType::class, [
                 'label' => false,
                 'attr' => [
-                    'placeholder' => 'Prénom',
+                    'placeholder' => $this->translator->trans('Prénom'),
                     'class' => 'border-theme',
                 ],
             ])
             ->add('telephone', TextType::class, [
                 'label' => false,
                 'attr' => [
-                    'placeholder' => 'Téléphone',
+                    'placeholder' => $this->translator->trans('Numéro de téléphone'),
                     'class' => 'border-theme',
                 ],
             ])

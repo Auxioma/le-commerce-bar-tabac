@@ -38,11 +38,11 @@
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/theme-color1.css') }}">
 
-        <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+        <meta property="og:url"                content="https://lecommercetabac.com" />
         <meta property="og:type"               content="article" />
-        <meta property="og:title"              content="When Great Minds Don’t Think Alike" />
-        <meta property="og:description"        content="How much does culture influence creative thinking?" />
-        <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+        <meta property="og:title"              content="{% trans %}Bars tabac à FORGES-LES-EAUX{% endtrans %}" />
+        <meta property="og:description"        content="{% trans %}Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.{% endtrans %}" />
+        <meta property="og:image"              content="https://lecommercetabac.com/assets/img/hero/Slider-1.png" />
 
 
     </head>
@@ -52,17 +52,7 @@
     	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div class="preloader  ">
-            <button class="vs-btn mask-style1 preloaderCls">Cancel Preloader </button>
-            <div class="preloader-inner">
-                <div class="loader-logo">
-                    <img src="{{ asset('assets/img/logo-white.svg') }}" alt="Loader Image">
-                </div>
-                <div class="loader-wrap pt-4">
-                    <span class="loader"></span>
-                </div>
-            </div>
-        </div>
+
 
         {% block body %}{% endblock %}
         
