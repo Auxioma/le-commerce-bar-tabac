@@ -19,6 +19,12 @@ class Horaire
     #[ORM\Column(length: 255)]
     private ?string $HoraireOuverture = null;
 
+    #[ORM\Column(length: 3)]
+    private ?string $Lang = null;
+
+    #[ORM\Column(length: 1)]
+    private ?string $WeekNumber = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -44,6 +50,30 @@ class Horaire
     public function setHoraireOuverture(string $HoraireOuverture): static
     {
         $this->HoraireOuverture = $HoraireOuverture;
+
+        return $this;
+    }
+
+    public function getLang(): ?string
+    {
+        return $this->Lang;
+    }
+
+    public function setLang(string $Lang): static
+    {
+        $this->Lang = $Lang;
+
+        return $this;
+    }
+
+    public function getWeekNumber(): ?string
+    {
+        return $this->WeekNumber;
+    }
+
+    public function setWeekNumber(string $WeekNumber): static
+    {
+        $this->WeekNumber = $WeekNumber;
 
         return $this;
     }

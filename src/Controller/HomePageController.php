@@ -4,17 +4,17 @@ namespace App\Controller;
 
 use App\Entity\Sms;
 use App\Form\SmsType;
-use DateTimeImmutable;
 use App\Entity\Contact;
 use App\Form\ContactType;
-use App\Repository\HoraireRepository;
 use App\Repository\PhotoRepository;
+use App\Repository\HoraireRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpKernel\Attribute\Cache;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class HomePageController extends AbstractController
@@ -56,25 +56,14 @@ class HomePageController extends AbstractController
         'sl' => '/sl',
         'sv' => '/sv',
         'cs' => '/cs',
-        'ua' => '/ua',
-        'ru' => '/ru',
-        'be' => '/be',
     ], name: 'app_home_page')]
+    #[Cache(vary: ['Accept-Language'], public: true, expires: '+6 hour', maxage: '6', smaxage: '6', etag: '6')]
     public function index(HoraireRepository $horaire, Request $request, PhotoRepository $photo): Response
     {
-        $date    = DateTimeImmutable::createFromFormat('U', time());
-        $dateEn  = $date->format('D');
 
-        // Je met dans une variable le jour de la semaine en français
-        $joursFr = [
-            'Mon' => 'lundi',
-            'Tue' => 'mardi',
-            'Wed' => 'mercredi',
-            'Thu' => 'jeudi',
-            'Fri' => 'vendredi',
-            'Sat' => 'samedi',
-            'Sun' => 'dimanche',
-        ];
+        $WeekNumber = strftime('%w');
+        $lang = $request->getLocale();
+
 
         // Création du formulaire de contact
         $contact = new Contact();
@@ -148,7 +137,8 @@ class HomePageController extends AbstractController
         }
         
         return $this->render('main/HomePage.html.twig', [
-            'horaire' => $horaire->findOneBy(['Jours' => $joursFr[$dateEn]]),
+            'horaire' => $horaire->findOneBy(['Lang' => $lang, 'WeekNumber' => $WeekNumber]),
+            'ouvertures' => $horaire->findBy(['Lang' => $lang], ['WeekNumber' => 'ASC']),
             'form' => $form->createView(),
             'formSms' => $formSms->createView(),
             'photos' => $photo->findBy([], ['id' => 'DESC'], 8),

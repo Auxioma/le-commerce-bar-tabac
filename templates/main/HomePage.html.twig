@@ -419,7 +419,7 @@
 							</span>
 							<div class="media-body ml-15">
 								<h3 class="box-title mb-1">{% trans %}E-mail{% endtrans %}</h3>
-								<p class="mb-0">hello@example.com</p>
+								<p class="mb-0"><a href="{{ path('app_home_page') }}">contact</a> <a href="{{ path('app_home_page') }}">[ @ ]</a> <a href="{{ path('app_home_page') }}">lecommercetabac.com</a></p>
 							</div>
 						</div>
 						<div class="icon-contact-box mb-10 mb-lg-30 d-flex">
@@ -428,13 +428,10 @@
 							</span>
 							<div class="media-body ml-15">
 								<h3 class="box-title mb-1">{% trans %}Nos horaires{% endtrans %}</h3>
-								<p class="mb-0">{% trans %}lundi	07:00 à 19:30{% endtrans %}</p>
-								<p class="mb-0">{% trans %}mardi	07:00 à 19:30{% endtrans %}</p>
-								<p class="mb-0">{% trans %}mercredi	07:00 à 19:30{% endtrans %}</p>
-								<p class="mb-0">{% trans %}jeudi	07:00 à 19:30{% endtrans %}</p>
-								<p class="mb-0">{% trans %}vendredi	07:00 à 19:30{% endtrans %}</p>
-								<p class="mb-0">{% trans %}samedi	07:00 à 19:30{% endtrans %}</p>
-								<p class="mb-0">{% trans %}dimanche	08:00 à 18:30{% endtrans %}</p>
+
+								{% for ouverture in ouvertures %}
+								<p class="mb-0">{{ ouverture.Jours }}: {{ ouverture.HoraireOuverture }}</p>
+								{% endfor %}
 							</div>
 						</div>
 						<div class="social-links links-has-border">
