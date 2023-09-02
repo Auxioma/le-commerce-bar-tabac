@@ -116,7 +116,7 @@ class HomePageController extends AbstractController
             
             $email = (new TemplatedEmail())
                 ->from($form->get('Email')->getData())
-                ->to('noreply@lecommercebartabac.com')
+                ->to('support@auxioma.eu')
                 ->subject('Nouveaux message depuis le formulaire de contact')
                 ->htmlTemplate('email/contact.html.twig')
                 ->context(
