@@ -18,7 +18,7 @@ class HoraireFixtures extends Fixture
             ['jeudi', '07:00–19:30','fr', '4'],
             ['vendredi', '07:00–19:30', 'fr', '5'],
             ['samedi', '07:00–19:30', 'fr', '6'],
-            ['dimanche', '08:00–18:30','fr', '7'],
+            ['dimanche', '08:00–18:30','fr', '0'],
 
             // je rentre les donnée en anglais
             ['monday', '07:00–19:30','en', '1'],
@@ -27,7 +27,7 @@ class HoraireFixtures extends Fixture
             ['thursday', '07:00–19:30','en', '4'],
             ['friday', '07:00–19:30', 'en', '5'],
             ['saturday', '07:00–19:30', 'en', '6'],
-            ['sunday', '08:00–18:30','en', '7'],
+            ['sunday', '08:00–18:30','en', '0'],
 
             // je rentre les donnée pour tous ses code langue
             // [de, bg, hr, da, es, et, fi, el, hu, ga, it, lv, lt, mt, nl, pl, pt, ro, sk, sl, sv, cs]
@@ -37,7 +37,7 @@ class HoraireFixtures extends Fixture
             ['Donnerstag', '07:00–19:30','de', '4'],
             ['Freitag', '07:00–19:30', 'de', '5'],
             ['Samstag', '07:00–19:30', 'de', '6'],
-            ['Sonntag', '08:00–18:30','de', '7'],
+            ['Sonntag', '08:00–18:30','de', '0'],
 
             ['понеделник', '07:00–19:30','bg', '1'],
             ['вторник', '07:00–19:30','bg', '2'],
@@ -45,7 +45,7 @@ class HoraireFixtures extends Fixture
             ['четвъртък', '07:00–19:30','bg', '4'],
             ['петък', '07:00–19:30', 'bg', '5'],
             ['събота', '07:00–19:30', 'bg', '6'],
-            ['неделя', '08:00–18:30','bg', '7'],
+            ['неделя', '08:00–18:30','bg', '0'],
 
             ['ponedjeljak', '07:00–19:30','hr', '1'],
             ['utorak', '07:00–19:30','hr', '2'],
@@ -53,7 +53,7 @@ class HoraireFixtures extends Fixture
             ['četvrtak', '07:00–19:30','hr', '4'],
             ['petak', '07:00–19:30', 'hr', '5'],
             ['subota', '07:00–19:30', 'hr', '6'],
-            ['nedjelja', '08:00–18:30','hr', '7'],
+            ['nedjelja', '08:00–18:30','hr', '0'],
 
             ['mandag', '07:00–19:30','da', '1'],
             ['tirsdag', '07:00–19:30','da', '2'],
@@ -61,7 +61,7 @@ class HoraireFixtures extends Fixture
             ['torsdag', '07:00–19:30','da', '4'],
             ['fredag', '07:00–19:30', 'da', '5'],
             ['lørdag', '07:00–19:30', 'da', '6'],
-            ['søndag', '08:00–18:30','da', '7'],
+            ['søndag', '08:00–18:30','da', '0'],
 
             ['lunes', '07:00–19:30','es', '1'],
             ['martes', '07:00–19:30','es', '2'],
@@ -69,7 +69,7 @@ class HoraireFixtures extends Fixture
             ['jueves', '07:00–19:30','es', '4'],
             ['viernes', '07:00–19:30', 'es', '5'],
             ['sábado', '07:00–19:30', 'es', '6'],
-            ['domingo', '08:00–18:30','es', '7'],
+            ['domingo', '08:00–18:30','es', '0'],
 
             ['esmaspäev', '07:00–19:30','et', '1'],
             ['teisipäev', '07:00–19:30','et', '2'],
@@ -77,7 +77,7 @@ class HoraireFixtures extends Fixture
             ['neljapäev', '07:00–19:30','et', '4'],
             ['reede', '07:00–19:30', 'et', '5'],
             ['laupäev', '07:00–19:30', 'et', '6'],
-            ['pühapäev', '08:00–18:30','et', '7'],
+            ['pühapäev', '08:00–18:30','et', '0'],
 
             ['maanantai', '07:00–19:30','fi', '1'],
             ['tiistai', '07:00–19:30','fi', '2'],
@@ -85,7 +85,7 @@ class HoraireFixtures extends Fixture
             ['torstai', '07:00–19:30','fi', '4'],
             ['perjantai', '07:00–19:30', 'fi', '5'],
             ['lauantai', '07:00–19:30', 'fi', '6'],
-            ['sunnuntai', '08:00–18:30','fi', '7'],
+            ['sunnuntai', '08:00–18:30','fi', '0'],
 
             ['Δευτέρα', '07:00–19:30','el', '1'],
             ['Τρίτη', '07:00–19:30','el', '2'],
@@ -93,7 +93,7 @@ class HoraireFixtures extends Fixture
             ['Πέμπτη', '07:00–19:30','el', '4'],
             ['Παρασκευή', '07:00–19:30', 'el', '5'],
             ['Σάββατο', '07:00–19:30', 'el', '6'],
-            ['Κυριακή', '08:00–18:30','el', '7'],
+            ['Κυριακή', '08:00–18:30','el', '0'],
 
             ['hétfő', '07:00–19:30','hu', '1'],
             ['kedd', '07:00–19:30','hu', '2'],
@@ -101,7 +101,7 @@ class HoraireFixtures extends Fixture
             ['csütörtök', '07:00–19:30','hu', '4'],
             ['péntek', '07:00–19:30', 'hu', '5'],
             ['szombat', '07:00–19:30', 'hu', '6'],
-            ['vasárnap', '08:00–18:30','hu', '7'],
+            ['vasárnap', '08:00–18:30','hu', '0'],
 
             ['Dé Luain', '07:00–19:30','ga', '1'],
             ['Dé Máirt', '07:00–19:30','ga', '2'],
@@ -109,7 +109,7 @@ class HoraireFixtures extends Fixture
             ['Déardaoin', '07:00–19:30','ga', '4'],
             ['Dé hAoine', '07:00–19:30', 'ga', '5'],
             ['Dé Sathairn', '07:00–19:30', 'ga', '6'],
-            ['Dé Domhnaigh', '08:00–18:30','ga', '7'],
+            ['Dé Domhnaigh', '08:00–18:30','ga', '0'],
 
             ['lunedì', '07:00–19:30','it', '1'],
             ['martedì', '07:00–19:30','it', '2'],
@@ -117,7 +117,7 @@ class HoraireFixtures extends Fixture
             ['giovedì', '07:00–19:30','it', '4'],
             ['venerdì', '07:00–19:30', 'it', '5'],
             ['sabato', '07:00–19:30', 'it', '6'],
-            ['domenica', '08:00–18:30','it', '7'],
+            ['domenica', '08:00–18:30','it', '0'],
 
             ['pirmdiena', '07:00–19:30','lv', '1'],
             ['otrdiena', '07:00–19:30','lv', '2'],
@@ -125,7 +125,7 @@ class HoraireFixtures extends Fixture
             ['ceturtdiena', '07:00–19:30','lv', '4'],
             ['piektdiena', '07:00–19:30', 'lv', '5'],
             ['sestdiena', '07:00–19:30', 'lv', '6'],
-            ['svētdiena', '08:00–18:30','lv', '7'],
+            ['svētdiena', '08:00–18:30','lv', '0'],
 
             ['pirmadienis', '07:00–19:30','lt', '1'],
             ['antradienis', '07:00–19:30','lt', '2'],
@@ -133,7 +133,7 @@ class HoraireFixtures extends Fixture
             ['ketvirtadienis', '07:00–19:30','lt', '4'],
             ['penktadienis', '07:00–19:30', 'lt', '5'],
             ['šeštadienis', '07:00–19:30', 'lt', '6'],
-            ['sekmadienis', '08:00–18:30','lt', '7'],
+            ['sekmadienis', '08:00–18:30','lt', '0'],
 
             ['It-Tnejn', '07:00–19:30','mt', '1'],
             ['It-Tlieta', '07:00–19:30','mt', '2'],
@@ -141,7 +141,7 @@ class HoraireFixtures extends Fixture
             ['Il-Ħamis', '07:00-19:30', 'mt', '4'],
             ['Il-Ġimgħa', '07:00–19:30', 'mt', '5'],
             ['Is-Sibt', '07:00–19:30', 'mt', '6'],
-            ['Il-Ħadd', '08:00–18:30','mt', '7'],
+            ['Il-Ħadd', '08:00–18:30','mt', '0'],
 
             ['maandag', '07:00–19:30','nl', '1'],
             ['dinsdag', '07:00–19:30','nl', '2'],
@@ -149,7 +149,7 @@ class HoraireFixtures extends Fixture
             ['donderdag', '07:00–19:30','nl', '4'],
             ['vrijdag', '07:00–19:30', 'nl', '5'],
             ['zaterdag', '07:00–19:30', 'nl', '6'],
-            ['zondag', '08:00–18:30','nl', '7'],
+            ['zondag', '08:00–18:30','nl', '0'],
 
             ['poniedziałek', '07:00–19:30','pl', '1'],
             ['wtorek', '07:00–19:30','pl', '2'],
@@ -157,7 +157,7 @@ class HoraireFixtures extends Fixture
             ['czwartek', '07:00–19:30','pl', '4'],
             ['piątek', '07:00–19:30', 'pl', '5'],
             ['sobota', '07:00–19:30', 'pl', '6'],
-            ['niedziela', '08:00–18:30','pl', '7'],
+            ['niedziela', '08:00–18:30','pl', '0'],
 
             ['segunda-feira', '07:00–19:30','pt', '1'],
             ['terça-feira', '07:00–19:30','pt', '2'],
@@ -165,7 +165,7 @@ class HoraireFixtures extends Fixture
             ['quinta-feira', '07:00–19:30','pt', '4'],
             ['sexta-feira', '07:00–19:30', 'pt', '5'],
             ['sábado', '07:00–19:30', 'pt', '6'],
-            ['domingo', '08:00–18:30','pt', '7'],
+            ['domingo', '08:00–18:30','pt', '0'],
 
             ['luni', '07:00–19:30','ro', '1'],
             ['marți', '07:00–19:30','ro', '2'],
@@ -173,7 +173,7 @@ class HoraireFixtures extends Fixture
             ['joi', '07:00–19:30','ro', '4'],
             ['vineri', '07:00–19:30', 'ro', '5'],
             ['sâmbătă', '07:00–19:30', 'ro', '6'],
-            ['duminică', '08:00–18:30','ro', '7'],
+            ['duminică', '08:00–18:30','ro', '0'],
 
             ['pondelok', '07:00–19:30','sk', '1'],
             ['utorok', '07:00–19:30','sk', '2'],
@@ -181,7 +181,7 @@ class HoraireFixtures extends Fixture
             ['štvrtok', '07:00–19:30','sk', '4'],
             ['piatok', '07:00–19:30', 'sk', '5'],
             ['sobota', '07:00–19:30', 'sk', '6'],
-            ['nedeľa', '08:00–18:30','sk', '7'],
+            ['nedeľa', '08:00–18:30','sk', '0'],
 
             ['ponedeljek', '07:00–19:30','sl', '1'],
             ['torek', '07:00–19:30','sl', '2'],
@@ -189,7 +189,7 @@ class HoraireFixtures extends Fixture
             ['četrtek', '07:00–19:30','sl', '4'],
             ['petek', '07:00–19:30', 'sl', '5'],
             ['sobota', '07:00–19:30', 'sl', '6'],
-            ['nedelja', '08:00–18:30','sl', '7'],
+            ['nedelja', '08:00–18:30','sl', '0'],
 
             ['måndag', '07:00–19:30','sv', '1'],
             ['tisdag', '07:00–19:30','sv', '2'],
@@ -197,7 +197,7 @@ class HoraireFixtures extends Fixture
             ['torsdag', '07:00–19:30','sv', '4'],
             ['fredag', '07:00–19:30', 'sv', '5'],
             ['lördag', '07:00–19:30', 'sv', '6'],
-            ['söndag', '08:00–18:30','sv', '7'],
+            ['söndag', '08:00–18:30','sv', '0'],
 
             ['pondělí', '07:00–19:30','cs', '1'],
             ['úterý', '07:00–19:30','cs', '2'],
@@ -205,7 +205,7 @@ class HoraireFixtures extends Fixture
             ['čtvrtek', '07:00–19:30','cs', '4'],
             ['pátek', '07:00–19:30', 'cs', '5'],
             ['sobota', '07:00–19:30', 'cs', '6'],
-            ['neděle', '08:00–18:30','cs', '7'],
+            ['neděle', '08:00–18:30','cs', '0'],
 
             // aussi en ru et ua
             ['понедельник', '07:00–19:30','ru', '1'],
@@ -214,7 +214,7 @@ class HoraireFixtures extends Fixture
             ['четверг', '07:00–19:30','ru', '4'],
             ['пятница', '07:00–19:30', 'ru', '5'],
             ['суббота', '07:00–19:30', 'ru', '6'],
-            ['воскресенье', '08:00–18:30','ru', '7'],
+            ['воскресенье', '08:00–18:30','ru', '0'],
 
             ['понеділок', '07:00–19:30','ua', '1'],
             ['вівторок', '07:00–19:30','ua', '2'],
@@ -222,7 +222,7 @@ class HoraireFixtures extends Fixture
             ['четвер', '07:00–19:30','ua', '4'],
             ['пʼятниця', '07:00–19:30', 'ua', '5'],
             ['субота', '07:00–19:30', 'ua', '6'],
-            ['неділя', '08:00–18:30','ua', '7'],
+            ['неділя', '08:00–18:30','ua', '0'],
 
         ];
 

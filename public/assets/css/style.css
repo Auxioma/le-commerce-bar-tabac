@@ -3179,7 +3179,7 @@ textarea.form-control.is-invalid {
 }
 
 /*------------------- 8.5. Popup Search  -------------------*/
-.popup-search-box {
+.popup-search-box, .popup-search-box-mentionLegal {
   position: fixed;
   top: 0;
   left: 50%;
@@ -3194,7 +3194,7 @@ textarea.form-control.is-invalid {
   transform: translateX(-50%);
   transition: all ease 0.4s;
 }
-.popup-search-box button.searchClose {
+.popup-search-box button.searchClose , .popup-search-box-mentionLegal button.searchClose {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -3272,7 +3272,7 @@ textarea.form-control.is-invalid {
 .popup-search-box form button:hover {
   transform: scale(1.1);
 }*/
-.popup-search-box.show {
+.popup-search-box.show, .popup-search-box-mentionLegal.show {
   opacity: 1;
   visibility: visible;
   width: 100.1%;

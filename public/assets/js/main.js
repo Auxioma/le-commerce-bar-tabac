@@ -175,6 +175,32 @@
   };
   popupSarchBox('.popup-search-box', '.searchBoxTggler', '.searchClose', 'show');
 
+  /*---------- 08. Search Box Popup ----------*/
+  function utils($searchBox, $searchOpen, $searchCls, $toggleCls) {
+    $($searchOpen).on('click', function (e) {
+      e.preventDefault();
+      $($searchBox).addClass($toggleCls);
+      $('body').addClass('overflow-hidden');
+    });
+    $($searchBox).on('click', function (e) {
+      e.stopPropagation();
+      $($searchBox).removeClass($toggleCls);
+      $('body').removeClass('overflow-hidden');
+    });
+    $($searchBox).find('form').on('click', function (e) {
+      e.stopPropagation();
+      $($searchBox).addClass($toggleCls);
+      $('body').addClass('overflow-hidden');
+    });
+    $($searchCls).on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $($searchBox).removeClass($toggleCls);
+      $('body').removeClass('overflow-hidden');
+    });
+  };
+  utils('.popup-search-box-mentionLegal', '.mentionLegal', '.searchClose', 'show');
+
 
 
   /*----------- 09. Counter Up Active ----------*/
