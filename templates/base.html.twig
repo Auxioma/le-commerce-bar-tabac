@@ -43,7 +43,9 @@
         <meta property="og:title"              content="{% trans %}Bars tabac à FORGES-LES-EAUX{% endtrans %}" />
         <meta property="og:description"        content="{% trans %}Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.Le service impeccable que nous offrons est au cœur de notre réputation. Notre personnel attentionné et professionnel vous réserve un accueil chaleureux et discret, veillant à ce que votre visite soit exceptionnelle de bout en bout. Chaque sourire, chaque interaction, contribue à faire de votre temps passé dans notre bar une expérience inoubliable.{% endtrans %}" />
         <meta property="og:image"              content="https://lecommercetabac.com/assets/img/hero/Slider-1.png" />
-
+		{% for local in locales %}{% if local == app.request.locale %}<meta http-equiv="content-language" content="{{ local }}-{{ local | upper}} " />{% endif %}
+		{% if local != 'fr' %}<link rel="alternate" hreflang="{{ local }}" href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': local})) }}" />{% endif %}
+		{% endfor %}
 
     </head>
     <body>
@@ -51,8 +53,6 @@
         <!--[if lte IE 9]>
     	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
-
 
         {% block body %}{% endblock %}
         
