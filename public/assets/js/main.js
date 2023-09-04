@@ -291,7 +291,7 @@
 
 
 
-  /*---------- 12. Date & Time Picker ----------*/
+  /*---------- 12. Date & Time Picker ----------
   // Time And Date Picker
   $('.dateTime-pick').datetimepicker({
     timepicker: true,
@@ -317,7 +317,7 @@
     hours12: false,
     step: 10
   });
-
+*/
 
 
   /*----------- 13. Magnific Popup ----------*/
