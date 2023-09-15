@@ -80,21 +80,8 @@ class HomePageController extends AbstractController
         if ($formSms->isSubmitted() && $formSms->isValid()) {
             // je vais formater le numéro de téléphone pour qu'il soit au format E164
             $numero = $formSms->get('telephone')->getData();
-            $phoneUtil = \libphonenumber\PhoneNumberUtil::getInstance();
-            try {
-                $swissNumberProto = $phoneUtil->parse($numero, "FR");
-                $isValid = $phoneUtil->isValidNumber($swissNumberProto);
-                if (!$isValid) {
-                    $this->addFlash('danger', 'Le numéro de téléphone n\'est pas valide');
-                    return $this->redirectToRoute('app_home_page');
-                } else {
-                    $numero = $phoneUtil->format($swissNumberProto, \libphonenumber\PhoneNumberFormat::E164);
-                    $SMS->setTelephone($numero);
-                }
-            } catch (\libphonenumber\NumberParseException $e) {
-                var_dump($e);
-            }
-
+            $SMS->setTelephone($numero);
+            
             $this->entityManager->beginTransaction();
             try {
                 $this->entityManager->persist($SMS);
