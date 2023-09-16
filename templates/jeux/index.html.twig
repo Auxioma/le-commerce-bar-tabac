@@ -162,7 +162,8 @@
                 return data[i].label;
             });
 
-        container.on("click", spin);
+            container.on("click", spin);
+            
 
 
         function spin(d){
@@ -266,6 +267,13 @@
                         message.innerHTML = "Désolé vous n'avez pas gagné";
                         document.getElementById("question").appendChild(message);
 
+                        // creer un cookie pour ne pas pouvoir rejouer pendant 24h
+                        var date = new Date();
+                        date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
+                        var expires = "expires=" + date.toGMTString();
+                        document.cookie = expires + "; path=/";
+                        // refrech la page
+                        setTimeout(function(){location.reload()}, 3000);
                     }
 
               
