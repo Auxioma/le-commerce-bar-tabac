@@ -3,39 +3,121 @@
 {% block title %}Hello JeuxController!{% endblock %}
 
 {% block body %}
-    <div id="chart"></div>
-    <div id="question"><p></p></div>
+	<div class="breadcumb-wrapper breadcumb-layout1 background-image link-inherit  mb-30" data-vs-img="assets/img/breadcumb/breadcumb-bg-1-1.jpg" data-overlay="black" data-opacity="6">
+		<div class="container z-index-common">
+			<div class="breadcumb-content text-center pt-65 pt-lg-140 pb-95 pb-lg-175">
+				<h1 class="breadcumb-title sec-title1 text-white my-0">Gagnez une Boissons</h1>
+				<ul class="breadcumb-menu-style1 bg-white">
+					<li>
+						<a href="{{ path('app_home_page') }}">
+							<i class="fal fa-home text-theme"></i>Accueil</a>
+					</li>
+					<li class="active">Gagnez une Boissons</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="login-wrapper  py-60 py-lg-150">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 ">
+                    <div id="chart"></div>
+                    <div id="question"><p></p></div>
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+    <div style="clear:both"></div>
+    	<div class="background-image" data-vs-img="assets/img/footer/footer-bg-2-1.jpg" data-overlay="black" data-opacity="8">
+		<footer class="footer-wrapper footer-layout1 dark-footer ">
+			<div class="footer-widget-wrapper border-top footer-widget-layout1 pt-40 pt-lg-195 pt-xl-210 pb-10 pb-lg-70 z-index-common">
+				<div class="container ">
+					<div class="row">
+						<div class="col-lg-6 col-xl-4">
+							<div class="widget pt-0">
+								<div class="vs-widget-about">
+									<div class="widget-about-logo mb-20 mb-lg-25">
+										<a href="{{ path('app_home_page') }}">
+											<img src="{{ asset('assets/img/logo-blanc.png') }}" alt="logo">
+										</a>
+									</div>
+									<p class="widget-about-text mb-20">
+										{% trans %}Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !{% endtrans %}
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-5 col-xl-5 offset-xl-3">
+							<div class="widget  ">
+								<h3 class="widget_title">Adresse</h3>
+								<div class="vs-widget-about">
+									<p class="contact-info mb-15">
+										<i class="fal fa-map-marker-alt"></i>3 Rue du Mal Leclerc, 76440 Forges-les-Eaux</p>
+									<p class="contact-info mb-15">
+										<i class="fal fa-fax"></i>
+										<a href="tel:+65965252561">+33 (0)2 35 90 50 16</a>
+									</p>
+									<p class="contact-info mb-15">
+										<i class="fal fa-fax"></i>
+										<a href="" class="mentionLegal">Mention Légal</a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright text-center bg-black py-3 link-inherit z-index-common">
+				<div class="container">
+					<p class="text-white mb-0">Copyright
+						{{ 'now' | date('Y') }}</p>
+				</div>
+				<div class="fluid-container">
+					<p class="text-white mb-0">
+
+						{% for locale in locales %}
+							{% if locale == 'fr' %}
+								<a class="text-decoration-none mx-3" href="{{ path('app_home_page') }}">
+									<img src="{{ asset('assets/img/flag/fr.png') }}" alt="{{locale}}" height="20" style="height:20px;"/>
+								</a>
+							{% else %}
+								<a class="text-decoration-none mx-3" href="{{ path('app_home_page', {'_locale': locale} ) }}">
+									<img src="{{ asset('assets/img/flag/' ~ locale ~ '.png') }}" alt="{{locale}}" height="20" style="height:20px;"/>
+								</a>
+							{% endif %}
+						{% endfor %}
+
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<a href="#" class="scrollToTop icon-btn bg-theme border-before-theme">
+		<i class="far fa-angle-up"></i>
+	</a>
 {% endblock %}
 {% block javascripts %}
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
-var padding = {top:0, right:0, bottom:0, left:0},
-            w = 500 - padding.left - padding.right,
-            h = 500 - padding.top  - padding.bottom,
-            r = Math.min(w, h)/2,
-            rotation = 0,
-            oldrotation = 0,
-            picked = 100000,
-            oldpick = [],
-            color = d3.scale.category20();//category20c()
-            //randomNumbers = getRandomNumbers();
+    var padding = {top:0, right:0, bottom:0, left:0},
+        w = 500 - padding.left - padding.right,
+        h = 500 - padding.top  - padding.bottom,
+        r = Math.min(w, h)/2,
+        rotation = 0,
+        oldrotation = 0,
+        picked = 100000,
+        oldpick = [],
+        color = d3.scale.category20();//category20c()
+       //randomNumbers = getRandomNumbers();
 
-        //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
-
-        var data = [                 
-            {"label":"1 scooter", "value":1, "question":"Bravo ! Vous avez gagné un super Scooter !"},//semi-colon
-            {"label":"Un voyage à Cuba", "value":2, "question":"Ouai bravo. C'est top ! "},//semi-colon
-            {"label":"Perdu !", "value":3, "question":"Mince ! Vous avez perdu. :()"},//semi-colon
-            {"label":"1 ebook \"Les amis de Tron\"", "value":4, "question":"Ouai ! Vous pouvez consulter votre ebook ici : "},//semi-colon
-            {"label":"Mince !", "value":5, "question":"Vous avez perdu. :("},//semi-colon
-            {"label":"1 playstation 4", "value":6, "question":"Quelle chance ! Votre email sera  peut-être tiré au sort."},//semi-colon
-            {"label":"1 porte-clé", "value":7, "question":"Il est mignon n'est-ce pas ?"},//semi-colon
-            {"label":"Zut !", "value":8, "question":"Bon bah c'est raté :()"},//semi-colon 
-            {"label":"1 cours de cuisine", "value":9, "question":"Devenez un vrai chef en bénéficiant d'un cours gratuit de cuisine traditionnelle !"},//semi-colon  
-            {"label":"Rien", "value":10, "question":"Désolé, c'est raté :()"},//semi-colon
-            {"label":"Oups", "value":11, "question":"Aïe, c'est raté !"},//semi-colon
-            {"label":"1 weekend en amoureux", "value":12, "question":"Vous serez peut-être tiré au sort !"},//semi-colon
-            {"label":"1 calendrier de l'Avent", "value":13, "question":"Miam miam ils sont bons les chocolats :)"} 
+        var data = [  
+            {% for jeux in jeux %}               
+            {"label":"{{ jeux.Label }}", "value":{{ jeux.Value }}, "question":"{{ jeux.Question }}"},
+            {% endfor %}
         ];
 
         var svg = d3.select('#chart')
@@ -88,9 +170,9 @@ var padding = {top:0, right:0, bottom:0, left:0},
             container.on("click", null);
 
             //all slices have been seen, all done
-            console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
+            // console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
             if(oldpick.length == data.length){
-                console.log("done");
+                //console.log("done");
                 container.on("click", null);
                 return;
             }
@@ -126,14 +208,68 @@ var padding = {top:0, right:0, bottom:0, left:0},
                         .attr("fill", "purple");*/
  
                     //populate question
-                    d3.select("#question p")
-                        .text(data[picked].question);
+                    //d3.select("#question p")
+                    //    .text(data[picked].question);
 
                     oldrotation = rotation;
                 
                     container.on("click", spin);
+
+                    // je vais céer une variable pour stocker la valeur de la case gagnante
+                    var valeurCaseGagnante = data[picked].value;
+                    // si la valeur de la case gagnante est égale à 1 j'affiche un formulaire avec la nom, prénom et numéro de téléphone
+                    if(valeurCaseGagnante == 0){
+                        
+                        // je vais créer un formulaire
+                        var form = document.createElement("form");
+                        form.setAttribute("method", "post");
+                        form.setAttribute("action", "{{ path('app_jeux') }}");
+
+                        // je vais créer un input pour le nom
+                        var inputNom = document.createElement("input");
+                        inputNom.setAttribute("type", "text");
+                        inputNom.setAttribute("name", "nom");
+
+                        // je vais créer un input pour le prénom
+                        var inputPrenom = document.createElement("input");
+                        inputPrenom.setAttribute("type", "text");
+                        inputPrenom.setAttribute("name", "prenom");
+
+                        // je vais créer un input pour le numéro de téléphone
+                        var inputTelephone = document.createElement("input");
+                        inputTelephone.setAttribute("type", "text");
+                        inputTelephone.setAttribute("name", "telephone");
+
+                        // je vais créer un input pour le submit
+                        var inputSubmit = document.createElement("input");
+                        inputSubmit.setAttribute("type", "submit");
+
+                        // je vais créer un input pour le token
+                        var inputToken = document.createElement("input");
+                        inputToken.setAttribute("type", "hidden");
+                        inputToken.setAttribute("name", "token");
+                        inputToken.setAttribute("value", "{{ csrf_token('jeux') }}");
+
+                        // j'enregistre les éléments dans le formulaire
+                        form.appendChild(inputNom);
+                        form.appendChild(inputPrenom);
+                        form.appendChild(inputTelephone);
+                        form.appendChild(inputSubmit);
+                        form.appendChild(inputToken);
+
+                        // j'affiche le formulaire
+                        document.getElementById("question").appendChild(form);
+
+                    }else{
+                        // si la valeur de la case gagnante est égale à 0 j'affiche un message
+                        var message = document.createElement("p");
+                        message.innerHTML = "Désolé vous n'avez pas gagné";
+                        document.getElementById("question").appendChild(message);
+
+                    }
+
               
-                    alert("Case " + data[picked].value + " sélectionnée.");
+                    
                 });
         }
 
@@ -189,9 +325,6 @@ var padding = {top:0, right:0, bottom:0, left:0},
 
 {% block stylesheets %}
 <style>
-body {
-  background: #CCEAF1;
-}
 
 text{
   font-family:  Arial, sans-serif;
@@ -202,7 +335,7 @@ text{
 }
 
 #chart{
-  position:absolute;
+  position:relative;
   width:500px;
   height:500px;
   top:0; 

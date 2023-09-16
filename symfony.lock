@@ -82,6 +82,15 @@
             "./tests/bootstrap.php"
         ]
     },
+    "symfony/all-my-sms-notifier": {
+        "version": "6.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "78d88926fedfb0d484f8ed63c6f041d2db5c007c"
+        }
+    },
     "symfony/apache-pack": {
         "version": "1.0",
         "recipe": {
