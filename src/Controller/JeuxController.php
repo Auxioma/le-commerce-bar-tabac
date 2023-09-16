@@ -37,7 +37,7 @@ class JeuxController extends AbstractController
                 // Add the custom options to the sms message and send the message
                 $sms->options($options);
                 
-                $texter->send($sms);
+                // $texter->send($sms);
 
             }
            
