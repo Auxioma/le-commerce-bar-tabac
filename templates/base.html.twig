@@ -70,6 +70,8 @@
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/theme-color1.css') }}">
 
+        {% block stylesheets %}{% endblock %}
+
         <meta property="og:url"                content="https://lecommercetabac.com" />
         <meta property="og:type"               content="article" />
         <meta property="og:title"              content="{% trans %}Bars tabac à FORGES-LES-EAUX{% endtrans %}" />
@@ -104,9 +106,10 @@
         <script src="{{ asset('assets/js/vsmenu.min.js') }}"></script>
         {#<script src="{{ asset('assets/js/ajax-mail.js') }}"></script>#}
         <script src="{{ asset('assets/js/main.js') }}"></script>
+
+        {% block javascripts %}{% endblock %}
         
         <!-- Google tag (gtag.js) -->
-        
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKWQ1PVYMZ"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
