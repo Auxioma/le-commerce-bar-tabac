@@ -17,10 +17,10 @@
 					<nav class="main-menu menu-sticky1 onepage-nav d-none d-lg-block link-inherit mobile-menu-active">
 						<ul>
 							<li><a href="{{path('app_home_page')}}">{% trans %}Accueil{% endtrans %}</a></li>
-							<li><a href="#about">{% trans %}Le bar{% endtrans %}</a></li>
-							<li><a href="#promo">{% trans %}nos offres{% endtrans %}</a></li>
-							<li><a href="#avisclt">{% trans %}Temoiniages{% endtrans %}</a></li>
-							<li><a href="#contact">{% trans %}Contact{% endtrans %}</a></li>
+							<li><a href="{{ path('app_home_page') }}#about">{% trans %}Le bar{% endtrans %}</a></li>
+							<li><a href="{{ path('app_home_page') }}#promo">{% trans %}nos offres{% endtrans %}</a></li>
+							<li><a href="{{ path('app_home_page') }}#avisclt">{% trans %}Temoiniages{% endtrans %}</a></li>
+							<li><a href="{{ path('app_home_page') }}#contact">{% trans %}Contact{% endtrans %}</a></li>
 						</ul>
 					</nav>
 					<button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none">
