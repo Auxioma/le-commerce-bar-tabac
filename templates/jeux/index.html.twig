@@ -155,8 +155,8 @@
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
     var padding = {top:0, right:0, bottom:0, left:0},
-        w = 500 - padding.left - padding.right,
-        h = 500 - padding.top  - padding.bottom,
+        w = 365 - padding.left - padding.right,
+        h = 365 - padding.top  - padding.bottom,
         r = Math.min(w, h)/2,
         rotation = 0,
         oldrotation = 0,
@@ -412,12 +412,13 @@ text{
 }
 
 #chart{
-  position:relative;
-  width:500px;
-  height:500px;
-  top:0; 
-  left:0;
-  z-index: 1;
+    position:relative;
+    max-width:365px;
+    max-height:365px;
+    top:0; 
+    left:0;
+    z-index: 1;
+    margin: 0 auto;
 }
 
 #chart::before
