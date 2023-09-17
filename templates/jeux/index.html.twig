@@ -1,6 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello JeuxController!{% endblock %}
+{% block title %}
+	{% trans %}Bar tabac à proximité de chez vous à Forges-les-Eaux (76440), ouvert le dimanche toute la journée{% endtrans %}
+{% endblock %}
+{% block description %}
+	{% trans %} 
+        Bar proposant jeux de la Française des jeux (loto et grattage), tabac et accessoires, presse. Paiement de proximité. Boissons à emporter.
+    {% endtrans %}
+{% endblock %}
+{% block kw %}
+	{% trans %}bar, tabac, jeux, divertissement, café, boissons, billard, baby-foot, fléchettes, jeux de société, détente, loisirs, soirées, animations, musique, cocktails, bières, alcools{% endtrans %}
+{% endblock %}
 
 {% block body %}
 	<div class="py-1 py-sm-2 py-lg-1">
