@@ -16,7 +16,21 @@ class JeuxFixtures extends Fixture
         $jeux->setQuestion("Vous avez gagné un cafée !");
         $manager->persist($jeux);
 
-        for ($i = 2; $i <= 13; $i++) {
+        $jeux = new Jeux();
+        $jeux->setLabel("Gagné");
+        $jeux->setValue('1');
+        $jeux->setQuestion("Vous avez gagné un cafée !");
+        $manager->persist($jeux);
+
+        $jeux = new Jeux();
+        $jeux->setLabel("Gagné");
+        $jeux->setValue('1');
+        $jeux->setQuestion("Vous avez gagné un cafée !");
+        $manager->persist($jeux);
+
+
+
+        for ($i = 4; $i <= 13; $i++) {
             $jeux = new Jeux();
             $jeux->setLabel("Perdu");
             $jeux->setValue('0');

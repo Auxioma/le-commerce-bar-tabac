@@ -25,7 +25,7 @@ class SmsCrudController extends AbstractCrudController
             ->setCssClass('btn btn-info');
 
         return $actions
-        ->add(Crud::PAGE_DETAIL, $duplicate)
+        ->add(Crud::PAGE_INDEX, $duplicate)
         ->disable('new', 'delete', 'edit')
         ->setPermission(Action::NEW, 'ROLE_ADMIN')
         ;

@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Sms;
 use App\Controller\Admin\SmsCrudController;
+use App\Entity\Jeux;
 use App\Entity\Photo;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -33,5 +34,6 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Liste des numéro', 'fas fa-phone', Sms::class);
         yield MenuItem::linkToCrud('Gallerie Image', 'fas fa-phone', Photo::class);
+        yield MenuItem::linkToCrud('Jeux', 'fas fa-phone', Jeux::class);
     }
 }

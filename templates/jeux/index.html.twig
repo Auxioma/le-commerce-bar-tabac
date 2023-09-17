@@ -3,6 +3,44 @@
 {% block title %}Hello JeuxController!{% endblock %}
 
 {% block body %}
+	<div class="py-1 py-sm-2 py-lg-1">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-5 col-md-3">
+					<div class="logo">
+						<a href="{{ path('app_home_page') }}">
+							<img src="{{ asset('assets/img/logo-noir.png') }}" alt="{% trans %}Bar tabac{% endtrans %}">
+						</a>
+					</div>
+				</div>
+				<div class="col-7 col-md-9 text-right">
+					<nav class="main-menu menu-sticky1 onepage-nav d-none d-lg-block link-inherit mobile-menu-active">
+						<ul>
+							<li><a href="{{path('app_home_page')}}">{% trans %}Accueil{% endtrans %}</a></li>
+							<li><a href="#about">{% trans %}Le bar{% endtrans %}</a></li>
+							<li><a href="#promo">{% trans %}nos offres{% endtrans %}</a></li>
+							<li><a href="#avisclt">{% trans %}Temoiniages{% endtrans %}</a></li>
+							<li><a href="#contact">{% trans %}Contact{% endtrans %}</a></li>
+						</ul>
+					</nav>
+					<button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none">
+						<i class="far fa-bars"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="vs-menu-wrapper">
+		<div class="vs-menu-area">
+			<button class="vs-menu-toggle text-theme">
+				<i class="fal fa-times"></i>
+			</button>
+			<div class="mobile-logo">
+				<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-blanc.png') }}" alt="{% trans %}Café{% endtrans %}"></a>
+			</div>
+			<div class="vs-mobile-menu link-inherit"></div>
+		</div>
+	</div>
 	<div class="breadcumb-wrapper breadcumb-layout1 background-image link-inherit  mb-30" data-vs-img="assets/img/breadcumb/breadcumb-bg-1-1.jpg" data-overlay="black" data-opacity="6">
 		<div class="container z-index-common">
 			<div class="breadcumb-content text-center pt-65 pt-lg-140 pb-95 pb-lg-175">
@@ -19,12 +57,15 @@
 	</div>
 	<div class="login-wrapper  py-60 py-lg-150">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6 ">
+			<div class="row">
+				<div class="col-12 col-lg-6 ">
                     <div id="chart"></div>
-                    <div id="question"><p></p></div>
                     
 				</div>
+                <div class="col-12 col-lg-6 ">
+                    <h2 class="sec-title1 text-font3">Tentez de gagné une <span class="text-theme">Boissons</span></h2>
+                    <div id="question"></div>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -203,78 +244,96 @@
                 .attrTween("transform", rotTween)
                 // Actions à lancer à l'arrêt de la roue
                 .each("end", function(){
-
-                    //mark question as seen
-                    /*d3.select(".slice:nth-child(" + (picked + 1) + ") path")
-                        .attr("fill", "purple");*/
- 
-                    //populate question
-                    //d3.select("#question p")
-                    //    .text(data[picked].question);
-
                     oldrotation = rotation;
                 
-                    container.on("click", spin);
+                    // Vérifiez si l'utilisateur a déjà cliqué aujourd'hui en utilisant un cookie ou un autre mécanisme de stockage local
+                    var dernierClic = new Date(localStorage.getItem('dernierClic'));
+                    var aujourdHui = new Date();
+                    aujourdHui.setHours(0, 0, 0, 0); // Réglez la date d'aujourd'hui à minuit
+
+                    if (dernierClic < aujourdHui) {
+                        container.on("click", spin);
+                    } else {
+                        // je vide le contenu de la div question
+                        document.getElementById("question").innerHTML = "";
+
+                        
+                        var message = document.createElement("p");
+                        message.innerHTML = "Vous avez déjà joué aujourd'hui";
+                        document.getElementById("question").appendChild(message);
+                        
+                    }
+
 
                     // je vais céer une variable pour stocker la valeur de la case gagnante
                     var valeurCaseGagnante = data[picked].value;
                     // si la valeur de la case gagnante est égale à 1 j'affiche un formulaire avec la nom, prénom et numéro de téléphone
                     if(valeurCaseGagnante == 1){
-                        
-                        // je vais créer un formulaire
-                        var form = document.createElement("form");
-                        form.setAttribute("method", "post");
-                        form.setAttribute("action", "{{ path('app_jeux') }}");
+                        if (dernierClic < aujourdHui) {
+                            // je vais créer un formulaire
+                            var form = document.createElement("form");
+                            form.setAttribute("method", "post");
+                            form.setAttribute("class", "appointment-form1 px-10 py-10 px-sm-30 py-sm-30 px-xl-80 py-xl-80 bg-white");
+                            form.setAttribute("action", "{{ path('app_jeux') }}");
 
-                        // je vais créer un input pour le nom
-                        var inputNom = document.createElement("input");
-                        inputNom.setAttribute("type", "text");
-                        inputNom.setAttribute("name", "nom");
+                            // je vais créer un input pour le nom
+                            var inputNom = document.createElement("input");
+                            inputNom.setAttribute("type", "text");
+                            inputNom.setAttribute("class", "form-control");
+                            inputNom.setAttribute("placeholder", "Entré votre nom");
+                            inputNom.setAttribute("name", "nom");
 
-                        // je vais créer un input pour le prénom
-                        var inputPrenom = document.createElement("input");
-                        inputPrenom.setAttribute("type", "text");
-                        inputPrenom.setAttribute("name", "prenom");
+                            // je vais créer un input pour le prénom
+                            var inputPrenom = document.createElement("input");
+                            inputPrenom.setAttribute("type", "text");
+                            inputPrenom.setAttribute("class", "form-control");
+                            inputPrenom.setAttribute("placeholder", "Entré votre prénom");
+                            inputPrenom.setAttribute("name", "prenom");
 
-                        // je vais créer un input pour le numéro de téléphone
-                        var inputTelephone = document.createElement("input");
-                        inputTelephone.setAttribute("type", "text");
-                        inputTelephone.setAttribute("name", "telephone");
+                            // je vais créer un input pour le numéro de téléphone
+                            var inputTelephone = document.createElement("input");
+                            inputTelephone.setAttribute("type", "text");
+                            inputTelephone.setAttribute("class", "form-control");
+                            inputTelephone.setAttribute("placeholder", "Entré votre numéro de téléphone");
+                            inputTelephone.setAttribute("name", "telephone");
 
-                        // je vais créer un input pour le submit
-                        var inputSubmit = document.createElement("input");
-                        inputSubmit.setAttribute("type", "submit");
+                            // je vais créer un input pour le submit
+                            var inputSubmit = document.createElement("button");
+                            inputSubmit.setAttribute("class", "vs-btn mask-style1 rounded-0 w-100");
+                            inputSubmit.setAttribute("type", "submit");
+                            inputSubmit.innerHTML = "Envoyer";
 
-                        // je vais créer un input pour le token
-                        var inputToken = document.createElement("input");
-                        inputToken.setAttribute("type", "hidden");
-                        inputToken.setAttribute("name", "token");
-                        inputToken.setAttribute("value", "{{ csrf_token('jeux') }}");
+                            // je vais créer un input pour le token
+                            var inputToken = document.createElement("input");
+                            inputToken.setAttribute("type", "hidden");
+                            inputToken.setAttribute("name", "token");
+                            inputToken.setAttribute("value", "{{ csrf_token('jeux') }}");
 
-                        // j'enregistre les éléments dans le formulaire
-                        form.appendChild(inputNom);
-                        form.appendChild(inputPrenom);
-                        form.appendChild(inputTelephone);
-                        form.appendChild(inputSubmit);
-                        form.appendChild(inputToken);
+                            // j'enregistre les éléments dans le formulaire
+                            form.appendChild(inputNom);
+                            form.appendChild(inputPrenom);
+                            form.appendChild(inputTelephone);
+                            form.appendChild(inputSubmit);
+                            form.appendChild(inputToken);
 
-                        // j'affiche le formulaire
-                        document.getElementById("question").appendChild(form);
+                            // j'affiche le formulaire
+                            document.getElementById("question").appendChild(form);
+                        }
 
                     }else{
-                        // si la valeur de la case gagnante est égale à 0 j'affiche un message
-                        var message = document.createElement("p");
-                        message.innerHTML = "Désolé vous n'avez pas gagné";
-                        document.getElementById("question").appendChild(message);
+                        if (dernierClic < aujourdHui) {
+                            // je vide le contenu de la div question
+                            document.getElementById("question").innerHTML = "";
 
-                        // creer un cookie pour ne pas pouvoir rejouer pendant 24h
-                        var date = new Date();
-                        date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
-                        var expires = "expires=" + date.toGMTString();
-                        document.cookie = expires + "; path=/";
-                        // refrech la page
-                        setTimeout(function(){location.reload()}, 3000);
+                            // je vais créer un paragraphe pour afficher la question
+                            var question = document.createElement("p");
+                            question.innerHTML = data[picked].question;
+                            document.getElementById("question").appendChild(question);
+                        }
+                        // Enregistrez la date du dernier clic
+                        localStorage.setItem('dernierClic', aujourdHui);
                     }
+
 
               
                     
@@ -371,11 +430,11 @@ text{
 }
 
 #question{
-  position: absolute;
+ /* position: absolute;
   width:300px;
   height:500px;
   top:0;
-  left:530px;
+  left:530px;*/
 }
 #question p{
   font-size: 26px;

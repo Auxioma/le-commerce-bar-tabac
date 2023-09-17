@@ -2,14 +2,15 @@
 
 namespace App\Controller;
 
+use DateTime;
 use App\Repository\JeuxRepository;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Notifier\TexterInterface;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Notifier\Message\SmsMessage;
 use Symfony\Component\Notifier\Bridge\AllMySms\AllMySmsOptions;
-use Symfony\Component\Notifier\TexterInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class JeuxController extends AbstractController
 {
@@ -21,23 +22,23 @@ class JeuxController extends AbstractController
             // je verifie si le token est valide
             if ($this->isCsrfTokenValid('jeux', $request->get('token'))) {
                  
-                $sms = new SmsMessage('+33766068003', 'My message');
+               // 
+                $nom = $request->get('nom');
+                $prenom = $request->get('prenom');
+                $telephone = $request->get('telephone');
 
-                $options = (new AllMySmsOptions())
-                    ->alerting(1)
-                    ->campaignName('API')
-                    ->cliMsgId('test_cli_msg_id')
-                    ->date('2023-05-23 23:47:25')
-                    ->simulate(1)
-                    ->uniqueIdentifier('unique_identifier')
-                    ->verbose(1)
-                    // ...
-                    ;
-                
-                // Add the custom options to the sms message and send the message
-                $sms->options($options);
-                
-                // $texter->send($sms);
+                // date + 24h
+                $date = new DateTime();
+                $valable = $date->add(new \DateInterval('PT24H'));
+                $valable = $valable->format('d-m-Y');
+
+                $Message = "Bravo $nom $prenom vous avez gagné un café sur présentation de ce message ! Offre valable jusqu'au $valable";
+
+                $sms = new SmsMessage('0686656358', $Message);
+
+                $texter->send($sms);
+
+                $this->addFlash('success', 'Un sms vous a été envoyé !');
 
             }
            
