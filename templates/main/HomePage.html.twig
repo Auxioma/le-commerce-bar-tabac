@@ -354,7 +354,7 @@
 					<div class="col-md-6 col-lg-4 col-xl-3">
 						<div class="vs-gallery image-scale-hover">
 							<div class="gallery-img">
-								<img src="{{ vich_uploader_asset(photo, 'imageFile') }}" class="w-100" alt="{{ photo.Alt }}" height="400" width="455">
+								<img src="{{ vich_uploader_asset(photo, 'imageFile') | imagine_filter('my_thumb') }}" class="w-100" alt="{{ photo.Alt }}" height="400" width="455">
 							</div>
 							<div class="gallery-content px-40 py-40" data-overlay="black" data-opacity="7">
 								<h3 class="gallery-title h4 mb-0 text-white">
