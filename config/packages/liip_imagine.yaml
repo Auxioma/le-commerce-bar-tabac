@@ -2,6 +2,10 @@
 liip_imagine:
     # valid drivers options include "gd" or "gmagick" or "imagick"
     driver: "gd"
+    
+    # Configure twig mode to lazy
+    twig:
+        mode: lazy
 
     # filter sets
     filter_sets:
