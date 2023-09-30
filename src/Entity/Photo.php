@@ -35,6 +35,9 @@ class Photo
     #[ORM\Column(nullable: true)]
     private ?int $imageSize = null;
 
+    #[ORM\ManyToOne(inversedBy: 'photos')]
+    private ?CategorieImage $Categorie = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -95,5 +98,17 @@ class Photo
     public function getImageSize(): ?int
     {
         return $this->imageSize;
+    }
+
+    public function getCategorie(): ?CategorieImage
+    {
+        return $this->Categorie;
+    }
+
+    public function setCategorie(?CategorieImage $Categorie): static
+    {
+        $this->Categorie = $Categorie;
+
+        return $this;
     }
 }

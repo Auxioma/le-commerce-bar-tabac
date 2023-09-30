@@ -64,7 +64,6 @@ class HomePageController extends AbstractController
         $WeekNumber = strftime('%w');
         $lang = $request->getLocale();
 
-
         // Création du formulaire de contact
         $contact = new Contact();
         $form = $this->createForm(ContactType::class, $contact);
