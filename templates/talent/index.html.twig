@@ -1,38 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello TalentController!
+{% block title %}
+	{% trans %}Détente et Convivialité au Cœur du bar tabac le commerce à Forges-les-Eaux - Découvrez l'Ambiance Chaleureuse et les Saveurs uniques !{% endtrans %}
+{% endblock %}
+{% block description %}
+	{% trans %}
+		Découvrez une expérience unique au sein du bar tabac le commerce, où convivialité rime avec détente. Profitez d'une atmosphère chaleureuse, de boissons raffinées et de moments inoubliables. Plongez dans l'essence de notre établissement, mêlant plaisir, rencontres et saveurs exquises. Rejoignez-nous pour des instants mémorables au cœur de Forges-les-Eaux.
+	{% endtrans %}
+{% endblock %}
+{% block kw %}
+	{% trans %}Bar, Tabac, Boissons, Tabac à rouler, Ambiance, Convivialité, Café, Terrasse, Jeux de société, Presse{% endtrans %}
 {% endblock %}
 
 {% block body %}
-	<div class="py-1 py-sm-2 py-lg-1">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-5 col-md-3">
-					<div class="logo">
-						<a href="{{ path('app_home_page') }}">
-							<img src="{{ asset('assets/img/logo-noir.png') }}" alt="{% trans %}Bar tabac{% endtrans %}">
-						</a>
-					</div>
-				</div>
-				<div class="col-7 col-md-9 text-right">
-					<nav class="main-menu menu-sticky1 onepage-nav d-none d-lg-block link-inherit mobile-menu-active">
-						<ul>
-							<li><a href="{{path('app_home_page')}}">{% trans %}Accueil{% endtrans %}</a></li>
-							<li><a href="{{ path('app_home_page') }}#about">{% trans %}Le bar{% endtrans %}</a></li>
-							<li><a href="{{ path('app_home_page') }}#promo">{% trans %}nos offres{% endtrans %}</a></li>
-							<li><a href="{{ path('app_home_page') }}#avisclt">{% trans %}Temoiniages{% endtrans %}</a></li>
-							<li><a href="{{ path('app_home_page') }}#contact">{% trans %}Contact{% endtrans %}</a></li>
-							<li><a href="{{path('app_jeux')}}">{% trans %}Gagnez une Boissons{% endtrans %}</a></li>
-							<li><a href="{{path('app_talent')}}">A la recherche de nouveau talent</a></li>
-						</ul>
-					</nav>
-					<button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none">
-						<i class="far fa-bars"></i>
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
+
+	{% include '_partials/menu.html.twig' %}
+
 	<div class="vs-menu-wrapper">
 		<div class="vs-menu-area">
 			<button class="vs-menu-toggle text-theme">

@@ -30,7 +30,7 @@
 							<li><a href="#avisclt">{% trans %}Temoiniages{% endtrans %}</a></li>
 							<li><a href="#contact">{% trans %}Contact{% endtrans %}</a></li>
 							<li><a href="{{path('app_jeux')}}">{% trans %}Gagnez une Boissons{% endtrans %}</a></li>
-							<li><a href="{{path('app_talent')}}">A la recherche de nouveau talent</a></li>
+							<li><a href="{{path('app_talent')}}">{% trans %}Partenariat{% endtrans %}</a></li>
 						</ul>
 					</nav>
 					<button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none">
@@ -69,7 +69,7 @@
 							<li><a href="#avisclt">{% trans %}Temoiniages{% endtrans %}</a></li>
 							<li><a href="#contact">{% trans %}Contact{% endtrans %}</a></li>
 							<li><a href="{{path('app_jeux')}}">{% trans %}Gagnez une Boissons{% endtrans %}</a></li>
-							<li><a href="{{path('app_talent')}}">A la recherche de nouveau talent</a></li>
+							<li><a href="{{path('app_talent')}}">{% trans %}Partenariat{% endtrans %}</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="vs-menu-toggle ml-auto d-block text-theme border-theme d-lg-none">
@@ -357,13 +357,13 @@
 					<div class="col-md-6 col-lg-4 col-xl-3">
 						<div class="vs-gallery image-scale-hover">
 							<div class="gallery-img">
-								<img src="{{ vich_uploader_asset(photo, 'imageFile') | imagine_filter('my_thumb') }}" class="w-100" alt="{{ photo.Alt }}" height="400" width="455">
+								<img src="{{ vich_uploader_asset(photo, 'imageFile') | imagine_filter('my_thumb') }}" class="w-100" alt="{{ photo.Nom }}" height="400" width="455">
 							</div>
 							<div class="gallery-content px-40 py-40" data-overlay="black" data-opacity="7">
 								<h3 class="gallery-title h4 mb-0 text-white">
-									<a>{{ photo.Alt }}</a>
+									<a href="{{ path('app_dossier', {'Slug': photo.Slug }) }}">{{ photo.Nom }}</a>
 								</h3>
-								<a href="{{ vich_uploader_asset(photo, 'imageFile') }}" class="icon-btn popup-image text-body">
+								<a href="{{ path('app_dossier', {'Slug': photo.Slug }) }}" class="icon-btn popup-image text-body">
 									<i class="fal fa-eye"></i>
 								</a>
 							</div>

@@ -6,9 +6,9 @@ use App\Entity\Sms;
 use App\Form\SmsType;
 use App\Entity\Contact;
 use App\Form\ContactType;
-use App\Repository\PhotoRepository;
 use App\Repository\HoraireRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use App\Repository\CategorieImageRepository;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Mailer\MailerInterface;
@@ -58,9 +58,8 @@ class HomePageController extends AbstractController
         'cs' => '/cs',
     ], name: 'app_home_page')]
     #[Cache(vary: ['Accept-Language'], public: true, expires: '+6 hour', maxage: '6', smaxage: '6', etag: '6')]
-    public function index(HoraireRepository $horaire, Request $request, PhotoRepository $photo): Response
+    public function index(HoraireRepository $horaire, Request $request, CategorieImageRepository $dossier): Response
     {
-
         $WeekNumber = strftime('%w');
         $lang = $request->getLocale();
 
@@ -127,7 +126,15 @@ class HomePageController extends AbstractController
             'ouvertures' => $horaire->findBy(['Lang' => $lang], ['WeekNumber' => 'ASC']),
             'form' => $form->createView(),
             'formSms' => $formSms->createView(),
-            'photos' => $photo->findBy([], ['id' => 'DESC'], 8),
+            'photos' => $dossier->findBy([], ['id' => 'DESC'], 8),
+        ]);
+    }
+
+    #[Route('/partenaire/{Slug}', name: 'app_dossier')]
+    public function dossier(): Response
+    {
+        return $this->render('main/dossier.html.twig', [
+           
         ]);
     }
 }
