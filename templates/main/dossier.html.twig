@@ -1,0 +1,143 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Bar tabac à proximité de chez vous à Forges-les-Eaux (76440), ouvert le dimanche toute la journée{% endtrans %}
+{% endblock %}
+{% block description %}
+	{% trans %} 
+        Bar proposant jeux de la Française des jeux (loto et grattage), tabac et accessoires, presse. Paiement de proximité. Boissons à emporter.
+    {% endtrans %}
+{% endblock %}
+{% block kw %}
+	{% trans %}bar, tabac, jeux, divertissement, café, boissons, billard, baby-foot, fléchettes, jeux de société, détente, loisirs, soirées, animations, musique, cocktails, bières, alcools{% endtrans %}
+{% endblock %}
+
+{% block body %}
+
+    {% include '_partials/menu.html.twig' %}
+    
+	<div class="vs-menu-wrapper">
+		<div class="vs-menu-area">
+			<button class="vs-menu-toggle text-theme">
+				<i class="fal fa-times"></i>
+			</button>
+			<div class="mobile-logo">
+				<a href="{{ path('app_home_page') }}"><img src="{{ asset('assets/img/logo-blanc.png') }}" alt="{% trans %}Café{% endtrans %}"></a>
+			</div>
+			<div class="vs-mobile-menu link-inherit"></div>
+		</div>
+	</div>
+	<div class="breadcumb-wrapper breadcumb-layout1 background-image link-inherit  mb-30" data-vs-img="{{ asset('assets/img/breadcumb/breadcumb-bg-1-1.jpg') }}" data-overlay="black" data-opacity="6">
+		<div class="container z-index-common">
+			<div class="breadcumb-content text-center pt-65 pt-lg-140 pb-95 pb-lg-175">
+				<h1 class="breadcumb-title sec-title1 text-white my-0">{{ photos[0].Nom }}</h1>
+				<ul class="breadcumb-menu-style1 bg-white">
+					<li>
+						<a href="{{ path('app_home_page') }}">
+							<i class="fal fa-home text-theme"></i>Accueil</a>
+					</li>
+					<li class="active">{{ photos[0].Nom }}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<section class="vs-gallery-wrapper gallery-box-layout1 link-inherit pb-lg-100 pb-30" id="gallery">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+
+
+				{% for photo in photos[0].photos %}
+
+					<div class="col-md-6 col-lg-4 col-xl-3">
+						<div class="vs-gallery image-scale-hover">
+							<div class="gallery-img">
+								<img src="{{ vich_uploader_asset(photo, 'imageFile') | imagine_filter('my_thumb') }}" class="w-100" alt="{{ photo.Alt }}" height="400" width="455">
+							</div>
+							<div class="gallery-content px-40 py-40" data-overlay="black" data-opacity="7">
+								<h3 class="gallery-title h4 mb-0 text-white">
+									<a href="">{{ photo.Alt }}</a>
+								</h3>
+								<a href="{{ vich_uploader_asset(photo, 'imageFile') }}" class="icon-btn popup-image text-body">
+									<i class="fal fa-eye"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				{% endfor %}
+
+			</div>
+		</div>
+	</section>
+    <div style="clear:both"></div>
+    	<div class="background-image" data-vs-img="assets/img/footer/footer-bg-2-1.jpg" data-overlay="black" data-opacity="8">
+		<footer class="footer-wrapper footer-layout1 dark-footer ">
+			<div class="footer-widget-wrapper border-top footer-widget-layout1 pt-40 pt-lg-195 pt-xl-210 pb-10 pb-lg-70 z-index-common">
+				<div class="container ">
+					<div class="row">
+						<div class="col-lg-6 col-xl-4">
+							<div class="widget pt-0">
+								<div class="vs-widget-about">
+									<div class="widget-about-logo mb-20 mb-lg-25">
+										<a href="{{ path('app_home_page') }}">
+											<img src="{{ asset('assets/img/logo-blanc.png') }}" alt="logo">
+										</a>
+									</div>
+									<p class="widget-about-text mb-20">
+										{% trans %}Vous cherchez un endroit convivial pour vous détendre, profiter de vos activités favorites ? Ne cherchez pas plus loin, car le COMMERCE a tout ce dont vous avez besoin !{% endtrans %}
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-5 col-xl-5 offset-xl-3">
+							<div class="widget  ">
+								<h3 class="widget_title">Adresse</h3>
+								<div class="vs-widget-about">
+									<p class="contact-info mb-15">
+										<i class="fal fa-map-marker-alt"></i>3 Rue du Mal Leclerc, 76440 Forges-les-Eaux</p>
+									<p class="contact-info mb-15">
+										<i class="fal fa-fax"></i>
+										<a href="tel:+65965252561">+33 (0)2 35 90 50 16</a>
+									</p>
+									<p class="contact-info mb-15">
+										<i class="fal fa-fax"></i>
+										<a href="" class="mentionLegal">Mention Légal</a>
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright text-center bg-black py-3 link-inherit z-index-common">
+				<div class="container">
+					<p class="text-white mb-0">Copyright
+						{{ 'now' | date('Y') }}</p>
+				</div>
+				<div class="fluid-container">
+					<p class="text-white mb-0">
+
+						{% for locale in locales %}
+							{% if locale == 'fr' %}
+								<a class="text-decoration-none mx-3" href="{{ path('app_home_page') }}">
+									<img src="{{ asset('assets/img/flag/fr.png') }}" alt="{{locale}}" height="20" style="height:20px;"/>
+								</a>
+							{% else %}
+								<a class="text-decoration-none mx-3" href="{{ path('app_home_page', {'_locale': locale} ) }}">
+									<img src="{{ asset('assets/img/flag/' ~ locale ~ '.png') }}" alt="{{locale}}" height="20" style="height:20px;"/>
+								</a>
+							{% endif %}
+						{% endfor %}
+
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<a href="#" class="scrollToTop icon-btn bg-theme border-before-theme">
+		<i class="far fa-angle-up"></i>
+	</a>
+{% endblock %}

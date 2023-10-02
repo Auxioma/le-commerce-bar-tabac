@@ -363,7 +363,7 @@
 								<h3 class="gallery-title h4 mb-0 text-white">
 									<a href="{{ path('app_dossier', {'Slug': photo.Slug }) }}">{{ photo.Nom }}</a>
 								</h3>
-								<a href="{{ path('app_dossier', {'Slug': photo.Slug }) }}" class="icon-btn popup-image text-body">
+								<a href="{{ vich_uploader_asset(photo, 'imageFile') | imagine_filter('my_thumb') }}" class="icon-btn popup-image text-body">
 									<i class="fal fa-eye"></i>
 								</a>
 							</div>

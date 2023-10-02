@@ -131,10 +131,10 @@ class HomePageController extends AbstractController
     }
 
     #[Route('/partenaire/{Slug}', name: 'app_dossier')]
-    public function dossier(): Response
+    public function dossier(CategorieImageRepository $dossier, $Slug): Response
     {
         return $this->render('main/dossier.html.twig', [
-           
+           'photos' => $dossier->findBy(['Slug' => $Slug]),
         ]);
     }
 }
