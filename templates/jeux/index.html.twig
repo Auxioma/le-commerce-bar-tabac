@@ -232,13 +232,17 @@
                 .each("end", function(){
                     oldrotation = rotation;
                 
-                    // Vérifiez si l'utilisateur a déjà cliqué aujourd'hui en utilisant un cookie ou un autre mécanisme de stockage local
-                    var dernierClic = new Date(localStorage.getItem('dernierClic'));
-                    var aujourdHui = new Date();
-                    aujourdHui.setHours(0, 0, 0, 0); // Réglez la date d'aujourd'hui à minuit
+                    var dernierClicStr = localStorage.getItem('dernierClic');
+                    var dernierClic = dernierClicStr ? new Date(JSON.parse(dernierClicStr)) : null;
+                    var maintenant = new Date();
 
-                    if (dernierClic < aujourdHui) {
+                    // Réglez la date d'aujourd'hui à minuit
+                    maintenant.setHours(0, 0, 0, 0);
+
+                    if (!dernierClic || dernierClic < maintenant) {
                         container.on("click", spin);
+                        localStorage.setItem('dernierClic', JSON.stringify(maintenant));
+                        
                     } else {
                         // je vide le contenu de la div question
                         document.getElementById("question").innerHTML = "";
@@ -305,7 +309,6 @@
                             // j'affiche le formulaire
                             document.getElementById("question").appendChild(form);
                         }
-
                     }else{
                         if (dernierClic < aujourdHui) {
                             // je vide le contenu de la div question
@@ -316,13 +319,7 @@
                             question.innerHTML = data[picked].question;
                             document.getElementById("question").appendChild(question);
                         }
-                        // Enregistrez la date du dernier clic
-                        localStorage.setItem('dernierClic', aujourdHui);
-                    }
-
-
-              
-                    
+                    } 
                 });
         }
 
