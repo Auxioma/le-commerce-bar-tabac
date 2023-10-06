@@ -44,10 +44,12 @@ class SmsType extends AbstractType
                 ],
             ])
 
+            /*
             ->add('captcha', Recaptcha3Type::class, [
                 'constraints' => new Recaptcha3(),
                 'action_name' => 'homepage'
             ]);
+            */
         ;
     }
 
