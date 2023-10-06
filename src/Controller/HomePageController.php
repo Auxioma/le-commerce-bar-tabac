@@ -86,7 +86,9 @@ class HomePageController extends AbstractController
             $this->entityManager->flush();
 
             $this->addFlash('success', 'Votre message a bien été envoyé');
-            return $this->redirectToRoute('app_home_page');
+            // redirection sur le modal qui porte cette class vs-btn mask-style1 searchBoxTggler
+
+            return $this->redirectToRoute('app_home_page', ['success' => true]);
         }
 
         /**

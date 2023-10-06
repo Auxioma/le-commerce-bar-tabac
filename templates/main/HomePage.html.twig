@@ -932,4 +932,19 @@
 	</div>
 
 {% endblock %}
+{% block javascripts %}
+    <script>
+        // Attendre que le document soit prêt
+        document.addEventListener("DOMContentLoaded", function() {
+            // Vérifier si le paramètre de succès est présent dans l'URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const successParam = urlParams.get('success');
 
+            // Si le paramètre de succès est présent, afficher la modal
+            if (successParam === 'true') {
+				console.log('success');
+                $('#successModal').modal('show'); // Assurez-vous d'ajuster l'ID de la modal en conséquence
+            }
+        });
+    </script>
+{% endblock %}
