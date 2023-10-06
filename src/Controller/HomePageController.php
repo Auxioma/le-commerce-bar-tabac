@@ -77,6 +77,7 @@ class HomePageController extends AbstractController
          */
         if ($formSms->isSubmitted() && $formSms->isValid()) {
 
+            dd($formSms);
             $numero = $formSms->get('telephone')->getData();
             $SMS->setTelephone($numero);
             
