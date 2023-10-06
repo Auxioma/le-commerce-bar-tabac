@@ -84,8 +84,6 @@ class HomePageController extends AbstractController
 
             $this->entityManager->persist($SMS);
             $this->entityManager->flush();
-              dd($formSms);
-    
 
             $this->addFlash('success', 'Votre message a bien été envoyé');
             return $this->redirectToRoute('app_home_page');
