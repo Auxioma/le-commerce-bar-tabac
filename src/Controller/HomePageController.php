@@ -77,20 +77,16 @@ class HomePageController extends AbstractController
          */
         if ($formSms->isSubmitted() && $formSms->isValid()) {
 
-            dd($formSms);
+          
             $numero = $formSms->get('telephone')->getData();
             $SMS->setTelephone($numero);
             
-            $this->entityManager->beginTransaction();
-            try {
-                $this->entityManager->persist($SMS);
-                $this->entityManager->flush();
-                $this->entityManager->commit();
+
+            $this->entityManager->persist($SMS);
+            $this->entityManager->flush();
+              dd($formSms);
     
-            } catch (\Exception $e) {
-                $this->entityManager->rollback();
-                throw $e;
-            }
+
             $this->addFlash('success', 'Votre message a bien été envoyé');
             return $this->redirectToRoute('app_home_page');
         }
