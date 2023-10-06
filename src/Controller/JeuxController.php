@@ -22,7 +22,7 @@ class JeuxController extends AbstractController
             // je verifie si le token est valide
             if ($this->isCsrfTokenValid('jeux', $request->get('token'))) {
                  
-               // 
+                
                 $nom = $request->get('nom');
                 $prenom = $request->get('prenom');
                 $telephone = $request->get('telephone');

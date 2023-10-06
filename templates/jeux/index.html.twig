@@ -247,7 +247,6 @@
                         // je vide le contenu de la div question
                         document.getElementById("question").innerHTML = "";
 
-                        
                         var message = document.createElement("p");
                         message.innerHTML = "Vous avez déjà joué aujourd'hui";
                         document.getElementById("question").appendChild(message);
@@ -259,7 +258,7 @@
                     var valeurCaseGagnante = data[picked].value;
                     // si la valeur de la case gagnante est égale à 1 j'affiche un formulaire avec la nom, prénom et numéro de téléphone
                     if(valeurCaseGagnante == 1){
-                        if (dernierClic < aujourdHui) {
+                        if (!dernierClic || dernierClic < maintenant) {
                             // je vais créer un formulaire
                             var form = document.createElement("form");
                             form.setAttribute("method", "post");
@@ -310,7 +309,7 @@
                             document.getElementById("question").appendChild(form);
                         }
                     }else{
-                        if (dernierClic < aujourdHui) {
+                        if (!dernierClic || dernierClic < maintenant) {
                             // je vide le contenu de la div question
                             document.getElementById("question").innerHTML = "";
 
@@ -352,8 +351,7 @@
             return "rotate(" + i(t) + ")";
           };
         }
-        
-        
+
         function getRandomNumbers(){
             var array = new Uint16Array(1000);
             var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);

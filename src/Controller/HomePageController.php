@@ -76,7 +76,9 @@ class HomePageController extends AbstractController
          * Formulaire du SMS
          */
         if ($formSms->isSubmitted() && $formSms->isValid()) {
-            // je vais formater le numéro de téléphone pour qu'il soit au format E164
+
+            var_dump($formSms); 
+            
             $numero = $formSms->get('telephone')->getData();
             $SMS->setTelephone($numero);
             
