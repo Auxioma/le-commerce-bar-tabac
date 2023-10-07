@@ -43,14 +43,39 @@
 	</div>
 	<div class="login-wrapper  py-60 py-lg-150">
 		<div class="container">
+        	<div class="row mb-5">
+                <div class="col-12">
+                    <div class="about-content text-center">
+                        <p class="h3 text-theme text-font3 mb-10">Mettez en Lumière Votre Talent au Bar Tabac</p>
+                        <h2 class="sec-title1">Le Commerce</h2>
+                    </div>
+                </div>
+            </div>
 			<div class="row">
 				<div class="col-12 col-lg-6 ">
                     <div id="chart"></div>
                     
 				</div>
                 <div class="col-12 col-lg-6 ">
-                    <h2 class="sec-title1 text-font3">Tentez de gagné une <span class="text-theme">Boissons</span></h2>
-                    <div id="question"></div>
+                    
+                    {{ form_start(form, {'attr' : {'class':'appointment-form1 px-10 px-sm-30 px-xl-80 bg-white'} }) }}
+                    <div id="reponsedejajourer"></div>
+					<div class="form-group mb-20">
+						{{ form_widget(form.Nom)}}
+						<i class="fal fa-user"></i>
+					</div>
+                    <div class="form-group mb-20">
+						{{ form_widget(form.Prenom)}}
+						<i class="fal fa-user"></i>
+					</div>
+                    <div class="form-group mb-20">
+						{{ form_widget(form.Telephone)}}
+						<i class="fal fa-phone"></i>
+					</div>
+                    <div class="form-btn">
+						<button type="submit" id="jouer" class="vs-btn mask-style1 rounded-0 w-100">Jouer</button>
+					</div>
+                    {{ form_end(form) }}
                 </div>
 			</div>
 		</div>
@@ -138,8 +163,7 @@
         oldrotation = 0,
         picked = 100000,
         oldpick = [],
-        color = d3.scale.category20();//category20c()
-       //randomNumbers = getRandomNumbers();
+        color = d3.scale.category20();
 
         var data = [  
             {% for jeux in jeux %}               
@@ -189,7 +213,37 @@
                 return data[i].label;
             });
 
-            container.on("click", spin);
+            let btn = document.querySelector('#jouer');
+
+            // avant de faire tournée la roue, je vérifier en AJAX si le joueur a déjà joué
+            btn.addEventListener('click', function(e){
+                e.preventDefault();
+                // je récupère les données du formulaire
+                let nom = document.querySelector('#user_jeux_Nom').value;
+                let prenom = document.querySelector('#user_jeux_Prenom').value;
+                let telephone = document.querySelector('#user_jeux_Telephone').value;
+                // je vérifie si les champs sont remplis
+                if(nom != '' && prenom != '' && telephone != ''){
+                    // j'envoie les données en AJAX pour traitement
+                    let xhr = new XMLHttpRequest();
+                    xhr.open('POST', '/api-jeux', true);
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    xhr.send('nom='+nom+'&prenom='+prenom+'&telephone='+telephone);
+                    xhr.onreadystatechange = function(){
+                        if(xhr.readyState == 4 && xhr.status == 200){
+                            // je récupère la réponse du serveur
+                            let reponse = JSON.parse(xhr.responseText);
+                            // je vérifie si le joueur a déjà joué
+                            if(reponse.success){
+                                spin();
+                            }else{
+                                // j'envoie a ID reponsedejajourer le message que le joueur a déjà joué
+                                document.querySelector('#reponsedejajourer').innerHTML = '<p class="h3 text-theme text-font3 mb-10">Vous avez déjà joué.</p>';
+                            }
+                        }
+                    }
+                }
+            });
             
 
 
@@ -226,99 +280,48 @@
             
           // On fait tourner la roue
             vis.transition()
-                .duration(6000)
+                .duration(8000)
                 .attrTween("transform", rotTween)
                 // Actions à lancer à l'arrêt de la roue
                 .each("end", function(){
                     oldrotation = rotation;
-                
-                    var dernierClicStr = localStorage.getItem('dernierClic');
-                    var dernierClic = dernierClicStr ? new Date(JSON.parse(dernierClicStr)) : null;
-                    var maintenant = new Date();
+                    // container.on("click", spin);
 
-                    // Réglez la date d'aujourd'hui à minuit
-                    maintenant.setHours(0, 0, 0, 0);
+                    // Je mets dans une variable la case gagnante
+                    let gagnant = data[picked].value;
+                    // je vais envoyer le numero de téléphone a l'action qui va envoyer le sms
+                    let nom = document.querySelector('#user_jeux_Nom').value;
+                    let prenom = document.querySelector('#user_jeux_Prenom').value;
+                    let telephone = document.querySelector('#user_jeux_Telephone').value;
 
-                    if (!dernierClic || dernierClic < maintenant) {
-                        container.on("click", spin);
-                        localStorage.setItem('dernierClic', JSON.stringify(maintenant));
-                        
+                    // je vérifie si le joueur a gagné
+                    if( gagnant == 1) {
+                        // j'envoie les donné en AJAX pour traitement
+                        let xhr = new XMLHttpRequest();
+                        xhr.open('POST', '/api-jeux-gagnant', true);
+                        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                        xhr.send('nom='+nom+'&prenom='+prenom+'&telephone='+telephone);
+
+                        xhr.onreadystatechange = function(){
+                            if(xhr.readyState == 4 && xhr.status == 200){
+                                // je récupère la réponse du serveur
+                                let reponse = JSON.parse(xhr.responseText);
+                                console.log(reponse.success);
+
+                                // je vérifie si le joueur a déjà joué
+                                if(reponse.smsenvoie){
+                                    // j'envoie a ID reponsedejajourer le message que le SMS a été envoyer
+                                    document.querySelector('#reponsedejajourer').innerHTML = '<p class="h3 text-theme text-font3 mb-10">Un SMS avec votre gain a été envoyer</p>';
+                                }else{
+                                    
+                                }
+                            }
+                        }   
                     } else {
-                        // je vide le contenu de la div question
-                        document.getElementById("question").innerHTML = "";
-
-                        var message = document.createElement("p");
-                        message.innerHTML = "Vous avez déjà joué aujourd'hui";
-                        document.getElementById("question").appendChild(message);
-                        
+                        // j'envoie a ID reponsedejajourer le message que le joueur n'a pas gagné
+                        document.querySelector('#reponsedejajourer').innerHTML = '<p class="h3 text-theme text-font3 mb-10">Vous n\'avez pas gagné</p>';
                     }
 
-
-                    // je vais céer une variable pour stocker la valeur de la case gagnante
-                    var valeurCaseGagnante = data[picked].value;
-                    // si la valeur de la case gagnante est égale à 1 j'affiche un formulaire avec la nom, prénom et numéro de téléphone
-                    if(valeurCaseGagnante == 1){
-                        if (!dernierClic || dernierClic < maintenant) {
-                            // je vais créer un formulaire
-                            var form = document.createElement("form");
-                            form.setAttribute("method", "post");
-                            form.setAttribute("class", "appointment-form1 px-10 py-10 px-sm-30 py-sm-30 px-xl-80 py-xl-80 bg-white");
-                            form.setAttribute("action", "{{ path('app_jeux') }}");
-
-                            // je vais créer un input pour le nom
-                            var inputNom = document.createElement("input");
-                            inputNom.setAttribute("type", "text");
-                            inputNom.setAttribute("class", "form-control");
-                            inputNom.setAttribute("placeholder", "Entré votre nom");
-                            inputNom.setAttribute("name", "nom");
-
-                            // je vais créer un input pour le prénom
-                            var inputPrenom = document.createElement("input");
-                            inputPrenom.setAttribute("type", "text");
-                            inputPrenom.setAttribute("class", "form-control");
-                            inputPrenom.setAttribute("placeholder", "Entré votre prénom");
-                            inputPrenom.setAttribute("name", "prenom");
-
-                            // je vais créer un input pour le numéro de téléphone
-                            var inputTelephone = document.createElement("input");
-                            inputTelephone.setAttribute("type", "text");
-                            inputTelephone.setAttribute("class", "form-control");
-                            inputTelephone.setAttribute("placeholder", "Entré votre numéro de téléphone");
-                            inputTelephone.setAttribute("name", "telephone");
-
-                            // je vais créer un input pour le submit
-                            var inputSubmit = document.createElement("button");
-                            inputSubmit.setAttribute("class", "vs-btn mask-style1 rounded-0 w-100");
-                            inputSubmit.setAttribute("type", "submit");
-                            inputSubmit.innerHTML = "Envoyer";
-
-                            // je vais créer un input pour le token
-                            var inputToken = document.createElement("input");
-                            inputToken.setAttribute("type", "hidden");
-                            inputToken.setAttribute("name", "token");
-                            inputToken.setAttribute("value", "{{ csrf_token('jeux') }}");
-
-                            // j'enregistre les éléments dans le formulaire
-                            form.appendChild(inputNom);
-                            form.appendChild(inputPrenom);
-                            form.appendChild(inputTelephone);
-                            form.appendChild(inputSubmit);
-                            form.appendChild(inputToken);
-
-                            // j'affiche le formulaire
-                            document.getElementById("question").appendChild(form);
-                        }
-                    }else{
-                        if (!dernierClic || dernierClic < maintenant) {
-                            // je vide le contenu de la div question
-                            document.getElementById("question").innerHTML = "";
-
-                            // je vais créer un paragraphe pour afficher la question
-                            var question = document.createElement("p");
-                            question.innerHTML = data[picked].question;
-                            document.getElementById("question").appendChild(question);
-                        }
-                    } 
                 });
         }
 
@@ -333,7 +336,7 @@
         container.append("circle")
             .attr("cx", 0)
             .attr("cy", 0)
-            .attr("r", 70) // Rayon du cercle
+            .attr("r", 15) // Rayon du cercle
             .style({"fill":"white","cursor":"pointer","background": "#CCEAF1"});
 
         //Texte bouton "Lancer"
@@ -341,7 +344,7 @@
             .attr("x", 0)
             .attr("y", 8)
             .attr("text-anchor", "middle")
-            .text("Lancer")
+            .text("")
             .style({"font-weight":"bold", "font-size":"22px"});
         
         
